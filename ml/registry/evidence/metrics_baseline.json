@@ -1,0 +1,58 @@
+{
+  "val": {
+    "at05_accuracy": 0.5959595959595959,
+    "at05_precision": 1.0,
+    "at05_sensitivity": 0.1111111111111111,
+    "at05_specificity": 1.0,
+    "at05_f1": 0.2,
+    "at05_auroc": 0.9304526748971194,
+    "at05_threshold": 0.5,
+    "at05_tp": 5,
+    "at05_fp": 0,
+    "at05_tn": 54,
+    "at05_fn": 40,
+    "at_op_accuracy": 0.5959595959595959,
+    "at_op_precision": 1.0,
+    "at_op_sensitivity": 0.1111111111111111,
+    "at_op_specificity": 1.0,
+    "at_op_f1": 0.2,
+    "at_op_auroc": 0.9304526748971194,
+    "at_op_threshold": 0.5,
+    "at_op_tp": 5,
+    "at_op_fp": 0,
+    "at_op_tn": 54,
+    "at_op_fn": 40
+  },
+  "test": {
+    "at05_accuracy": 0.6,
+    "at05_precision": 1.0,
+    "at05_sensitivity": 0.2,
+    "at05_specificity": 1.0,
+    "at05_f1": 0.3333333333333333,
+    "at05_auroc": 0.9348,
+    "at05_threshold": 0.5,
+    "at05_tp": 10,
+    "at05_fp": 0,
+    "at05_tn": 50,
+    "at05_fn": 40,
+    "at_op_accuracy": 0.6,
+    "at_op_precision": 1.0,
+    "at_op_sensitivity": 0.2,
+    "at_op_specificity": 1.0,
+    "at_op_f1": 0.3333333333333333,
+    "at_op_auroc": 0.9348,
+    "at_op_threshold": 0.5,
+    "at_op_tp": 10,
+    "at_op_fp": 0,
+    "at_op_tn": 50,
+    "at_op_fn": 40
+  },
+  "threshold": {
+    "operating_point": 0.5,
+    "target_sensitivity": 0.9
+  },
+  "onnx": {
+    "max_abs_delta_vs_torch": 7.972121238708496e-07,
+    "opset": 17
+  }
+}

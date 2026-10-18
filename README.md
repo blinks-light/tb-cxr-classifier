@@ -75,6 +75,7 @@ ml/
   configs/baseline.yaml
   configs/improved.yaml
   registry/current_model.md
+  registry/evidence/   ROC curve, confusion matrix, metrics, per-image predictions, mlflow dump
   README_data.md       data lineage: source, v1→v2 changes, commit mapping
   README_experiments.md experiment rationale: which run ships and why
   PROVENANCE.md        checksums + reproduction commands
@@ -102,9 +103,24 @@ DEPLOYMENT.md          branch → environment → image mapping, runbook
 | Input | 224×224 grayscale → replicated to 3 channels → ImageNet normalisation |
 | Preprocessing | `v2`: resize → **CLAHE** (8×8 tiles, numpy implementation) → normalise |
 | Output | `P(tuberculosis)`, single sigmoid, exported as a probability |
-| Operating point | threshold tuned on the validation split for **sensitivity ≥ 0.90** |
+| Operating point | threshold **0.21**, tuned on the validation split for **sensitivity ≥ 0.90** |
 | Serving | ONNX Runtime CPU, no torch in the image |
-| Measured metrics | see [ml/README_experiments.md](ml/README_experiments.md) |
+| Shipped run | MLflow `a7963fd50d9b4310bb321b8f97de89f5` (`improved_v2_finetune`) |
+
+**Held-out results (dataset v2 test split, n = 100: 51 TB / 49 normal)**
+
+| Metric | Improved (shipped) | Baseline (frozen backbone, thr 0.5) |
+|---|---|---|
+| AUROC | **0.9580** | 0.9348 |
+| Accuracy | **0.8900** | 0.6000 |
+| Sensitivity | **0.9412** | 0.2000 |
+| Specificity | 0.8367 | 1.0000 |
+| F1 | **0.8972** | 0.3333 |
+| Specificity at equal 0.90 sensitivity | **0.959** | 0.780 |
+
+The baseline is the honest "it looks fine until you check sensitivity" run: AUROC
+0.93 but it misses 80 % of TB cases at the default threshold. Full analysis in
+[ml/README_experiments.md](ml/README_experiments.md).
 
 ### Why sensitivity first
 

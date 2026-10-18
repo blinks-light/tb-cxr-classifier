@@ -33,6 +33,10 @@ import urllib.error
 import urllib.request
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
+from typing import TYPE_CHECKING
+
+if TYPE_CHECKING:  # annotation-only import; numpy is imported lazily inside functions
+    import numpy as np
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 RAW_DIR = REPO_ROOT / "data" / "raw"
@@ -113,9 +117,8 @@ def fingerprint(path: Path, *, grid: int = 32) -> np.ndarray:
     mean absolute difference of 32x32 thumbnails instead separates genuine
     re-scans (RMSE < 0.02) from merely similar anatomy (RMSE ~ 0.06).
     """
-    from PIL import Image
-
     import numpy as np
+    from PIL import Image
 
     with Image.open(path) as im:
         small = im.convert("L").resize((grid, grid), Image.Resampling.BOX)
@@ -302,7 +305,7 @@ def _split_assign(records: list[dict], *, seed: int, stratified: bool) -> None:
     by_class: dict[int, list[dict]] = collections.defaultdict(list)
     for rec in records:
         by_class[rec["label"]].append(rec)
-    for label, items in sorted(by_class.items()):
+    for _label, items in sorted(by_class.items()):
         rng.shuffle(items)
         n = len(items)
         n_train, n_val = int(round(n * ratios["train"])), int(round(n * ratios["val"]))
@@ -415,7 +418,11 @@ def cmd_build_v2(args: argparse.Namespace) -> int:
         close = [j for j in range(index) if matrix[index, j] < args.dedup_rmse]
         if close:
             dropped_near.append(
-                {"file": rec["name"], "duplicate_of": unique[close[0]]["name"], "rmse": round(float(matrix[index, close[0]]), 5)}
+                {
+                    "file": rec["name"],
+                    "duplicate_of": unique[close[0]]["name"],
+                    "rmse": round(float(matrix[index, close[0]]), 5),
+                }
             )
             continue
         kept.append(rec)

@@ -1,0 +1,58 @@
+{
+  "val": {
+    "at05_accuracy": 0.8282828282828283,
+    "at05_precision": 0.9230769230769231,
+    "at05_sensitivity": 0.72,
+    "at05_specificity": 0.9387755102040817,
+    "at05_f1": 0.8089887640449438,
+    "at05_auroc": 0.9379591836734693,
+    "at05_threshold": 0.5,
+    "at05_tp": 36,
+    "at05_fp": 3,
+    "at05_tn": 46,
+    "at05_fn": 14,
+    "at_op_accuracy": 0.8383838383838383,
+    "at_op_precision": 0.8035714285714286,
+    "at_op_sensitivity": 0.9,
+    "at_op_specificity": 0.7755102040816326,
+    "at_op_f1": 0.8490566037735849,
+    "at_op_auroc": 0.9379591836734693,
+    "at_op_threshold": 0.21,
+    "at_op_tp": 45,
+    "at_op_fp": 11,
+    "at_op_tn": 38,
+    "at_op_fn": 5
+  },
+  "test": {
+    "at05_accuracy": 0.88,
+    "at05_precision": 0.9534883720930233,
+    "at05_sensitivity": 0.803921568627451,
+    "at05_specificity": 0.9591836734693877,
+    "at05_f1": 0.8723404255319149,
+    "at05_auroc": 0.957983193277311,
+    "at05_threshold": 0.5,
+    "at05_tp": 41,
+    "at05_fp": 2,
+    "at05_tn": 47,
+    "at05_fn": 10,
+    "at_op_accuracy": 0.89,
+    "at_op_precision": 0.8571428571428571,
+    "at_op_sensitivity": 0.9411764705882353,
+    "at_op_specificity": 0.8367346938775511,
+    "at_op_f1": 0.897196261682243,
+    "at_op_auroc": 0.957983193277311,
+    "at_op_threshold": 0.21,
+    "at_op_tp": 48,
+    "at_op_fp": 8,
+    "at_op_tn": 41,
+    "at_op_fn": 3
+  },
+  "threshold": {
+    "operating_point": 0.21,
+    "target_sensitivity": 0.9
+  },
+  "onnx": {
+    "max_abs_delta_vs_torch": 7.748603820800781e-07,
+    "opset": 17
+  }
+}
