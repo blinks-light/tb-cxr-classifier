@@ -67,8 +67,7 @@ class TBClassifier:
             actual = _sha256(self.model_path)
             if actual != expected:
                 raise ModelLoadError(
-                    "artifact integrity check failed: model.onnx sha256 "
-                    f"{actual} != metadata {expected}"
+                    "artifact integrity check failed: model.onnx sha256 " f"{actual} != metadata {expected}"
                 )
 
         threads = int(os.environ.get("TBCXR_INTRA_OP_THREADS", "0")) or min(4, os.cpu_count() or 1)
@@ -78,7 +77,9 @@ class TBClassifier:
         options.graph_optimization_level = ort.GraphOptimizationLevel.ORT_ENABLE_ALL
         options.log_severity_level = 3
 
-        self.session = ort.InferenceSession(str(self.model_path), sess_options=options, providers=["CPUExecutionProvider"])
+        self.session = ort.InferenceSession(
+            str(self.model_path), sess_options=options, providers=["CPUExecutionProvider"]
+        )
         self.input_name = self.session.get_inputs()[0].name
         self.output_name = self.session.get_outputs()[0].name
 
@@ -108,11 +109,9 @@ class TBClassifier:
     def _forward(self, tensor_batch: np.ndarray) -> np.ndarray:
         raw = self.session.run([self.output_name], {self.input_name: tensor_batch})[0]
         flat = np.asarray(raw, dtype=np.float64).reshape(len(tensor_batch))
-        if self.output_is_probability:
-            probabilities = np.clip(flat, 0.0, 1.0)
-        else:  # graph emits logits
-            probabilities = _sigmoid(flat)
-        return probabilities
+        # The graph is exported *with* a sigmoid, but an older artifact that emits
+        # logits must still serve correctly.
+        return np.clip(flat, 0.0, 1.0) if self.output_is_probability else _sigmoid(flat)
 
     def _shape_result(self, probability: float, latency_ms: float) -> dict[str, Any]:
         probability = float(probability)

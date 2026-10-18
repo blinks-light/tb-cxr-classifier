@@ -1,7 +1,9 @@
 [flake8]
 max-line-length = 120
 extend-ignore = E203, W503, E501, B008
-exclude = .git,.venv,venv,data,runs,artifacts,mlruns,__pycache__,.pytest_cache
+exclude = .git,.venv,venv,data,runs,artifacts,mlruns,_wheels,__pycache__,.pytest_cache
 per-file-ignores =
     tests/*:S101
+    # the training loop is deliberately linear: setup -> epochs -> eval -> export -> log
+    ml/train.py:C901
 max-complexity = 18

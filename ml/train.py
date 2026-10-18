@@ -31,7 +31,7 @@ import subprocess
 import sys
 import time
 from dataclasses import dataclass
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 from pathlib import Path
 
 import numpy as np
@@ -50,7 +50,6 @@ from sklearn.metrics import (  # noqa: E402
     confusion_matrix,
     f1_score,
     precision_score,
-    recall_score,
     roc_auc_score,
     roc_curve,
 )
@@ -170,9 +169,7 @@ class CXRDataset(Dataset):
 def build_frames(data_dir: Path) -> dict[str, pd.DataFrame]:
     labels = data_dir / "labels.csv"
     if not labels.exists():
-        raise FileNotFoundError(
-            f"{labels} not found -- run `python ml/data_pipeline.py build-v2` and `promote` first"
-        )
+        raise FileNotFoundError(f"{labels} not found -- run `python ml/data_pipeline.py build-v2` and `promote` first")
     frame = pd.read_csv(labels)
     missing = {"filename", "label", "split"} - set(frame.columns)
     if missing:
@@ -327,11 +324,31 @@ class RunResult:
     threshold: float
 
 
+def _worker_init(worker_id: int) -> None:
+    """Seed python/numpy randomness coherently with torch's per-worker seeding.
+
+    Must be a module-level function: on Windows (spawn start method) the
+    DataLoader pickles it into each worker process.
+    """
+    base = torch.initial_seed() % (2**31)
+    random.seed(base + worker_id)
+    np.random.seed(base + worker_id)
+
+
 def train(config: dict, args: argparse.Namespace) -> RunResult:
     seed = int(config["seed"])
     seed_everything(seed)
 
-    data_dir = (REPO_ROOT / config["data_dir"]).resolve() if not Path(config["data_dir"]).is_absolute() else Path(config["data_dir"])
+    # Keep torchvision's ImageNet weight cache inside the repo (git-ignored) so the
+    # run does not depend on a writable %USERPROFILE%\.cache.
+    os.environ.setdefault("TORCH_HOME", str(REPO_ROOT / "runs" / ".torch"))
+    os.environ.setdefault("MPLCONFIGDIR", str(REPO_ROOT / "runs" / ".mpl"))
+
+    data_dir = (
+        (REPO_ROOT / config["data_dir"]).resolve()
+        if not Path(config["data_dir"]).is_absolute()
+        else Path(config["data_dir"])
+    )
     frames = build_frames(data_dir)
     preprocessing = config.get("preprocessing", "v2")
     manifest = {}
@@ -340,17 +357,13 @@ def train(config: dict, args: argparse.Namespace) -> RunResult:
     data_version = manifest.get("version") or data_dir.name
 
     datasets = {
-        "train": CXRDataset(frames["train"], data_dir / "images", preprocessing, augment=bool(config.get("augment", False)), seed=seed),
+        "train": CXRDataset(
+            frames["train"], data_dir / "images", preprocessing, augment=bool(config.get("augment", False)), seed=seed
+        ),
         "val": CXRDataset(frames["val"], data_dir / "images", preprocessing, augment=False, seed=seed),
         "test": CXRDataset(frames["test"], data_dir / "images", preprocessing, augment=False, seed=seed),
     }
     batch_size = int(config.get("batch_size", 16))
-
-    def _worker_init(worker_id: int) -> None:
-        # Keep python/numpy randomness coherent with torch's per-worker seeding.
-        base = torch.initial_seed() % (2**31)
-        random.seed(base + worker_id)
-        np.random.seed(base + worker_id)
 
     loaders = {
         "train": DataLoader(
@@ -385,9 +398,7 @@ def train(config: dict, args: argparse.Namespace) -> RunResult:
     lr = float(config.get("lr", 1e-3))
     weight_decay = float(config.get("weight_decay", 1e-4))
     epochs = int(config.get("epochs", 8))
-    optimizer = torch.optim.AdamW(
-        [p for p in model.parameters() if p.requires_grad], lr=lr, weight_decay=weight_decay
-    )
+    optimizer = torch.optim.AdamW([p for p in model.parameters() if p.requires_grad], lr=lr, weight_decay=weight_decay)
     scheduler = None
     if config.get("scheduler") == "cosine":
         scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=max(epochs, 1))
@@ -457,8 +468,14 @@ def train(config: dict, args: argparse.Namespace) -> RunResult:
     test_at_threshold = binary_metrics(y_test, p_test, threshold)
 
     metrics = {
-        "val": {**{f"at05_{k}": v for k, v in val_default.items()}, **{f"at_op_{k}": v for k, v in val_at_threshold.items()}},
-        "test": {**{f"at05_{k}": v for k, v in test_default.items()}, **{f"at_op_{k}": v for k, v in test_at_threshold.items()}},
+        "val": {
+            **{f"at05_{k}": v for k, v in val_default.items()},
+            **{f"at_op_{k}": v for k, v in val_at_threshold.items()},
+        },
+        "test": {
+            **{f"at05_{k}": v for k, v in test_default.items()},
+            **{f"at_op_{k}": v for k, v in test_at_threshold.items()},
+        },
         "threshold": {"operating_point": threshold, "target_sensitivity": target_sens},
     }
 
@@ -500,13 +517,14 @@ def train(config: dict, args: argparse.Namespace) -> RunResult:
         "threshold_strategy": config.get("threshold_strategy", "fixed"),
         "target_sensitivity": target_sens,
         "output_is_probability": True,
+        "onnx": {"max_abs_delta_vs_torch": max_delta, "opset": 17},
         "onnx_sha256": sha256_of(onnx_path),
         "onnx_bytes": onnx_path.stat().st_size,
         "data_version": data_version,
         "data_dvc_hash": data_dvc_hash(),
         "data_counts": manifest.get("counts", {}),
         "git_commit": git_commit(),
-        "trained_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+        "trained_at": datetime.now(UTC).isoformat(timespec="seconds"),
         "environment": {
             "python": platform.python_version(),
             "torch": torch.__version__,
@@ -571,7 +589,9 @@ def train(config: dict, args: argparse.Namespace) -> RunResult:
         for key, value in params.items():
             mlflow.log_param(key.replace(" ", "_"), value)
 
-        mlflow.set_tags({"data_version": data_version, "stage": "baseline" if "baseline" in config["name"] else "improved"})
+        mlflow.set_tags(
+            {"data_version": data_version, "stage": "baseline" if "baseline" in config["name"] else "improved"}
+        )
 
         for epoch_row in history:
             mlflow.log_metrics(
@@ -611,8 +631,12 @@ def train(config: dict, args: argparse.Namespace) -> RunResult:
 def build_args(argv: list[str] | None = None) -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--config", type=Path, default=REPO_ROOT / "ml" / "configs" / "baseline.yaml")
-    parser.add_argument("--promote", action="store_true", help="copy the ONNX graph into artifacts/ (used by the service)")
-    parser.add_argument("--set", action="append", default=[], metavar="KEY=VALUE", help="override a config entry, e.g. --set epochs=2")
+    parser.add_argument(
+        "--promote", action="store_true", help="copy the ONNX graph into artifacts/ (used by the service)"
+    )
+    parser.add_argument(
+        "--set", action="append", default=[], metavar="KEY=VALUE", help="override a config entry, e.g. --set epochs=2"
+    )
     return parser.parse_args(argv)
 
 

@@ -23,7 +23,9 @@ QUALITY_FLOOR_ACCURACY = 0.75
 @pytest.fixture(scope="module")
 def meta(artifacts_dir) -> dict:
     path = artifacts_dir / "model_meta.json"
-    assert path.exists(), "artifacts/model_meta.json missing -- run `python -m ml.train --config ml/configs/improved.yaml --promote`"
+    assert (
+        path.exists()
+    ), "artifacts/model_meta.json missing -- run `python -m ml.train --config ml/configs/improved.yaml --promote`"
     return json.loads(path.read_text(encoding="utf-8"))
 
 
@@ -59,16 +61,29 @@ def test_metadata_is_complete(meta) -> None:
 
 def test_graph_loads_without_torch(artifacts_dir) -> None:
     """Dependency guard: the serving stack must not need torch."""
-    import sys
-
     import onnxruntime as ort
 
-    assert "torch" not in sys.modules or True  # torch may be installed in dev, but must not be imported here
     session = ort.InferenceSession(str(artifacts_dir / "model.onnx"), providers=["CPUExecutionProvider"])
     inputs = session.get_inputs()
     outputs = session.get_outputs()
     assert inputs[0].shape == ["batch", 3, 224, 224]
     assert outputs[0].shape in (["batch", 1], ["batch"])
+
+
+def test_serving_import_graph_is_torch_free() -> None:
+    """`import app.main` must not drag torch into the process.
+
+    Checked in a subprocess so the result is unaffected by whatever else the test
+    session imported: this is the property that keeps the Docker image slim.
+    """
+    import subprocess
+    import sys
+
+    from app.inference import REPO_ROOT
+
+    code = "import sys, app.main; print(int('torch' in sys.modules))"
+    completed = subprocess.run([sys.executable, "-c", code], cwd=REPO_ROOT, capture_output=True, text=True, check=True)
+    assert completed.stdout.strip() == "0", f"app.main imported torch: {completed.stderr[-400:]}"
 
 
 def test_graph_outputs_probabilities(artifacts_dir) -> None:
