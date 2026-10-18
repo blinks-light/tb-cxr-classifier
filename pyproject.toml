@@ -9,13 +9,14 @@ extend-exclude = '''
   | runs
   | artifacts
   | mlruns
+  | _wheels
 )/
 '''
 
 [tool.ruff]
 line-length = 120
 target-version = "py312"
-exclude = [".venv", "venv", "data", "runs", "artifacts", "mlruns"]
+exclude = [".venv", "venv", "data", "runs", "artifacts", "mlruns", "_wheels"]
 
 [tool.ruff.lint]
 select = ["E", "F", "W", "I", "B", "UP", "C4", "SIM"]

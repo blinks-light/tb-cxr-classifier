@@ -46,9 +46,18 @@ def test_deterministic(version: str) -> None:
 
 @pytest.mark.parametrize("version", sorted(pre.SUPPORTED_PREPROCESSING))
 def test_three_channels_identical(version: str) -> None:
-    """A grayscale input must be replicated, not interpolated."""
+    """A grayscale input must be replicated, not interpolated.
+
+    The three channels are *not* numerically equal after normalisation (ImageNet
+    has a different mean/std per channel), so the check undoes the normalisation
+    first and then compares.
+    """
     tensor = pre.preprocess(_gray(), version)
-    assert np.allclose(tensor[0], tensor[1]) and np.allclose(tensor[1], tensor[2])
+    mean, std = pre._MEAN, pre._STD
+    raw = tensor * std[:, None, None] + mean[:, None, None]
+    # float32 round-trip through (x-mean)/std loses the last bit, hence the tolerance
+    assert np.allclose(raw[0], raw[1], rtol=0, atol=1e-5)
+    assert np.allclose(raw[1], raw[2], rtol=0, atol=1e-5)
 
 
 def test_versions_actually_differ() -> None:
@@ -62,7 +71,9 @@ def test_constant_image_is_stable() -> None:
     for version in ("v1", "v2"):
         tensor = pre.preprocess(flat, version)
         assert np.isfinite(tensor).all()
-        assert float(tensor.std()) < 1e-4
+        # per channel: the three channels differ by a constant (ImageNet mean/std),
+        # so the *within-channel* spread is what must vanish.
+        assert max(float(tensor[c].std()) for c in range(3)) < 1e-4
 
 
 @pytest.mark.parametrize("size", [(1, 1), (4, 300), (300, 4), (511, 389)])

@@ -175,9 +175,7 @@ def clahe(
 def _to_grayscale_224(image: Image.Image) -> np.ndarray:
     """Any PIL mode -> L -> 224x224 -> float32 in [0, 1]."""
     if image.width * image.height > MAX_PIXELS:
-        raise InvalidImageError(
-            f"image too large: {image.width}x{image.height} exceeds {MAX_PIXELS} pixels"
-        )
+        raise InvalidImageError(f"image too large: {image.width}x{image.height} exceeds {MAX_PIXELS} pixels")
     gray = image.convert("L")
     if gray.size != (IMAGE_SIZE, IMAGE_SIZE):
         # LANCZOS on down-scale, BILINEAR-ish on up-scale: LANCZOS is fine for both.

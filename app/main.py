@@ -24,7 +24,7 @@ from typing import Annotated
 from fastapi import FastAPI, File, HTTPException, Request, UploadFile
 from fastapi.responses import HTMLResponse, JSONResponse
 
-from app.inference import TBClassifier, ModelLoadError
+from app.inference import ModelLoadError, TBClassifier
 from app.preprocess import MAX_PIXELS, InvalidImageError, preprocess_bytes
 from app.schemas import (
     BatchPredictionResponse,
@@ -34,7 +34,9 @@ from app.schemas import (
     PredictionResponse,
 )
 
-logging.basicConfig(level=os.environ.get("TBCXR_LOG_LEVEL", "INFO"), format="%(asctime)s %(levelname)s %(name)s: %(message)s")
+logging.basicConfig(
+    level=os.environ.get("TBCXR_LOG_LEVEL", "INFO"), format="%(asctime)s %(levelname)s %(name)s: %(message)s"
+)
 logger = logging.getLogger("tbcxr.api")
 
 MAX_UPLOAD_BYTES = 8 * 1024 * 1024  # 8 MB, comfortably above a 6 MB Shenzhen PNG
@@ -58,7 +60,11 @@ async def lifespan(app: FastAPI):
     """Load the ONNX model once, at startup."""
     try:
         app.state.classifier = TBClassifier()
-        logger.info("model loaded: %s (preprocessing=%s)", app.state.classifier.meta.get("model_name"), app.state.classifier.preprocessing)
+        logger.info(
+            "model loaded: %s (preprocessing=%s)",
+            app.state.classifier.meta.get("model_name"),
+            app.state.classifier.preprocessing,
+        )
     except ModelLoadError as exc:
         # The API still boots so /health can report the failure in a readable way.
         app.state.classifier = None
@@ -139,7 +145,13 @@ async def model_info(request: Request) -> ModelInfoResponse:
 @app.post(
     "/predict",
     response_model=PredictionResponse,
-    responses={400: {"model": ErrorResponse}, 413: {"model": ErrorResponse}, 415: {"model": ErrorResponse}, 422: {"model": ErrorResponse}, 503: {"model": ErrorResponse}},
+    responses={
+        400: {"model": ErrorResponse},
+        413: {"model": ErrorResponse},
+        415: {"model": ErrorResponse},
+        422: {"model": ErrorResponse},
+        503: {"model": ErrorResponse},
+    },
     tags=["inference"],
 )
 async def predict(request: Request, file: Annotated[UploadFile, File(description="chest X-ray image")]) -> JSONResponse:
@@ -163,10 +175,18 @@ async def predict(request: Request, file: Annotated[UploadFile, File(description
 @app.post(
     "/predict/batch",
     response_model=BatchPredictionResponse,
-    responses={400: {"model": ErrorResponse}, 413: {"model": ErrorResponse}, 415: {"model": ErrorResponse}, 422: {"model": ErrorResponse}, 503: {"model": ErrorResponse}},
+    responses={
+        400: {"model": ErrorResponse},
+        413: {"model": ErrorResponse},
+        415: {"model": ErrorResponse},
+        422: {"model": ErrorResponse},
+        503: {"model": ErrorResponse},
+    },
     tags=["inference"],
 )
-async def predict_batch(request: Request, files: Annotated[list[UploadFile], File(description="1-8 chest X-ray images")]) -> JSONResponse:
+async def predict_batch(
+    request: Request, files: Annotated[list[UploadFile], File(description="1-8 chest X-ray images")]
+) -> JSONResponse:
     classifier = get_classifier(request)
     if not files:
         raise HTTPException(status_code=400, detail="no files uploaded")
