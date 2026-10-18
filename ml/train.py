@@ -331,6 +331,11 @@ def train(config: dict, args: argparse.Namespace) -> RunResult:
     seed = int(config["seed"])
     seed_everything(seed)
 
+    # Keep torchvision's ImageNet weight cache inside the repo (git-ignored) so the
+    # run does not depend on a writable %USERPROFILE%\.cache.
+    os.environ.setdefault("TORCH_HOME", str(REPO_ROOT / "runs" / ".torch"))
+    os.environ.setdefault("MPLCONFIGDIR", str(REPO_ROOT / "runs" / ".mpl"))
+
     data_dir = (REPO_ROOT / config["data_dir"]).resolve() if not Path(config["data_dir"]).is_absolute() else Path(config["data_dir"])
     frames = build_frames(data_dir)
     preprocessing = config.get("preprocessing", "v2")
