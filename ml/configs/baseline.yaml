@@ -1,0 +1,28 @@
+# Experiment 1 -- the honest baseline.
+#
+# Deliberately naive: dataset v1 (random split, no dedup), no CLAHE, no
+# augmentation, ImageNet backbone frozen for the whole run (linear probe), and
+# the decision threshold left at 0.5.  This is what a first attempt looks like,
+# and it is the run the improved experiment is measured against.
+name: baseline_v1_linear_probe
+data_dir: data/versions/v1
+preprocessing: v1
+
+seed: 42
+epochs: 10
+batch_size: 16
+lr: 0.001
+weight_decay: 0.0001
+dropout: 0.2
+num_workers: 0
+
+augment: false
+class_weight: none
+scheduler: none
+
+# freeze_backbone_epochs >= epochs => the backbone never unfreezes (linear probe)
+freeze_backbone_epochs: 99
+
+threshold_strategy: fixed
+fixed_threshold: 0.5
+target_sensitivity: 0.90

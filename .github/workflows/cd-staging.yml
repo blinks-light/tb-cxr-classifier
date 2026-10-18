@@ -1,0 +1,102 @@
+name: CD — staging
+
+# Trigger: a merge (or push) into `staging`.
+# What it does: materialises a staging .env from repository *staging secrets*,
+# builds the image, pushes it to GHCR, and records the deployment descriptor as
+# a build artifact.  Actually running the container on a host is out of scope for
+# this course deliverable (see DEPLOYMENT.md).
+
+on:
+  push:
+    branches: [staging]
+  workflow_dispatch:
+
+concurrency:
+  group: cd-staging
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+  packages: write
+
+env:
+  IMAGE_NAME: ghcr.io/${{ github.repository }}/tb-cxr
+
+jobs:
+  build-and-push:
+    name: build staging image
+    runs-on: ubuntu-latest
+    environment: staging
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check the staging secrets are wired up
+        env:
+          LOG_LEVEL: ${{ secrets.STAGING_LOG_LEVEL }}
+          THREADS: ${{ secrets.STAGING_INTRA_OP_THREADS }}
+        run: |
+          missing=0
+          [ -n "$LOG_LEVEL" ] || { echo "::error::STAGING_LOG_LEVEL is not set"; missing=1; }
+          [ -n "$THREADS" ]  || { echo "::error::STAGING_INTRA_OP_THREADS is not set"; missing=1; }
+          exit $missing
+
+      - name: Generate .env from staging secrets (never committed)
+        env:
+          LOG_LEVEL: ${{ secrets.STAGING_LOG_LEVEL }}
+          THREADS: ${{ secrets.STAGING_INTRA_OP_THREADS }}
+        run: |
+          {
+            echo "TBCXR_LOG_LEVEL=${LOG_LEVEL}"
+            echo "TBCXR_INTRA_OP_THREADS=${THREADS}"
+            echo "DEPLOY_ENV=staging"
+            echo "IMAGE_TAG=staging-${GITHUB_SHA::7}"
+          } > .env
+          sed -e 's/=.*/=<redacted>/' .env
+
+      - name: Validate the model artifact before shipping it
+        run: |
+          python3 - <<'PY'
+          import hashlib, json, pathlib
+          meta = json.loads(pathlib.Path("artifacts/model_meta.json").read_text())
+          digest = hashlib.sha256(pathlib.Path("artifacts/model.onnx").read_bytes()).hexdigest()
+          assert digest == meta["onnx_sha256"], "artifact digest mismatch -- refusing to deploy"
+          print("artifact ok:", meta["model_name"], meta["data_version"], meta["mlflow_run_id"])
+          PY
+
+      - uses: docker/setup-buildx-action@v3
+
+      - uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build and push
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          push: true
+          tags: |
+            ${{ env.IMAGE_NAME }}:staging
+            ${{ env.IMAGE_NAME }}:staging-${{ github.sha }}
+          labels: |
+            org.opencontainers.image.revision=${{ github.sha }}
+            deploy.environment=staging
+          cache-from: type=gha,scope=staging
+          cache-to: type=gha,mode=max,scope=staging
+
+      - name: Record the deployment descriptor
+        run: |
+          {
+            echo "environment=staging"
+            echo "image=${IMAGE_NAME}:staging-${GITHUB_SHA}"
+            echo "commit=${GITHUB_SHA}"
+            echo "run=${{ github.run_id }}"
+            echo "deployed_at=$(date -u +%Y-%m-%dT%H:%M:%SZ)"
+          } > deployment-staging.txt
+          cat deployment-staging.txt
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: deployment-staging
+          path: deployment-staging.txt

@@ -1,0 +1,45 @@
+# --- python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
+.env.local
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+reports/
+
+# --- data (managed by DVC; only data.dvc is committed) ---
+data/raw/
+data/versions/
+data/processed/
+data/.dvc/
+
+# --- DVC internals ---
+.dvc/cache/
+.dvc/tmp/
+.dvc/config.local
+
+# --- local build scratch ---
+_wheels/
+runs/
+_scratch/
+
+# --- MLflow local store ---
+mlruns/
+mlflow.db
+mlflow-artifacts/
+
+# --- misc ---
+*.log
+.DS_Store
+Thumbs.db
+
+# pip scratch dirs (appear when pip runs with cwd inside the repo)
+pip-metadata-*/
+pip-unpack-*/
+pip-install-*/

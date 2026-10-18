@@ -1,0 +1,138 @@
+name: CI
+
+# Runs on every PR into a protected branch and on every push to the long-lived
+# branches.  A failing run blocks merging (see README section "Branch protection").
+
+on:
+  pull_request:
+    branches: [dev, staging, main]
+  push:
+    branches: [dev, staging, main, "feature/**"]
+  workflow_dispatch:
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+env:
+  PYTHON_VERSION: "3.12"
+  PIP_DISABLE_PIP_VERSION_CHECK: "1"
+
+jobs:
+  # ------------------------------------------------------------------ #
+  lint:
+    name: lint (black · ruff · flake8)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          cache: pip
+
+      - name: Install linters
+        run: |
+          python -m pip install --upgrade pip
+          pip install black==24.10.0 ruff flake8
+
+      - name: black --check
+        run: black --check --diff .
+
+      - name: ruff
+        run: ruff check --output-format=github .
+
+      - name: flake8
+        run: flake8 app ml tests
+
+  # ------------------------------------------------------------------ #
+  test:
+    name: test (pytest)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          cache: pip
+
+      - name: Install CPU torch first (keeps the runner image small)
+        run: |
+          python -m pip install --upgrade pip
+          pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
+
+      - name: Install project dependencies
+        run: pip install -r requirements-dev.txt
+
+      - name: Verify the committed model artifact
+        run: python -c "from app.inference import TBClassifier; m=TBClassifier(); print('model ok:', m.meta['model_name'], 'sha256', m.meta['onnx_sha256'][:12])"
+
+      - name: Run tests
+        run: pytest -q --junitxml=reports/junit.xml
+
+      - name: Upload test report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: pytest-report
+          path: reports/junit.xml
+          if-no-files-found: ignore
+
+  # ------------------------------------------------------------------ #
+  docker:
+    name: docker build + smoke test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build image
+        run: docker build --tag tb-cxr:ci .
+
+      - name: Report image size
+        run: |
+          size=$(docker image inspect tb-cxr:ci --format '{{.Size}}')
+          echo "image size: $((size / 1000000)) MB"
+          # The slim-image requirement is a hard budget.
+          test "$size" -lt 700000000 || { echo "image too large"; exit 1; }
+
+      - name: Smoke test the container
+        run: |
+          docker run -d --name tb-cxr -p 8000:8000 tb-cxr:ci
+          for i in $(seq 1 40); do
+            if curl -fsS http://127.0.0.1:8000/health > /tmp/health.json; then break; fi
+            sleep 1
+          done
+          cat /tmp/health.json
+          grep -q '"model_loaded":true' /tmp/health.json
+          curl -fsS http://127.0.0.1:8000/model-info | head -c 400; echo
+          code=$(curl -s -o /tmp/pred.json -w '%{http_code}' \
+            -F "file=@tests/fixtures/tb_sample.png;type=image/png" http://127.0.0.1:8000/predict)
+          echo "predict http $code"; cat /tmp/pred.json
+          test "$code" = "200"
+          # 4 MB of garbage must be rejected cleanly, not crash the service
+          code=$(curl -s -o /dev/null -w '%{http_code}' -F "file=@README.md;type=image/png" http://127.0.0.1:8000/predict)
+          echo "garbage upload http $code"; test "$code" = "422"
+          docker logs tb-cxr | tail -n 20
+
+      - name: Container cleanup
+        if: always()
+        run: docker rm -f tb-cxr || true
+
+  # ------------------------------------------------------------------ #
+  # Single status check to require in branch protection.
+  ci-status:
+    name: CI status
+    if: always()
+    needs: [lint, test, docker]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Fail if any upstream job failed
+        run: |
+          echo "lint=${{ needs.lint.result }} test=${{ needs.test.result }} docker=${{ needs.docker.result }}"
+          test "${{ needs.lint.result }}" = "success"
+          test "${{ needs.test.result }}" = "success"
+          test "${{ needs.docker.result }}" = "success"

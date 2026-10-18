@@ -1,0 +1,13 @@
+# Runtime dependencies -- this is the ONLY file baked into the Docker image.
+# Keep it small: the serving image must stay slim (no torch, no scikit-learn).
+#
+# numpy is pinned to <2 because torchvision 0.19 (the training environment)
+# requires it; keeping the *same* numpy/pillow versions in training and serving
+# removes a whole class of "works in training, drifts in production" bugs.
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+python-multipart==0.0.20
+onnxruntime==1.20.1
+numpy==1.26.4
+pillow==11.0.0
+pydantic==2.10.4

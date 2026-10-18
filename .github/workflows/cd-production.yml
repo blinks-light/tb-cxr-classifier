@@ -1,0 +1,107 @@
+name: CD — production
+
+# Trigger: a merge (or push) into `main`.
+# Same shape as the staging workflow, but it consumes *production* secrets, runs
+# in the `production` GitHub Environment (protect it with required reviewers), and
+# publishes an immutable, git-sha-pinned image plus the `latest` alias.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: cd-production
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+  packages: write
+
+env:
+  IMAGE_NAME: ghcr.io/${{ github.repository }}/tb-cxr
+
+jobs:
+  build-and-push:
+    name: build production image
+    runs-on: ubuntu-latest
+    environment: production
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check the production secrets are wired up
+        env:
+          LOG_LEVEL: ${{ secrets.PRODUCTION_LOG_LEVEL }}
+          THREADS: ${{ secrets.PRODUCTION_INTRA_OP_THREADS }}
+        run: |
+          missing=0
+          [ -n "$LOG_LEVEL" ] || { echo "::error::PRODUCTION_LOG_LEVEL is not set"; missing=1; }
+          [ -n "$THREADS" ]  || { echo "::error::PRODUCTION_INTRA_OP_THREADS is not set"; missing=1; }
+          exit $missing
+
+      - name: Generate .env from production secrets (never committed)
+        env:
+          LOG_LEVEL: ${{ secrets.PRODUCTION_LOG_LEVEL }}
+          THREADS: ${{ secrets.PRODUCTION_INTRA_OP_THREADS }}
+        run: |
+          {
+            echo "TBCXR_LOG_LEVEL=${LOG_LEVEL}"
+            echo "TBCXR_INTRA_OP_THREADS=${THREADS}"
+            echo "DEPLOY_ENV=production"
+            echo "IMAGE_TAG=prod-${GITHUB_SHA::7}"
+          } > .env
+          sed -e 's/=.*/=<redacted>/' .env
+
+      - name: Gate — production requires the quality floors
+        run: |
+          python3 - <<'PY'
+          import hashlib, json, pathlib, sys
+          meta = json.loads(pathlib.Path("artifacts/model_meta.json").read_text())
+          digest = hashlib.sha256(pathlib.Path("artifacts/model.onnx").read_bytes()).hexdigest()
+          if digest != meta["onnx_sha256"]:
+              sys.exit("artifact digest mismatch -- refusing to deploy")
+          m = meta["metrics"]
+          floors = {"test_auroc": 0.80, "test_accuracy": 0.75, "test_sensitivity": 0.80}
+          for key, floor in floors.items():
+              if m[key] < floor:
+                  sys.exit(f"{key}={m[key]:.3f} is below the production floor {floor}")
+          print("quality gate passed:", {k: round(m[k], 4) for k in floors})
+          print("model:", meta["model_name"], "| data:", meta["data_version"], "| run:", meta["mlflow_run_id"])
+          PY
+
+      - uses: docker/setup-buildx-action@v3
+
+      - uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build and push
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          push: true
+          tags: |
+            ${{ env.IMAGE_NAME }}:prod
+            ${{ env.IMAGE_NAME }}:prod-${{ github.sha }}
+            ${{ env.IMAGE_NAME }}:latest
+          labels: |
+            org.opencontainers.image.revision=${{ github.sha }}
+            deploy.environment=production
+
+      - name: Record the deployment descriptor
+        run: |
+          {
+            echo "environment=production"
+            echo "image=${IMAGE_NAME}:prod-${GITHUB_SHA}"
+            echo "commit=${GITHUB_SHA}"
+            echo "run=${{ github.run_id }}"
+            echo "deployed_at=$(date -u +%Y-%m-%dT%H:%M:%SZ)"
+          } > deployment-production.txt
+          cat deployment-production.txt
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: deployment-production
+          path: deployment-production.txt

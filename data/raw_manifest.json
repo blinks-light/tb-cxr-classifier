@@ -1,0 +1,3319 @@
+{
+  "source": "NLM Shenzhen Hospital CXR Set (ChinaCXRSet)",
+  "index_url": "https://data.lhncbc.nlm.nih.gov/public/Tuberculosis-Chest-X-ray-Datasets/Shenzhen-Hospital-CXR-Set/CXR_png/index.html",
+  "readme_url": "https://data.lhncbc.nlm.nih.gov/public/Tuberculosis-Chest-X-ray-Datasets/Shenzhen-Hospital-CXR-Set/NLM-ChinaCXRSet-ReadMe.docx",
+  "file_count": 662,
+  "total_bytes": 3768676455,
+  "files": {
+    "CHNCXR_0001_0.png": {
+      "label": 0,
+      "remote_size": 5920202,
+      "sha256": "e464a828425fe77ecebfcae955db4f9b9f1cf608a3fcb69a30e33a99eabd9459"
+    },
+    "CHNCXR_0002_0.png": {
+      "label": 0,
+      "remote_size": 6025191,
+      "sha256": "961172cfd3c727cf06f208edca3b42000afde99fd870bbfdd9cecd543229a566"
+    },
+    "CHNCXR_0003_0.png": {
+      "label": 0,
+      "remote_size": 6129094,
+      "sha256": "ba565d47973df598ab8ccdafb9170cc2dae3d6de9ef2e7a52ce97c4e352749dd"
+    },
+    "CHNCXR_0004_0.png": {
+      "label": 0,
+      "remote_size": 6287940,
+      "sha256": "96c984c930c21eb79a171e23ba28e846d4b2762f9910b02523d1e55986558cb6"
+    },
+    "CHNCXR_0005_0.png": {
+      "label": 0,
+      "remote_size": 6275542,
+      "sha256": "b6ecef531c122e6d6a22cb0628ae72780bbbb86205a3bd5190c71fe1c8172075"
+    },
+    "CHNCXR_0006_0.png": {
+      "label": 0,
+      "remote_size": 5620453,
+      "sha256": "9f7ee8bd6bb23e97d137078da9e367b9035152cca133381028c98b0f63bbb142"
+    },
+    "CHNCXR_0007_0.png": {
+      "label": 0,
+      "remote_size": 3579760,
+      "sha256": "6809cf0ef3e88d291c4a5ac171bd694b75a51c39a96c1874d51d57e59888439a"
+    },
+    "CHNCXR_0008_0.png": {
+      "label": 0,
+      "remote_size": 5783950,
+      "sha256": "93041839b9773ea21a5d4aab1e9ee95890d8de93c61899f22f9b88797b63a8bb"
+    },
+    "CHNCXR_0009_0.png": {
+      "label": 0,
+      "remote_size": 4876097,
+      "sha256": "e545a56ebc40176f5fa22b100cc293d184af38305dc4ec142e96413a7041a9b1"
+    },
+    "CHNCXR_0010_0.png": {
+      "label": 0,
+      "remote_size": 6192287,
+      "sha256": "8bf14d1e70fef244af43f6d4f3728400bf70d708d6584118044e49c8e573b253"
+    },
+    "CHNCXR_0011_0.png": {
+      "label": 0,
+      "remote_size": 5902532,
+      "sha256": "62f9294553130eefc35efb4618ae35ee62917e3cbfe510ace66e17d7e262a7f7"
+    },
+    "CHNCXR_0012_0.png": {
+      "label": 0,
+      "remote_size": 6536225,
+      "sha256": "7c98e3e7bee28e39e4919b3cf8ad058501974471fc94fa7454c10e1912b32a00"
+    },
+    "CHNCXR_0013_0.png": {
+      "label": 0,
+      "remote_size": 5808241,
+      "sha256": "122f400edbabaadfd37c3529890edf510645da373ca8860db8ab986faebeb85d"
+    },
+    "CHNCXR_0014_0.png": {
+      "label": 0,
+      "remote_size": 5881280,
+      "sha256": "dce39f08c52afc4e38b323fe6937d3695150a972856c55e25952690cfa104041"
+    },
+    "CHNCXR_0015_0.png": {
+      "label": 0,
+      "remote_size": 6282232,
+      "sha256": "512de712b2b119e9d441cc20b2f9b81fd8e39f5e18cb86e75677067b40248c4b"
+    },
+    "CHNCXR_0016_0.png": {
+      "label": 0,
+      "remote_size": 5861799,
+      "sha256": "2d90ea0403dc2480eb3d15f5d5dbf748d818f541136da588a708abcf51b2b32b"
+    },
+    "CHNCXR_0017_0.png": {
+      "label": 0,
+      "remote_size": 5510609,
+      "sha256": "ac18f60fa689b5834779165496bc496452bce70f538cb872baf34be152e4fbe9"
+    },
+    "CHNCXR_0018_0.png": {
+      "label": 0,
+      "remote_size": 5946264,
+      "sha256": "076f8a776a47a400775cbb33e10e4c13b5ef881c4ea6d4f7de6f32a4b9dc3c93"
+    },
+    "CHNCXR_0019_0.png": {
+      "label": 0,
+      "remote_size": 5969317,
+      "sha256": "7c2bfbc90f7180498261df75db45a0f711fe9b626b7dcc132089d5f53481856d"
+    },
+    "CHNCXR_0020_0.png": {
+      "label": 0,
+      "remote_size": 5819219,
+      "sha256": "ff8f78526be35227dc73eff00a2e82f26a8bd74b48b48279afebf7a13b3bfba1"
+    },
+    "CHNCXR_0021_0.png": {
+      "label": 0,
+      "remote_size": 5820832,
+      "sha256": "2ff45c8985022b737ea9fd035b376ed5609d912ccfa0f3a23e8d0b2aeae305f0"
+    },
+    "CHNCXR_0022_0.png": {
+      "label": 0,
+      "remote_size": 6399108,
+      "sha256": "1c5832bd61daf883d82625861a247a1e5e9a4894b018aef4feee08b14f1c3fda"
+    },
+    "CHNCXR_0023_0.png": {
+      "label": 0,
+      "remote_size": 6463402,
+      "sha256": "23d1a114e7ba1239f394baca87a86f099a85ae5c6a9b75ad0fb80eb5981b7553"
+    },
+    "CHNCXR_0024_0.png": {
+      "label": 0,
+      "remote_size": 6339411,
+      "sha256": "a2c82a034abb2609a9901a18aa2ac04ab32bd003662be2c6b1f2c6d74985e468"
+    },
+    "CHNCXR_0025_0.png": {
+      "label": 0,
+      "remote_size": 6305830,
+      "sha256": "d1d8f1a14e100e16d501ef4478f08cac8c9acac9562b18b0f84187dd89c87865"
+    },
+    "CHNCXR_0026_0.png": {
+      "label": 0,
+      "remote_size": 5837658,
+      "sha256": "058ffccd5e2fec056024cc1b9f3a8714bdbf91e07b4fff2acc3bee4694a0fcfb"
+    },
+    "CHNCXR_0027_0.png": {
+      "label": 0,
+      "remote_size": 6298682,
+      "sha256": "a60456fdb942358f5aa509ca8a7f46eb45f6423edb66aa098cf89b12cf81978e"
+    },
+    "CHNCXR_0028_0.png": {
+      "label": 0,
+      "remote_size": 6402529,
+      "sha256": "4ed3c271b22f7d074743ca17a8ead97ad518ba811165890d9cdc04165e0cf827"
+    },
+    "CHNCXR_0029_0.png": {
+      "label": 0,
+      "remote_size": 5597547,
+      "sha256": "1291d429e2a0f6224759be411ec5fff8e4339f892a29d14b14fcbdf24b39b767"
+    },
+    "CHNCXR_0030_0.png": {
+      "label": 0,
+      "remote_size": 4764439,
+      "sha256": "db239ab00a774d8b14498ece2609990c15f1a36718f980639eee5d1c7f89cb63"
+    },
+    "CHNCXR_0031_0.png": {
+      "label": 0,
+      "remote_size": 6392075,
+      "sha256": "68ab351e18357d008cb55b8638ca4f48a03cdc95f36e3ab11e98334671205cdf"
+    },
+    "CHNCXR_0032_0.png": {
+      "label": 0,
+      "remote_size": 6194280,
+      "sha256": "553fe638faeb2365fbc12e0d1cf9289a19f6c30c6cf0790c9bbf03757dd32be9"
+    },
+    "CHNCXR_0033_0.png": {
+      "label": 0,
+      "remote_size": 6217394,
+      "sha256": "d5ca162bdd8362937ea3028ce32765198f998e4b03122d7fadc93c1f1075f09f"
+    },
+    "CHNCXR_0034_0.png": {
+      "label": 0,
+      "remote_size": 3831702,
+      "sha256": "e224b2c5e4381867a96a4e71bfb711970a7be20c996dba5a2e2ee12216c68a97"
+    },
+    "CHNCXR_0035_0.png": {
+      "label": 0,
+      "remote_size": 6171187,
+      "sha256": "eaf59cfcf1ee2c9e13f60cdc326cd4c715ec7852cf32eb7b0309cfb9551abd86"
+    },
+    "CHNCXR_0036_0.png": {
+      "label": 0,
+      "remote_size": 6551384,
+      "sha256": "40f6e4faed40da5eb65b20ab9d80e1cf6d2f5b6c3935ae6c5684936d2e986a3b"
+    },
+    "CHNCXR_0037_0.png": {
+      "label": 0,
+      "remote_size": 6182168,
+      "sha256": "92e56701b198644e73bfd77c0d568c261ff4522658ad47a55f1ae5aa2a976cd6"
+    },
+    "CHNCXR_0038_0.png": {
+      "label": 0,
+      "remote_size": 5873564,
+      "sha256": "8c8f87344ae8d1d06643883f3e9d7551a7d89c8d5722ad08126522bbf72018fc"
+    },
+    "CHNCXR_0039_0.png": {
+      "label": 0,
+      "remote_size": 5860655,
+      "sha256": "c4d97eb1a7995be2dba51c5e0725e6f7587fb4b5011fba7ca8cd9d9f667d190c"
+    },
+    "CHNCXR_0040_0.png": {
+      "label": 0,
+      "remote_size": 5846434,
+      "sha256": "bf4c0368efe8444fece2ba5632de9e88e1760a8e31c1cad78c2d0296e8334d7b"
+    },
+    "CHNCXR_0041_0.png": {
+      "label": 0,
+      "remote_size": 5184655,
+      "sha256": "0b3955f6365c0418fb2fafcfb736d067877e065d74f1f78de838344586491b2f"
+    },
+    "CHNCXR_0042_0.png": {
+      "label": 0,
+      "remote_size": 6436663,
+      "sha256": "6f165345cb3ba8f71201b23639dacbe1e28e8ed12f0e9ad08a44077de2cda6e7"
+    },
+    "CHNCXR_0043_0.png": {
+      "label": 0,
+      "remote_size": 5515188,
+      "sha256": "e7d37b208111e8f6c4da46048579cf2fa833cc1e8c1720c0cd98bc17f304d18a"
+    },
+    "CHNCXR_0044_0.png": {
+      "label": 0,
+      "remote_size": 3848030,
+      "sha256": "ecb8bbe639b2e1b6267dc9e1c34867546160b6a1e9c0f72d1c3b1869629df7a3"
+    },
+    "CHNCXR_0045_0.png": {
+      "label": 0,
+      "remote_size": 5432687,
+      "sha256": "1e4712f33d0ddc202c42077ba4bac837d54a294b0c7e7015ffe998b7ebca6ec7"
+    },
+    "CHNCXR_0046_0.png": {
+      "label": 0,
+      "remote_size": 5800479,
+      "sha256": "00196577201f6f8750669c3bd4c7faca6af63ae8fd8eac72f8f14cb364df3de2"
+    },
+    "CHNCXR_0047_0.png": {
+      "label": 0,
+      "remote_size": 5650088,
+      "sha256": "34b01ca2a5be77df39e47251614cd1dfb26056bce638e8d3367942c4baee9cf2"
+    },
+    "CHNCXR_0048_0.png": {
+      "label": 0,
+      "remote_size": 6148878,
+      "sha256": "1203417ebc682697d56efdb771b91e9a6fb6da3f65b03ad82edd74c17e792d4a"
+    },
+    "CHNCXR_0049_0.png": {
+      "label": 0,
+      "remote_size": 5989591,
+      "sha256": "9f341ff76468810a20f15200623090d5abeb160d4fba53430eb9691960cbcb2c"
+    },
+    "CHNCXR_0050_0.png": {
+      "label": 0,
+      "remote_size": 6179961,
+      "sha256": "7f2ed87c1158850566677377aa5bf2f8f2458c2453046a38e0228f58144b952f"
+    },
+    "CHNCXR_0051_0.png": {
+      "label": 0,
+      "remote_size": 6385449,
+      "sha256": "0223b27b57c116d3d64573e03cca9229f46898abeed7fba8eb606742fbd99aae"
+    },
+    "CHNCXR_0052_0.png": {
+      "label": 0,
+      "remote_size": 4384800,
+      "sha256": "29233bb6e15218fa650cb85f60a9800c40c1a4284d1ff597ce87976a8811034e"
+    },
+    "CHNCXR_0053_0.png": {
+      "label": 0,
+      "remote_size": 5069677,
+      "sha256": "9c0c6586424b98e96a4d520578bef6126ca52129572cbd3b11a21f7fab7e6767"
+    },
+    "CHNCXR_0054_0.png": {
+      "label": 0,
+      "remote_size": 7117948,
+      "sha256": "3cdef3384252496dbdfc75b4d2b814a3d19007fc0dd2ea85b05ab61880d55f8d"
+    },
+    "CHNCXR_0055_0.png": {
+      "label": 0,
+      "remote_size": 5430555,
+      "sha256": "2e3affdf18406edd4d4f535f601ab336f43fc05b54985683e628f4cc9e771df0"
+    },
+    "CHNCXR_0056_0.png": {
+      "label": 0,
+      "remote_size": 5958140,
+      "sha256": "68fa7714d351cd104536bda0e63d9544f04ebf6c26660630dff3dbdb9892adf0"
+    },
+    "CHNCXR_0057_0.png": {
+      "label": 0,
+      "remote_size": 6096893,
+      "sha256": "8c2d453181a69e7b60fd55bfc8dee86e218ca62192b095d4c419f9062d3706f3"
+    },
+    "CHNCXR_0058_0.png": {
+      "label": 0,
+      "remote_size": 5573023,
+      "sha256": "fcc615e7d62f5263739bbae8c0c08e21daffe1fc493319515890d98a6c82a18b"
+    },
+    "CHNCXR_0059_0.png": {
+      "label": 0,
+      "remote_size": 5860417,
+      "sha256": "acb50bd026bdf75a76bf1f73e9edb9870a6296d319d37118cc27c896e4c15376"
+    },
+    "CHNCXR_0060_0.png": {
+      "label": 0,
+      "remote_size": 6327392,
+      "sha256": "18ed5b055e0205e34e07e307c010ddc26bb4a22ab578b9636c2e9f5959130294"
+    },
+    "CHNCXR_0061_0.png": {
+      "label": 0,
+      "remote_size": 6505990,
+      "sha256": "780e5e9f148a11c196f745f16f7a6ac3aeedd7b812be33d4f7332b34941b63a4"
+    },
+    "CHNCXR_0062_0.png": {
+      "label": 0,
+      "remote_size": 6409208,
+      "sha256": "b4254617a9a1d96957776826d4be6d932413fc2f52ba89b04efe9cec89eea20a"
+    },
+    "CHNCXR_0063_0.png": {
+      "label": 0,
+      "remote_size": 6233645,
+      "sha256": "f6f936c5a5adbf6112268baf16369cbb6708258a57cf3dd272df4155aa1e87e2"
+    },
+    "CHNCXR_0064_0.png": {
+      "label": 0,
+      "remote_size": 6251148,
+      "sha256": "43646855bb46c90e1516523f5dbeb9e7dc49f30135989ea45255edb9e14a73ec"
+    },
+    "CHNCXR_0065_0.png": {
+      "label": 0,
+      "remote_size": 6711992,
+      "sha256": "169550fe3f33d9e74804273c2b0bf4e3ea04622342ae1a1f813fbb8aa3ddcc67"
+    },
+    "CHNCXR_0066_0.png": {
+      "label": 0,
+      "remote_size": 6002386,
+      "sha256": "5cdcc05b6667e152c291a85cb83f9ce3c3dc233f1c93c24b4314f5c62c2872c4"
+    },
+    "CHNCXR_0067_0.png": {
+      "label": 0,
+      "remote_size": 6372166,
+      "sha256": "d38b010867a874da25ee971171d005d92ecac273e0659aa88da22f65febd552b"
+    },
+    "CHNCXR_0068_0.png": {
+      "label": 0,
+      "remote_size": 5801414,
+      "sha256": "abdfd5a73adbea1371adc4602e0e0ac0ee6321e19b59fd55ca73694ba033ed54"
+    },
+    "CHNCXR_0069_0.png": {
+      "label": 0,
+      "remote_size": 4259470,
+      "sha256": "c5a69526e9c5b6e9e0f43e3c0f1be71e994eb5c950d70442629edc5d8b31a052"
+    },
+    "CHNCXR_0070_0.png": {
+      "label": 0,
+      "remote_size": 4687462,
+      "sha256": "811de53ca3fb4255490c8065d4003e5bbbfa38d0ff8f99c1962fb09e2b135edb"
+    },
+    "CHNCXR_0071_0.png": {
+      "label": 0,
+      "remote_size": 4274874,
+      "sha256": "f33a0de7284c54e84516ad1546c68f897528f88dbacd6b125cabacd64599fcc7"
+    },
+    "CHNCXR_0072_0.png": {
+      "label": 0,
+      "remote_size": 5176733,
+      "sha256": "8a8f8b8f473a08858594bc8084d0f30f699b77de3b76170098a2b8d9aca74953"
+    },
+    "CHNCXR_0073_0.png": {
+      "label": 0,
+      "remote_size": 5989891,
+      "sha256": "6f7a0a34f5b44619d8deaa847d7ea9e09df85ba7e1fd21994343bfce71d414de"
+    },
+    "CHNCXR_0074_0.png": {
+      "label": 0,
+      "remote_size": 920955,
+      "sha256": "15dcdfe1346d6bc1700075523ba75598923a68feda47ca065a3364583c750c11"
+    },
+    "CHNCXR_0075_0.png": {
+      "label": 0,
+      "remote_size": 1009907,
+      "sha256": "75964ccbbdc20225d576682c2f9064916861058d9f9c3455653ab0b042f82b4d"
+    },
+    "CHNCXR_0076_0.png": {
+      "label": 0,
+      "remote_size": 1099891,
+      "sha256": "69a4048210434feb96122aed542ecb3dbd7d2bac5989e9bcbd760ac54745f0e6"
+    },
+    "CHNCXR_0077_0.png": {
+      "label": 0,
+      "remote_size": 5712239,
+      "sha256": "f3124f61b1d2387c4ccb4a11c3bf5852bfc61581d35269e1e881fcf9784afc80"
+    },
+    "CHNCXR_0078_0.png": {
+      "label": 0,
+      "remote_size": 6308139,
+      "sha256": "c48f0362ac0160c190bfcf06c56f7cba3b2608ef4e37bd29b4dbb05a6c98fc2a"
+    },
+    "CHNCXR_0079_0.png": {
+      "label": 0,
+      "remote_size": 6209456,
+      "sha256": "afa1e96920314781a11ca4d6502dfa20865531266569e2353acc3ce0990adca0"
+    },
+    "CHNCXR_0080_0.png": {
+      "label": 0,
+      "remote_size": 5862287,
+      "sha256": "3f187151bb5f24a64e9db3d1f08ba93b7013a57461a20e8433c32cb0210e25a8"
+    },
+    "CHNCXR_0081_0.png": {
+      "label": 0,
+      "remote_size": 6284011,
+      "sha256": "c61a6a403283e2ddd5dcbaea9f45219ea1a7c3b411bdc648388aa9507e42d7ff"
+    },
+    "CHNCXR_0082_0.png": {
+      "label": 0,
+      "remote_size": 6265380,
+      "sha256": "eef5914e44f3f0613abd3e12d51482423eff84298f04c23d3af8771e69309983"
+    },
+    "CHNCXR_0083_0.png": {
+      "label": 0,
+      "remote_size": 5857133,
+      "sha256": "11fe4dedcf8bb4aeec16bed0c8b5dfd29ae9824f0727f07fb3d3ce76e06df4b3"
+    },
+    "CHNCXR_0084_0.png": {
+      "label": 0,
+      "remote_size": 5457893,
+      "sha256": "2f103b7a797b16021281518f27e6695047fb8b2a35e99ee7a4271de673402eb5"
+    },
+    "CHNCXR_0085_0.png": {
+      "label": 0,
+      "remote_size": 5986530,
+      "sha256": "519197c380245c0e04e17b2c713d3918413e4090623fb8fcd2eb817b8521fa74"
+    },
+    "CHNCXR_0086_0.png": {
+      "label": 0,
+      "remote_size": 5968493,
+      "sha256": "713b778555efec24a1dfc52a4a99b977b5c1c02d5ab289406b7d49f29c2c4360"
+    },
+    "CHNCXR_0087_0.png": {
+      "label": 0,
+      "remote_size": 5546996,
+      "sha256": "0df2d6ce10f3b18e3d6741b8d2328785fbf79dd1e0775fb88fe1c8095e9dd75f"
+    },
+    "CHNCXR_0088_0.png": {
+      "label": 0,
+      "remote_size": 6681443,
+      "sha256": "f86f857f92c25f2c643ff15fbf8982b6366e634b623fe97473a3cd47ded8b4b1"
+    },
+    "CHNCXR_0089_0.png": {
+      "label": 0,
+      "remote_size": 4995291,
+      "sha256": "59ba63bad7def904f305ab08d3c0f7d09dac70ec43b0a2f51a9207ed6170133d"
+    },
+    "CHNCXR_0090_0.png": {
+      "label": 0,
+      "remote_size": 5458530,
+      "sha256": "79158a3c9561c37d3e5739173c82eb9ed7a6811e97ff3714d7bc44288876de4d"
+    },
+    "CHNCXR_0091_0.png": {
+      "label": 0,
+      "remote_size": 6319285,
+      "sha256": "5975cab108875de97aafc2c3cbcba324a968b2e4f370868196aa768ed416bf42"
+    },
+    "CHNCXR_0092_0.png": {
+      "label": 0,
+      "remote_size": 4936160,
+      "sha256": "a8ca4c78bf0673f9da4cb46dcd365bb567674c4f4ded3a4eb2816365859cc830"
+    },
+    "CHNCXR_0093_0.png": {
+      "label": 0,
+      "remote_size": 6753804,
+      "sha256": "95e189970c757367dc3fb3dc76a8f316385174d09c4d26a9071dda8027f6a44c"
+    },
+    "CHNCXR_0094_0.png": {
+      "label": 0,
+      "remote_size": 6320983,
+      "sha256": "6850698f01234af65760719282114f4817bd5c27ba817edc8649bb84f6afdd20"
+    },
+    "CHNCXR_0095_0.png": {
+      "label": 0,
+      "remote_size": 6360348,
+      "sha256": "d8efad2a54da68de29e6c759719875fbad135df3e42ad0d6766691cf3416bb00"
+    },
+    "CHNCXR_0096_0.png": {
+      "label": 0,
+      "remote_size": 2967116,
+      "sha256": "39a3f8374267c668ced0c6846c26b470e76df96fec072995e41f506dab20a9bb"
+    },
+    "CHNCXR_0097_0.png": {
+      "label": 0,
+      "remote_size": 3276594,
+      "sha256": "36ea4532c4955bae200778d0b90ea79c7982e96e843d1f03d72b5f5350d7464f"
+    },
+    "CHNCXR_0098_0.png": {
+      "label": 0,
+      "remote_size": 5802386,
+      "sha256": "300577fcbc4486d0106b23534c8bed7853f15531d1767ba6cf8cb5a151415264"
+    },
+    "CHNCXR_0099_0.png": {
+      "label": 0,
+      "remote_size": 5372338,
+      "sha256": "3d81ff5e65dc8340767939b8a0d6a9c256a9c06eeb6ef25988040e80a9917757"
+    },
+    "CHNCXR_0100_0.png": {
+      "label": 0,
+      "remote_size": 4267068,
+      "sha256": "0377048204a782f9e19e5ddf428fee6326b9f832d4a4252c8cae6584a2de5c9e"
+    },
+    "CHNCXR_0101_0.png": {
+      "label": 0,
+      "remote_size": 6423928,
+      "sha256": "c94a35f824e28a0dc114d84532f356bd7e294b9d99cf0a82b4231a08df803190"
+    },
+    "CHNCXR_0102_0.png": {
+      "label": 0,
+      "remote_size": 3437609,
+      "sha256": "ff7250f0f7cc65c86dbb4e97701c801856fe35885bbcb7a6e1fa7ed3900290e2"
+    },
+    "CHNCXR_0103_0.png": {
+      "label": 0,
+      "remote_size": 4593264,
+      "sha256": "56b92d13a0bc3e93579003d546194194f88e7e9dc08fbf301ae5d0cf0609dc36"
+    },
+    "CHNCXR_0104_0.png": {
+      "label": 0,
+      "remote_size": 6879166,
+      "sha256": "7cd509e525feaa2ae39b3cc5e289e00d3d34e638c60ebbf57108832dfbfa7e22"
+    },
+    "CHNCXR_0105_0.png": {
+      "label": 0,
+      "remote_size": 5267949,
+      "sha256": "2cf9f9475a88721b5ad200247d0051a3370fedd6b776ddb5d4060dc136bcdfdb"
+    },
+    "CHNCXR_0106_0.png": {
+      "label": 0,
+      "remote_size": 6442115,
+      "sha256": "da8506020a7dc7d17b08365a31907db63d22b16cf1ea3a512697af6389019cd3"
+    },
+    "CHNCXR_0107_0.png": {
+      "label": 0,
+      "remote_size": 3912700,
+      "sha256": "54cb981f0c81faa0a48c4c77747b7bc3759b136cd87a27a3c81e74167009df14"
+    },
+    "CHNCXR_0108_0.png": {
+      "label": 0,
+      "remote_size": 5942323,
+      "sha256": "c4d095b50e76098ab1e7f5f059507b945e35bae0e9552ca0956b960a06870f9e"
+    },
+    "CHNCXR_0109_0.png": {
+      "label": 0,
+      "remote_size": 4574332,
+      "sha256": "9394fd05cef3e81c5b549a1f5f9d7c215baf8e1f9e92ca7757d4a1953e037433"
+    },
+    "CHNCXR_0110_0.png": {
+      "label": 0,
+      "remote_size": 5538084,
+      "sha256": "539d96f52c192ad65975eb03f6f9cf8efebf92fd4f19d07ed4530f513f3ea1ad"
+    },
+    "CHNCXR_0111_0.png": {
+      "label": 0,
+      "remote_size": 4379338,
+      "sha256": "07fad9a66852cf34fdb835cd5bdc32955a58b089e91e26ba566180aa44a5d5bd"
+    },
+    "CHNCXR_0112_0.png": {
+      "label": 0,
+      "remote_size": 4609578,
+      "sha256": "1849bd9986c40209b7be4903ed3e5d0fde7fe3b46ef16649f0342b4c32865701"
+    },
+    "CHNCXR_0113_0.png": {
+      "label": 0,
+      "remote_size": 6139626,
+      "sha256": "d341298f913dbb4ad0021d0c89963c26af67c8ad00cea8048eaedfc91cdd9ee7"
+    },
+    "CHNCXR_0114_0.png": {
+      "label": 0,
+      "remote_size": 6436092,
+      "sha256": "04068abab993879bdd7023dcbd88553f6ae6edfb49faf6406815508794ae42a3"
+    },
+    "CHNCXR_0115_0.png": {
+      "label": 0,
+      "remote_size": 1089572,
+      "sha256": "7ef73890746c4024e2e1a66712435eed6368728b8d69c989bc11e17626292f4a"
+    },
+    "CHNCXR_0116_0.png": {
+      "label": 0,
+      "remote_size": 6328960,
+      "sha256": "5f124a9d69dcd8287c97db8deb0ba4fd572da76740fd213584da54e12fd39e9c"
+    },
+    "CHNCXR_0117_0.png": {
+      "label": 0,
+      "remote_size": 4897391,
+      "sha256": "6aa3646420d87891b5ed0c370d039077404015bf90ab434dc33c90f12976c344"
+    },
+    "CHNCXR_0118_0.png": {
+      "label": 0,
+      "remote_size": 6566802,
+      "sha256": "dfd4e8718ef2ff041769e2f23b6ec0c497e293f49c82fdbe3428123832513c15"
+    },
+    "CHNCXR_0119_0.png": {
+      "label": 0,
+      "remote_size": 5924771,
+      "sha256": "b51f58dff2ae861cd336f556883ec22db1f93d6c5112486a69e9b38eee6f786c"
+    },
+    "CHNCXR_0120_0.png": {
+      "label": 0,
+      "remote_size": 6302795,
+      "sha256": "6c474df9133d1a05a923cae6cf1681f6bab390a6613766620e77cb4d88b069d2"
+    },
+    "CHNCXR_0121_0.png": {
+      "label": 0,
+      "remote_size": 6366241,
+      "sha256": "ccd22e36ba403ef64bba4a770923f0046746e80281357bbcdb689008b7bbddfa"
+    },
+    "CHNCXR_0122_0.png": {
+      "label": 0,
+      "remote_size": 5614665,
+      "sha256": "1092f2b037a4e0d968548effe8d4e04e9da7541df361d7d3d521f8e68b7c4aae"
+    },
+    "CHNCXR_0123_0.png": {
+      "label": 0,
+      "remote_size": 5824306,
+      "sha256": "9d627581291641726a27dafa533de0fb2340712a6469bfe4382d29307dfa7861"
+    },
+    "CHNCXR_0124_0.png": {
+      "label": 0,
+      "remote_size": 4078962,
+      "sha256": "223a6bc2916a7b1ddbc86072ad40d26c65b717ee8f6aa355e09635d6eb3211eb"
+    },
+    "CHNCXR_0125_0.png": {
+      "label": 0,
+      "remote_size": 6859262,
+      "sha256": "36659bf2760006c0e6c135230bdd8e40f7184608782ccbb1c8d8f6a0548f1e00"
+    },
+    "CHNCXR_0126_0.png": {
+      "label": 0,
+      "remote_size": 5652168,
+      "sha256": "6a55bc65425d22c36869edbcbdf1d3d6e8258a376268deee06cdae958d7cd084"
+    },
+    "CHNCXR_0127_0.png": {
+      "label": 0,
+      "remote_size": 3999785,
+      "sha256": "856207321562e9f136d919b8e05d37cc5426f6fa4dd49b00128d86664d612886"
+    },
+    "CHNCXR_0128_0.png": {
+      "label": 0,
+      "remote_size": 6704290,
+      "sha256": "d960285d9dc7b622c79051252980e369cc83c2e7b1a8abc72afa13ad4e14b4c1"
+    },
+    "CHNCXR_0129_0.png": {
+      "label": 0,
+      "remote_size": 4751839,
+      "sha256": "edfc0f0fccd7567d8b776e5371667781b2a74e497da0317378c13150ae7c7782"
+    },
+    "CHNCXR_0130_0.png": {
+      "label": 0,
+      "remote_size": 6819063,
+      "sha256": "3d2a48a4716ca5be99640d66e466cb547753976c75171abd81b9842424db57f9"
+    },
+    "CHNCXR_0131_0.png": {
+      "label": 0,
+      "remote_size": 5997323,
+      "sha256": "4bf439b71e30486422264b55ef5e2a1a037aa721f4755ae551bb753186dce8d8"
+    },
+    "CHNCXR_0132_0.png": {
+      "label": 0,
+      "remote_size": 6113261,
+      "sha256": "27568c87d0594916544ea2f8372121c392a61f7bbf7d835f49ac00c53a225f91"
+    },
+    "CHNCXR_0133_0.png": {
+      "label": 0,
+      "remote_size": 6097369,
+      "sha256": "fce03d68f53eafc51280b00b2e3b30df4e1df3c6a2981524333174d26de60021"
+    },
+    "CHNCXR_0134_0.png": {
+      "label": 0,
+      "remote_size": 5147579,
+      "sha256": "f34eb3feeb79cd5816837e439585ed1138ac282ba892b2156a4fa689539037b1"
+    },
+    "CHNCXR_0135_0.png": {
+      "label": 0,
+      "remote_size": 6158576,
+      "sha256": "2844fc94b0f25ad1878e692207e385c5938a65ac94d731acb3e9b523371f019e"
+    },
+    "CHNCXR_0136_0.png": {
+      "label": 0,
+      "remote_size": 6005766,
+      "sha256": "f79a14eebee9fbced6bc6aac324bad2aec51b7c99b1a5977dc669c30d168b0b1"
+    },
+    "CHNCXR_0137_0.png": {
+      "label": 0,
+      "remote_size": 5926436,
+      "sha256": "c7a39dbb042d9a9b7dd260cd0b7d7fb7311f078bba16afb67e28e814ef813f78"
+    },
+    "CHNCXR_0138_0.png": {
+      "label": 0,
+      "remote_size": 5795874,
+      "sha256": "575f5fcb12b03f787863b3ba08caf0ed2b9abfa60b6ac0985addb3204b982d1f"
+    },
+    "CHNCXR_0139_0.png": {
+      "label": 0,
+      "remote_size": 5596445,
+      "sha256": "092cdb70708f95032728f10d7f89dc53d9a4e17dabc8c5bf357379d42fe4ecb4"
+    },
+    "CHNCXR_0140_0.png": {
+      "label": 0,
+      "remote_size": 3229782,
+      "sha256": "4a461369ad4c9fa33059ea610a702a22b259e2f8b2f715ccdaa3a06a353b354f"
+    },
+    "CHNCXR_0141_0.png": {
+      "label": 0,
+      "remote_size": 6012402,
+      "sha256": "1419998310231f2a95106762c4b62a43248c2d7e78e9ea5a606314a9b8596a11"
+    },
+    "CHNCXR_0142_0.png": {
+      "label": 0,
+      "remote_size": 3818068,
+      "sha256": "aa53911f4ceaf6eab0e86c18d2efb7d568e0249cc4fe89a491b5739ff005eead"
+    },
+    "CHNCXR_0143_0.png": {
+      "label": 0,
+      "remote_size": 6348364,
+      "sha256": "3b1342fc28386b7ad23f1b5858723ac307024cffb4430e7c9505286f4a54f18c"
+    },
+    "CHNCXR_0144_0.png": {
+      "label": 0,
+      "remote_size": 4341336,
+      "sha256": "0b63d6be464adb97c70e64ba8fbbad68c0208068cac39dd84c66704b0c138756"
+    },
+    "CHNCXR_0145_0.png": {
+      "label": 0,
+      "remote_size": 6899695,
+      "sha256": "6eb1549be5f77779e1ca370888ae3219ee8dc80fdc61791ad2865b5fb47f2d65"
+    },
+    "CHNCXR_0146_0.png": {
+      "label": 0,
+      "remote_size": 6491518,
+      "sha256": "7679cedf4b26c50dc3d34a836a32f3075b0952b99c66d38cc4799d93985f7f89"
+    },
+    "CHNCXR_0147_0.png": {
+      "label": 0,
+      "remote_size": 6492011,
+      "sha256": "26169d79c4df70f3119f38322403983abe9adf33ff03445330df23be80c8d9ef"
+    },
+    "CHNCXR_0148_0.png": {
+      "label": 0,
+      "remote_size": 5270137,
+      "sha256": "079c7d5f4b4baf08141bb84e72acc785ddef208071eaa97862f0af2a3f24b924"
+    },
+    "CHNCXR_0149_0.png": {
+      "label": 0,
+      "remote_size": 6341836,
+      "sha256": "f3d7b463d140f4b6071762cfa030a3ddba81f10824cfb7439673ff03cf796a3d"
+    },
+    "CHNCXR_0150_0.png": {
+      "label": 0,
+      "remote_size": 5379184,
+      "sha256": "78b0722bd23c446d3eb0d5414b84c16391f637e56e8fc4928108dd4a54398478"
+    },
+    "CHNCXR_0151_0.png": {
+      "label": 0,
+      "remote_size": 6156883,
+      "sha256": "1ab88025be6eac6eb1526e46e353b7fab158407fd7d609a98369315c23f55b02"
+    },
+    "CHNCXR_0152_0.png": {
+      "label": 0,
+      "remote_size": 4855817,
+      "sha256": "75795c602625c2624baff83b81650c35c0b6dcec49fdf12be4b3ddb9c25f7074"
+    },
+    "CHNCXR_0153_0.png": {
+      "label": 0,
+      "remote_size": 6248759,
+      "sha256": "00f858efb2e1758210dcab040246e7eb1d2300ab8df2e612300132d0781cd9fe"
+    },
+    "CHNCXR_0154_0.png": {
+      "label": 0,
+      "remote_size": 6033694,
+      "sha256": "6dad5f0c63edbcccc54155d5156997c57731fd55f093e17d25bdcc7628bc75fb"
+    },
+    "CHNCXR_0155_0.png": {
+      "label": 0,
+      "remote_size": 2860956,
+      "sha256": "ea284f4fcbcc056719f984665c3110731124d5cefb087f542fa92b20dc990373"
+    },
+    "CHNCXR_0156_0.png": {
+      "label": 0,
+      "remote_size": 6430301,
+      "sha256": "3210cb8ce85ea0fa94e5e56d7518085126e697c101d0eff00b3dbccafb94ac2c"
+    },
+    "CHNCXR_0157_0.png": {
+      "label": 0,
+      "remote_size": 6230671,
+      "sha256": "031559952d5dc363cb8ba0ca40f2e4fb192c5df7b33c27ecb4fdd2228d59847f"
+    },
+    "CHNCXR_0158_0.png": {
+      "label": 0,
+      "remote_size": 5493337,
+      "sha256": "a8434f88f5c2d1c9b18e2c2645fdabbf83ca1fe2e04b65bfb0adcaa788d0b67a"
+    },
+    "CHNCXR_0159_0.png": {
+      "label": 0,
+      "remote_size": 6748848,
+      "sha256": "e82282515e94c5935c6582c6f60a0dad9de4ec14e2a71071e08de51794e9fb0a"
+    },
+    "CHNCXR_0160_0.png": {
+      "label": 0,
+      "remote_size": 5530080,
+      "sha256": "5673c5f6c13ff18049d0fe9ee3de00427b863dcf3ebc87c3eca7e88e94c0e635"
+    },
+    "CHNCXR_0161_0.png": {
+      "label": 0,
+      "remote_size": 6231393,
+      "sha256": "4000cae36eac4f323fdb9f8c7a16d9dfc582403a769cb58628f125217563d300"
+    },
+    "CHNCXR_0162_0.png": {
+      "label": 0,
+      "remote_size": 6451805,
+      "sha256": "8d8908bbe6d83557d18611e9e55100ee72cd27bde315cfa039ddfc2995a5dbfa"
+    },
+    "CHNCXR_0163_0.png": {
+      "label": 0,
+      "remote_size": 6129814,
+      "sha256": "7d82e420050e7cdbf5a09eebef12e64382b2b0254f088da92e79d7e6ce4c6cc1"
+    },
+    "CHNCXR_0164_0.png": {
+      "label": 0,
+      "remote_size": 5780067,
+      "sha256": "4c8fe3f2f796c44188a62da4b5f7f0f70803073e3687b33b061c2a7f430df522"
+    },
+    "CHNCXR_0165_0.png": {
+      "label": 0,
+      "remote_size": 5558156,
+      "sha256": "2563008506f64d0f893b37224f9bade17ff438e3d7f7760ab17d3e09027e8838"
+    },
+    "CHNCXR_0166_0.png": {
+      "label": 0,
+      "remote_size": 4632848,
+      "sha256": "1b677ad4571f4b99002b00c43e81bed2fac1193a1adc9ed2fde2585031d39f87"
+    },
+    "CHNCXR_0167_0.png": {
+      "label": 0,
+      "remote_size": 6598131,
+      "sha256": "2557b507f4d35e00db966746fdad7ef239dbf72404e401f9b20e434f31f42892"
+    },
+    "CHNCXR_0168_0.png": {
+      "label": 0,
+      "remote_size": 6357428,
+      "sha256": "3ab9ad4b983b4439f08f5f84381b760b2cf02f88bb0f23ab32e8535e62f8fbfd"
+    },
+    "CHNCXR_0169_0.png": {
+      "label": 0,
+      "remote_size": 2431870,
+      "sha256": "9bda74787e851d18e4ae1b54a885d2dd6f02435ea80b3a05803201f752cb5084"
+    },
+    "CHNCXR_0170_0.png": {
+      "label": 0,
+      "remote_size": 5680895,
+      "sha256": "edd789285a4692f06c4391b401170db1cffa5c2bc4fb715be7a0b9351c9a55e6"
+    },
+    "CHNCXR_0171_0.png": {
+      "label": 0,
+      "remote_size": 6934968,
+      "sha256": "384989f0981c19baf5f7025829f170e5a54036b47ef37c821f6f84b8a2ecb3f3"
+    },
+    "CHNCXR_0172_0.png": {
+      "label": 0,
+      "remote_size": 4531828,
+      "sha256": "e569a4212f9e2e2a05048d1522dd0932fba9065b55bcbfb4649def2b0c9771ae"
+    },
+    "CHNCXR_0173_0.png": {
+      "label": 0,
+      "remote_size": 5184998,
+      "sha256": "ce4b36191623f44491d8071305e23c758f4253b5531f204bbf32dab842e77dbe"
+    },
+    "CHNCXR_0174_0.png": {
+      "label": 0,
+      "remote_size": 5256801,
+      "sha256": "3bb15ec0a3ec88ac78fd8037affb8541011220ae17b8148929346513f2c6a5d6"
+    },
+    "CHNCXR_0175_0.png": {
+      "label": 0,
+      "remote_size": 2706846,
+      "sha256": "74b69b92cfb273cfd5bf5ffc082a1bc402eb0a24ca1f4914f6c3f84284e46b7a"
+    },
+    "CHNCXR_0176_0.png": {
+      "label": 0,
+      "remote_size": 5821425,
+      "sha256": "e94878891ff8f0d743bb7743ae06709a2af35abe9bc9c731a69873476e05120f"
+    },
+    "CHNCXR_0177_0.png": {
+      "label": 0,
+      "remote_size": 4725903,
+      "sha256": "ce9adb72484b529109444e4a3e888f893838b375083ec86209666b42bc6515ad"
+    },
+    "CHNCXR_0178_0.png": {
+      "label": 0,
+      "remote_size": 1512422,
+      "sha256": "e5fbc51a5089d4739c4f19df4c9f7c59c3b6c68d743bc8ff3e9ce75c404243cb"
+    },
+    "CHNCXR_0179_0.png": {
+      "label": 0,
+      "remote_size": 5712801,
+      "sha256": "1b7e95c05c47b6f5da941068af280027b666e053ac60d5aae878a8b3f85a00ee"
+    },
+    "CHNCXR_0180_0.png": {
+      "label": 0,
+      "remote_size": 5031748,
+      "sha256": "01f2647efeab06674fd0ccf3b06a47e16f6b71acaf0412e5da0e2aff188fedd4"
+    },
+    "CHNCXR_0181_0.png": {
+      "label": 0,
+      "remote_size": 5540280,
+      "sha256": "def22992743fb87a21fdbeb3579d7bd54e7d9b632db4c6707b5287eedb1d524c"
+    },
+    "CHNCXR_0182_0.png": {
+      "label": 0,
+      "remote_size": 6038685,
+      "sha256": "fe655b3f70616925bb9fee763341eaa877500ff5a665043a1377dfb6a873c60e"
+    },
+    "CHNCXR_0183_0.png": {
+      "label": 0,
+      "remote_size": 6326059,
+      "sha256": "d577b028768d2a81e91ea931a821b57ddfacca24604c6ade06a7dc073e4c8e90"
+    },
+    "CHNCXR_0184_0.png": {
+      "label": 0,
+      "remote_size": 6262756,
+      "sha256": "e2e39ca7eb7e1c1725d40cae00aaf32453485fe97c2a5006306a60c295883f87"
+    },
+    "CHNCXR_0185_0.png": {
+      "label": 0,
+      "remote_size": 5418701,
+      "sha256": "015de05b7bc5719cd6013b857681a74012a27e31ad4be10b390b695c91a96c6c"
+    },
+    "CHNCXR_0186_0.png": {
+      "label": 0,
+      "remote_size": 4544670,
+      "sha256": "217b7b0f810a32df08797e8d6a22be2723c858e5e96299e9fdaaad24af8ffa3b"
+    },
+    "CHNCXR_0187_0.png": {
+      "label": 0,
+      "remote_size": 4837765,
+      "sha256": "b2e8c54b73b9d49051b41ee54dbf362658831dca20034bec9f5368af21d4b6e6"
+    },
+    "CHNCXR_0188_0.png": {
+      "label": 0,
+      "remote_size": 6742910,
+      "sha256": "6b580784fbeb8deb9f0e11bf50b05b73bca2c3bea76aa64b4ac0db4ecc140af3"
+    },
+    "CHNCXR_0189_0.png": {
+      "label": 0,
+      "remote_size": 5459378,
+      "sha256": "f8800e7c3f37589b45b0b598f192b92e542d7e250aaddf710a9a4223412a02f1"
+    },
+    "CHNCXR_0190_0.png": {
+      "label": 0,
+      "remote_size": 5974258,
+      "sha256": "2f64c05902ca3bb6060f99c4daca836773632b68cad0178de97ec07b33ab58f0"
+    },
+    "CHNCXR_0191_0.png": {
+      "label": 0,
+      "remote_size": 6165312,
+      "sha256": "d035dd9c55db9aecd587b2bd46693bbd1e5adfcaeaabf084a08e6b11c5192d8f"
+    },
+    "CHNCXR_0192_0.png": {
+      "label": 0,
+      "remote_size": 6635820,
+      "sha256": "7213eebd670ec88845b6e5bd367bd123beff19ce35d39dcd2002368450531641"
+    },
+    "CHNCXR_0193_0.png": {
+      "label": 0,
+      "remote_size": 5190527,
+      "sha256": "3c38b25018d5e991da9f9a43e05f4634e915220a700be5477453110721779a43"
+    },
+    "CHNCXR_0194_0.png": {
+      "label": 0,
+      "remote_size": 6693192,
+      "sha256": "32f78bec07a68679ed4fa53db2c11b557d23b117dc5dbfe90e6f11731d7ae7b4"
+    },
+    "CHNCXR_0195_0.png": {
+      "label": 0,
+      "remote_size": 6752046,
+      "sha256": "83046d1144eb559ba67a7942686a261abe32c1db690678cd5fcd5818e8d9ea03"
+    },
+    "CHNCXR_0196_0.png": {
+      "label": 0,
+      "remote_size": 6554938,
+      "sha256": "d031a3c854cff56f3d2046d5511760c467c0de2ba8c4d440765fb97ae8e6db06"
+    },
+    "CHNCXR_0197_0.png": {
+      "label": 0,
+      "remote_size": 5594826,
+      "sha256": "f46f8c888815795306bb20e85dcad07a1700e4d77e7193d8f09f79edd8c2efef"
+    },
+    "CHNCXR_0198_0.png": {
+      "label": 0,
+      "remote_size": 6736937,
+      "sha256": "763b3ac7736099e8ec23ef665d24854464a0a319ba9db8c2dcabb39e4067ca45"
+    },
+    "CHNCXR_0199_0.png": {
+      "label": 0,
+      "remote_size": 2977809,
+      "sha256": "aa731f612f73612ba31f9faea56e8c25e9f26d04351b9f4218aa93066e77edf3"
+    },
+    "CHNCXR_0200_0.png": {
+      "label": 0,
+      "remote_size": 6889590,
+      "sha256": "6b2ef9707c846f3646c9e0ace1c10cc8ab2d3c88470ee490bc1cb624648d5290"
+    },
+    "CHNCXR_0201_0.png": {
+      "label": 0,
+      "remote_size": 2141595,
+      "sha256": "f4e169aa2c564614daf3a791412db23f86a9716f47965729dc5b404f47e4972f"
+    },
+    "CHNCXR_0202_0.png": {
+      "label": 0,
+      "remote_size": 786661,
+      "sha256": "887d2966fb9c0e0d3de654963684e17ed678373df2953282aa55672c95dd89a0"
+    },
+    "CHNCXR_0203_0.png": {
+      "label": 0,
+      "remote_size": 6696174,
+      "sha256": "43cd999fbc1415f6c88deb141f98c359d8d29f7b6f7d1042837ceb8555160080"
+    },
+    "CHNCXR_0204_0.png": {
+      "label": 0,
+      "remote_size": 6888409,
+      "sha256": "1a6093d85d8fb48da370a3632de518739a17affe150cf5f8700276fe0896557f"
+    },
+    "CHNCXR_0205_0.png": {
+      "label": 0,
+      "remote_size": 2778140,
+      "sha256": "430923da63781e0476753f367d62bb37173a0280ed769f3d5a0640dfac0666d8"
+    },
+    "CHNCXR_0206_0.png": {
+      "label": 0,
+      "remote_size": 2250884,
+      "sha256": "690493cfca161d3c4a5e6e93acd66a4313c50606cfe631083bf50a600088b48f"
+    },
+    "CHNCXR_0207_0.png": {
+      "label": 0,
+      "remote_size": 6637141,
+      "sha256": "5bbbe5f522b239f7ae7b0a84cac1d3a032ff975787daf039f8217c5979517b52"
+    },
+    "CHNCXR_0208_0.png": {
+      "label": 0,
+      "remote_size": 5232833,
+      "sha256": "7f8774510769d022e6a003d8db2b3b933bcaeec503853b5e3f7e9225048062da"
+    },
+    "CHNCXR_0209_0.png": {
+      "label": 0,
+      "remote_size": 6614878,
+      "sha256": "419c669b158f5b66c005c487680954708fba115864a0a0e046f4c5b4fa60f243"
+    },
+    "CHNCXR_0210_0.png": {
+      "label": 0,
+      "remote_size": 6703400,
+      "sha256": "afe28585597dd5e1bb5cc9af15f5e7158bf9d1b42c59e87f1dc4ed11a4064e15"
+    },
+    "CHNCXR_0211_0.png": {
+      "label": 0,
+      "remote_size": 6728649,
+      "sha256": "6ec1d06674963c2b7bee6fa950ce1342d59d40d33e11320004ff7ac8c986aaf3"
+    },
+    "CHNCXR_0212_0.png": {
+      "label": 0,
+      "remote_size": 4884210,
+      "sha256": "f205fbc42003c4b895eeb89c6fe6d89467ea10833dc31177c06dab6fe2a54ac9"
+    },
+    "CHNCXR_0213_0.png": {
+      "label": 0,
+      "remote_size": 5810406,
+      "sha256": "24654737e13753525cb8ba891b3abfef471a61c1afa1a1adfaaad9d09c149f08"
+    },
+    "CHNCXR_0214_0.png": {
+      "label": 0,
+      "remote_size": 4862793,
+      "sha256": "26dd4a4e91702d0cb8942a45d9387832261becc228651e48ae805565a9b59d62"
+    },
+    "CHNCXR_0215_0.png": {
+      "label": 0,
+      "remote_size": 3071358,
+      "sha256": "5a719ff63308f6a20732f6a8a587636559ed267ab75112172f4845cd08215aea"
+    },
+    "CHNCXR_0216_0.png": {
+      "label": 0,
+      "remote_size": 5945920,
+      "sha256": "f434afd27ad9084171f70303054699f941daad8591113f8157dff3b08be54979"
+    },
+    "CHNCXR_0217_0.png": {
+      "label": 0,
+      "remote_size": 5582913,
+      "sha256": "da617386dbe032d50dc17d1b49f014ce142a48badb2d3581d49542510eaf37f9"
+    },
+    "CHNCXR_0218_0.png": {
+      "label": 0,
+      "remote_size": 6350437,
+      "sha256": "fc58b6e7816f959d1d198082d83055fcd399ebfd32f0bdff7eb5bf6c293ce653"
+    },
+    "CHNCXR_0219_0.png": {
+      "label": 0,
+      "remote_size": 6470247,
+      "sha256": "ab97f3eeedfee37f9f8dca433c87da399253d975f886dd99d0fed48c298b0d6a"
+    },
+    "CHNCXR_0220_0.png": {
+      "label": 0,
+      "remote_size": 4733008,
+      "sha256": "6302c806161ce7fe79ee621196ec739a06318710a4ef344696aee04aecf8036c"
+    },
+    "CHNCXR_0221_0.png": {
+      "label": 0,
+      "remote_size": 4973083,
+      "sha256": "6bfd13c299fdea1d16116c1a8534c8e9f363eddeba3b582f44a7fbb615ed6073"
+    },
+    "CHNCXR_0222_0.png": {
+      "label": 0,
+      "remote_size": 6728767,
+      "sha256": "1ae1cc7aed7ab5d31dd07d69be935cd98346ce471ee5d06812a40382af8f5acf"
+    },
+    "CHNCXR_0223_0.png": {
+      "label": 0,
+      "remote_size": 5687214,
+      "sha256": "c3b88b42612c4363814bce4fd08b8b1a6be4ba6649855e8e22a2fa44a5b844e5"
+    },
+    "CHNCXR_0224_0.png": {
+      "label": 0,
+      "remote_size": 6669915,
+      "sha256": "465d161e16b6f46fa95d58ac237f3f393fe91531a404622182b3b7b8453c4ce2"
+    },
+    "CHNCXR_0225_0.png": {
+      "label": 0,
+      "remote_size": 6261318,
+      "sha256": "2d4868ab6f45c66f5fa32b0693551d5fdfb162aac654913b0a15e6ab9b74e443"
+    },
+    "CHNCXR_0226_0.png": {
+      "label": 0,
+      "remote_size": 6685687,
+      "sha256": "06d48c58b0998cd064ffcb3650d17bc7b11536a6427506a197a65522f9973056"
+    },
+    "CHNCXR_0227_0.png": {
+      "label": 0,
+      "remote_size": 6882250,
+      "sha256": "570fb0e6592b4fdc8201e08a73464f40fda15e75297c0d23ba58fad3b075f131"
+    },
+    "CHNCXR_0228_0.png": {
+      "label": 0,
+      "remote_size": 1197041,
+      "sha256": "e7b2c0b420d372b784f989ae7ae54ed1d72ed0d301c00e1f178806b5ca2947bf"
+    },
+    "CHNCXR_0229_0.png": {
+      "label": 0,
+      "remote_size": 6358375,
+      "sha256": "8886632b35a9a0733f250e646621c01beae2b2a8ff0b74fc08a7c97e74d71ab0"
+    },
+    "CHNCXR_0230_0.png": {
+      "label": 0,
+      "remote_size": 6633277,
+      "sha256": "e600f17352b3e569b7fdf05cd02db036dad7014ea8f3f947605d01983e126b5d"
+    },
+    "CHNCXR_0231_0.png": {
+      "label": 0,
+      "remote_size": 6698071,
+      "sha256": "7087fe92dbcc51424a6cfaa62504ebe2013cd1b2fba6aec34c5e14c51eb5b787"
+    },
+    "CHNCXR_0232_0.png": {
+      "label": 0,
+      "remote_size": 6524760,
+      "sha256": "b67decbf7b2f8ee84ad711fa50ae11ff2a0b382b50f3dbbdce56736807ae6d2c"
+    },
+    "CHNCXR_0233_0.png": {
+      "label": 0,
+      "remote_size": 5865210,
+      "sha256": "cceb502bbeb1e8ff09919b8c75832fb87f38daaae2c447c60a99161066c31fc3"
+    },
+    "CHNCXR_0234_0.png": {
+      "label": 0,
+      "remote_size": 6607165,
+      "sha256": "7db24e985daeac2a2cdea2e026d13d5c2b1b9f734ed45540244693d7b230214c"
+    },
+    "CHNCXR_0235_0.png": {
+      "label": 0,
+      "remote_size": 4103241,
+      "sha256": "a7dfab2dc27a88f5613ce84f6711289e03f6fabd4c94807b37f8f4e4fcc1c9d3"
+    },
+    "CHNCXR_0236_0.png": {
+      "label": 0,
+      "remote_size": 6303420,
+      "sha256": "a7e71a4f5aeb44e8c36d85c3d0d0a0b4bfb38c47e377e069ed8d6f9b55bb9c49"
+    },
+    "CHNCXR_0237_0.png": {
+      "label": 0,
+      "remote_size": 5711445,
+      "sha256": "e4e0628fe5380fbe1c20bc37f08a43687542a742a5e928bc8b4959d8bd8619aa"
+    },
+    "CHNCXR_0238_0.png": {
+      "label": 0,
+      "remote_size": 5899771,
+      "sha256": "d201cb87529737abb4931b873e9be56de999772eaf74aa47a0d81c493893eb26"
+    },
+    "CHNCXR_0239_0.png": {
+      "label": 0,
+      "remote_size": 6981997,
+      "sha256": "030eacd94b9d6fd290be0c561fc07541cc0ab22498f1ebf5ff24f13ae92175ed"
+    },
+    "CHNCXR_0240_0.png": {
+      "label": 0,
+      "remote_size": 6652383,
+      "sha256": "7e7d49a4dbe3acc10480e63d3fe74a3c75013dc9e95ee2abc5af995bc9f35173"
+    },
+    "CHNCXR_0241_0.png": {
+      "label": 0,
+      "remote_size": 3935211,
+      "sha256": "81caefc25e73565642db27fe55c90ebf2be792ae190d782566e663bb2f47fb28"
+    },
+    "CHNCXR_0242_0.png": {
+      "label": 0,
+      "remote_size": 4014252,
+      "sha256": "b475348de0e5278f45677b76336ddd24dba55e88b7699d56c4507caa1f1e6008"
+    },
+    "CHNCXR_0243_0.png": {
+      "label": 0,
+      "remote_size": 6202713,
+      "sha256": "2e20d9b9c9d489bc3dc72a1f99dbc0c1e5883b943ac121eedf460992a2025ba8"
+    },
+    "CHNCXR_0244_0.png": {
+      "label": 0,
+      "remote_size": 3904370,
+      "sha256": "f03478db4ce0795e6e7fb13b5dc1e3f971078efa7be5b7822653634c75fda77b"
+    },
+    "CHNCXR_0245_0.png": {
+      "label": 0,
+      "remote_size": 6848717,
+      "sha256": "e77964ef7bf93f4a5e78a4f02255025dbc61b8699011807dadcd08d4913dcf5b"
+    },
+    "CHNCXR_0246_0.png": {
+      "label": 0,
+      "remote_size": 5961310,
+      "sha256": "6d8a8510083e57c3d22517ac5bc09f7777ba00eff32ebc4bc6a29360f90fc56f"
+    },
+    "CHNCXR_0247_0.png": {
+      "label": 0,
+      "remote_size": 6373640,
+      "sha256": "fe3d6f42db0c4f9121e65b95aecd4d254871da5952324ee30ea7bd443ddb2722"
+    },
+    "CHNCXR_0248_0.png": {
+      "label": 0,
+      "remote_size": 1468872,
+      "sha256": "85a48b226d7f324ecdc38c81df2853366771a27da9b97e7572585197408561a2"
+    },
+    "CHNCXR_0249_0.png": {
+      "label": 0,
+      "remote_size": 6765317,
+      "sha256": "8ec417dc8d8e1508bcb69542681be8cc43b4456bc220bf282466e90d6b958eb3"
+    },
+    "CHNCXR_0250_0.png": {
+      "label": 0,
+      "remote_size": 6230171,
+      "sha256": "3bc32e6abe6704526d647c87b8c3893b774b70cae5708236e5bce795a50493b8"
+    },
+    "CHNCXR_0251_0.png": {
+      "label": 0,
+      "remote_size": 3952690,
+      "sha256": "7e001ff1a2eb7f7474c9351ee8aedd7a5c0f5c69e80265af81e5f3e58c19225b"
+    },
+    "CHNCXR_0252_0.png": {
+      "label": 0,
+      "remote_size": 6844043,
+      "sha256": "86c8c7674589f8a455fc5bf9ea81630d95ac3d15cfb5f81b0cb73bb67602f874"
+    },
+    "CHNCXR_0253_0.png": {
+      "label": 0,
+      "remote_size": 5811039,
+      "sha256": "c65d2f868a9af8f27c4573f79af3cdedcf2ddc10467872b6d3162cc051a5b258"
+    },
+    "CHNCXR_0254_0.png": {
+      "label": 0,
+      "remote_size": 5975500,
+      "sha256": "2cde6ee99467421b79a88fb7b6a206b363999cf74d0879c92629a47a60eb9e8a"
+    },
+    "CHNCXR_0255_0.png": {
+      "label": 0,
+      "remote_size": 5272111,
+      "sha256": "bc60f14bfd58332b4acc3bf5ab1b1fc1aeed99c3b0450a1d977fc7418d223dec"
+    },
+    "CHNCXR_0256_0.png": {
+      "label": 0,
+      "remote_size": 2373603,
+      "sha256": "ccda821f07088a937e67ea2ed321e435cf057d1f04a53448d70df9132a25a2b8"
+    },
+    "CHNCXR_0257_0.png": {
+      "label": 0,
+      "remote_size": 6848473,
+      "sha256": "30c18537a598bb519adeb77c97cfb13a444705b205406f9f45641e34f8ce60a1"
+    },
+    "CHNCXR_0258_0.png": {
+      "label": 0,
+      "remote_size": 6267487,
+      "sha256": "dab90a752d0fd8a309df367b01b4d8993489e3ee199ee80a02bf4b22789db90e"
+    },
+    "CHNCXR_0259_0.png": {
+      "label": 0,
+      "remote_size": 2767758,
+      "sha256": "0c6dc8092b6f4674247320c5832aaa289107a72be7b666422fe5f61fb6028f58"
+    },
+    "CHNCXR_0260_0.png": {
+      "label": 0,
+      "remote_size": 5944626,
+      "sha256": "553c18e3e270ac6d44d4742348dde3637dee3be628f291826fac97181c3f9cd5"
+    },
+    "CHNCXR_0261_0.png": {
+      "label": 0,
+      "remote_size": 7085238,
+      "sha256": "497569344010ea5debacbcec9030d390fed4fef68e0087aa98a31147125207e4"
+    },
+    "CHNCXR_0262_0.png": {
+      "label": 0,
+      "remote_size": 6221617,
+      "sha256": "b08932b88c6abd74941219b66a5a6264278a83566c4d23afb2a201186112f264"
+    },
+    "CHNCXR_0263_0.png": {
+      "label": 0,
+      "remote_size": 6058086,
+      "sha256": "b0bca07c6c85a95d36821157abef6a60400167a8adcf0680b123621d899dffb1"
+    },
+    "CHNCXR_0264_0.png": {
+      "label": 0,
+      "remote_size": 6837546,
+      "sha256": "c08b7e4ee3200f3a49c4fbd39199041504c05a8406ca6640cd833d6649ae5dcd"
+    },
+    "CHNCXR_0265_0.png": {
+      "label": 0,
+      "remote_size": 3125343,
+      "sha256": "94954bc99bc445e2f5bf5151ead432d53d6b4ac26f79cee9c593f2cb9a80a2a1"
+    },
+    "CHNCXR_0266_0.png": {
+      "label": 0,
+      "remote_size": 6681764,
+      "sha256": "03023c4521e01a8a19a2046a1b37dc0a9bc8d4feeea2a4f5ce56471d8588dc0b"
+    },
+    "CHNCXR_0267_0.png": {
+      "label": 0,
+      "remote_size": 5708767,
+      "sha256": "2f90ea42067aafd4db7c47a419914faec3c33d212abca156f21d54f98110baa9"
+    },
+    "CHNCXR_0268_0.png": {
+      "label": 0,
+      "remote_size": 5951699,
+      "sha256": "22cc9e0655256abe032010af8d27b54bc75086115412b7f4c8a71dc4cd04c44a"
+    },
+    "CHNCXR_0269_0.png": {
+      "label": 0,
+      "remote_size": 5404097,
+      "sha256": "578d0b371010ed53f15fa3f88d049309cf2488532d77043b41ebf0f3f05a04f4"
+    },
+    "CHNCXR_0270_0.png": {
+      "label": 0,
+      "remote_size": 6628050,
+      "sha256": "d82a7cc73d46821a5fd9e6453ab282f0527dd2e1600bcf033c5290105e6f1537"
+    },
+    "CHNCXR_0271_0.png": {
+      "label": 0,
+      "remote_size": 6830371,
+      "sha256": "929d22f2cb52b282d38086a0c02f8e5d7df3cdaf71a24183fe24fa2f8ad6b24d"
+    },
+    "CHNCXR_0272_0.png": {
+      "label": 0,
+      "remote_size": 3823681,
+      "sha256": "701136b4fcda3c8e29e5b515121865a9478738d5f3918337219654d13fe5b1d8"
+    },
+    "CHNCXR_0273_0.png": {
+      "label": 0,
+      "remote_size": 3469307,
+      "sha256": "fe57c5709cc21a020154aaaad5b68b83dfa4a7a5ee4b9710a10e5ff61bdcd60f"
+    },
+    "CHNCXR_0274_0.png": {
+      "label": 0,
+      "remote_size": 5050063,
+      "sha256": "d2ede69166b0aadb32d6f1c514532212c768e85834401cd29cf24602d77cca64"
+    },
+    "CHNCXR_0275_0.png": {
+      "label": 0,
+      "remote_size": 6608288,
+      "sha256": "00494cd79d63856c73c71b48d3571fba107a0f4f340c20e5d94a3d455317ed2b"
+    },
+    "CHNCXR_0276_0.png": {
+      "label": 0,
+      "remote_size": 7288144,
+      "sha256": "ecae67e792ec4d8849b0fef121801c52229b3c244e5d79b0d869c431a865888e"
+    },
+    "CHNCXR_0277_0.png": {
+      "label": 0,
+      "remote_size": 5246348,
+      "sha256": "e2a5a79a5ab435011ce882658347c36b11cd21ff21fa6225bae47bafd9440f00"
+    },
+    "CHNCXR_0278_0.png": {
+      "label": 0,
+      "remote_size": 4996408,
+      "sha256": "354a7f474fa00ceebebde04e72e87be15c52c8556485ab8620e3b991b4b0fe02"
+    },
+    "CHNCXR_0279_0.png": {
+      "label": 0,
+      "remote_size": 4778659,
+      "sha256": "fece2d8d262fd53eefcc459667dd15b514a16f9dff2509d54925354c574b9f47"
+    },
+    "CHNCXR_0280_0.png": {
+      "label": 0,
+      "remote_size": 5460631,
+      "sha256": "209417c0dfadfd7ad869fc7b76847d4108792fab98e4964195d6c08238ce357d"
+    },
+    "CHNCXR_0281_0.png": {
+      "label": 0,
+      "remote_size": 6109812,
+      "sha256": "0255e0635a76d11879e75f0203d460feeee58c441dcc5f665f5c71b97c4d5ddf"
+    },
+    "CHNCXR_0282_0.png": {
+      "label": 0,
+      "remote_size": 6103493,
+      "sha256": "5aecaf2f9f6537cc2a31a9253fe55a78324b8cf0c1bdddbc4cfc536f008ab5cf"
+    },
+    "CHNCXR_0283_0.png": {
+      "label": 0,
+      "remote_size": 6152528,
+      "sha256": "5b22260aa23e0880c763342d6f0caa29314f45905642735f03e83fb980241f5c"
+    },
+    "CHNCXR_0284_0.png": {
+      "label": 0,
+      "remote_size": 5724676,
+      "sha256": "41109afe3b29b86769360f3519b869ae0063e9ec60d6a7833e6cd8a186572520"
+    },
+    "CHNCXR_0285_0.png": {
+      "label": 0,
+      "remote_size": 5916998,
+      "sha256": "b7bae0771a4c3f1f47bea613115bfd8e15bd46653f78eb85c173d6efab8a59e7"
+    },
+    "CHNCXR_0286_0.png": {
+      "label": 0,
+      "remote_size": 6338516,
+      "sha256": "04c85c72282903f2241fc37dd491d91c552986454b48a191fb69c45b826c44e4"
+    },
+    "CHNCXR_0287_0.png": {
+      "label": 0,
+      "remote_size": 5214823,
+      "sha256": "f152233f70f2b5cea7801371adb520c9c1c3a86e98131a5711f10e26605813d0"
+    },
+    "CHNCXR_0288_0.png": {
+      "label": 0,
+      "remote_size": 4631396,
+      "sha256": "801c6ed9a321890e5fb5afda73bde5f5828d8ce122222dbd67b9c16e81f61073"
+    },
+    "CHNCXR_0289_0.png": {
+      "label": 0,
+      "remote_size": 5887282,
+      "sha256": "68f3216225692954ad70007bbc4ca11146f4a1d2c53590a8d67c637da4c0aa77"
+    },
+    "CHNCXR_0290_0.png": {
+      "label": 0,
+      "remote_size": 6213793,
+      "sha256": "5cbc8d71d6964dfdf6af2502c2e1fb977399012409b698689e7a4ba88c19fd1a"
+    },
+    "CHNCXR_0291_0.png": {
+      "label": 0,
+      "remote_size": 4907887,
+      "sha256": "06f02296b9a781ffbe09020fc2626bb37a87aed8008fe24ed4b356ac83b23c62"
+    },
+    "CHNCXR_0292_0.png": {
+      "label": 0,
+      "remote_size": 5929252,
+      "sha256": "ab0bf791168125b1698fce2a59396ae0bec01565ea13f1f098b74bc04b166229"
+    },
+    "CHNCXR_0293_0.png": {
+      "label": 0,
+      "remote_size": 6254490,
+      "sha256": "dc66f5b385751c03f3ff03a08d612bf0f8d602377d0e38414adc97d0f4dd7810"
+    },
+    "CHNCXR_0294_0.png": {
+      "label": 0,
+      "remote_size": 6122336,
+      "sha256": "8607188d6e32d8471c768739ebf299382be7c5de6ed0da9c22dd26fbcf5db4a8"
+    },
+    "CHNCXR_0295_0.png": {
+      "label": 0,
+      "remote_size": 3852190,
+      "sha256": "e38ccb4639489ad59f456819ba651eecad9b7e5a0379f2d3598c8fd8f4821f7e"
+    },
+    "CHNCXR_0296_0.png": {
+      "label": 0,
+      "remote_size": 5224192,
+      "sha256": "13178a21acd328748d2a3d27f9eba746c0739e37baebcc8c7ed20b06ea360091"
+    },
+    "CHNCXR_0297_0.png": {
+      "label": 0,
+      "remote_size": 1795020,
+      "sha256": "35951ffddc82d33271d57eff682d98ad73f247375680f7dfde33ef3d84ada89b"
+    },
+    "CHNCXR_0298_0.png": {
+      "label": 0,
+      "remote_size": 5934277,
+      "sha256": "9b53719a61c90c3bd8d70362ad29dca9d41c781b5fdff731ef530d6e7303fd47"
+    },
+    "CHNCXR_0299_0.png": {
+      "label": 0,
+      "remote_size": 2985653,
+      "sha256": "3d3b3c6b5e809f78ab1e0e77267099ddd1f332c8c0d387c57dece70bce784db4"
+    },
+    "CHNCXR_0300_0.png": {
+      "label": 0,
+      "remote_size": 6433632,
+      "sha256": "afb4586a02fa39db6c65f24256a818df5d063fa5e80d5fdeb4698a06dc0951e3"
+    },
+    "CHNCXR_0301_0.png": {
+      "label": 0,
+      "remote_size": 6153207,
+      "sha256": "1833696f340214956e70ef0efbce9cb6442889bd0f809782b98b6d410f9bc2a7"
+    },
+    "CHNCXR_0302_0.png": {
+      "label": 0,
+      "remote_size": 5453193,
+      "sha256": "d625d5235e08ed17102730141913151ecff4ff9f09cedcaffd1d911b93c47ca1"
+    },
+    "CHNCXR_0303_0.png": {
+      "label": 0,
+      "remote_size": 2715777,
+      "sha256": "aac243997a81265af61c9bb30606fc4859c98e161d2a24bae494b1fd9977ae73"
+    },
+    "CHNCXR_0304_0.png": {
+      "label": 0,
+      "remote_size": 6215349,
+      "sha256": "46632021f312b6953ca92eabce58e58131c619e20fec6bd70946cbce2cce5539"
+    },
+    "CHNCXR_0305_0.png": {
+      "label": 0,
+      "remote_size": 5890413,
+      "sha256": "220fe7b4ada83837f479fc205b5d66ee76c1762e32a058610633de8e782542b7"
+    },
+    "CHNCXR_0306_0.png": {
+      "label": 0,
+      "remote_size": 5767959,
+      "sha256": "07628ddc15c0e632ef48efa52f931d5f8b9a780c19e5ff110e7a17bdd7748dae"
+    },
+    "CHNCXR_0307_0.png": {
+      "label": 0,
+      "remote_size": 6146548,
+      "sha256": "c00a9d6f55c4544cee49bbbb68d3ae76d187008349d4a3c65740522797a90826"
+    },
+    "CHNCXR_0308_0.png": {
+      "label": 0,
+      "remote_size": 6120163,
+      "sha256": "0de0538a9ed19affba8d4c487766317341362fc78fbd3b58d937d688c27802e5"
+    },
+    "CHNCXR_0309_0.png": {
+      "label": 0,
+      "remote_size": 6363839,
+      "sha256": "b7211b9be607323b69156fddffd43656f912555097b0b0f33ed0dba3b16536b4"
+    },
+    "CHNCXR_0310_0.png": {
+      "label": 0,
+      "remote_size": 4273931,
+      "sha256": "f033d86dc9e6468c3d4db59237ab0e8b579c052c368fe86d10de73a2f413acd6"
+    },
+    "CHNCXR_0311_0.png": {
+      "label": 0,
+      "remote_size": 6323067,
+      "sha256": "3bbf042614dab88e614c6d2ab063c6f2ac7b8383eff6b1c71211232eed29f892"
+    },
+    "CHNCXR_0312_0.png": {
+      "label": 0,
+      "remote_size": 5841711,
+      "sha256": "6b4f38ddd8a54b55a6e15bd75f829bbc4af6f6bbf757d37f1d27d27a49ce9f62"
+    },
+    "CHNCXR_0313_0.png": {
+      "label": 0,
+      "remote_size": 3013950,
+      "sha256": "338831ebf2ee14f8f4539bec7d3efde45270f6e426c5c67cfe4e49a3f06acc80"
+    },
+    "CHNCXR_0314_0.png": {
+      "label": 0,
+      "remote_size": 5307486,
+      "sha256": "0e766d6a1fe8bf66e4b06a4bf39610cb362e38cf6def05cdfb4fe86722007ea9"
+    },
+    "CHNCXR_0315_0.png": {
+      "label": 0,
+      "remote_size": 6288514,
+      "sha256": "e60a371675dfd49b8f73f49d1e61a3b14200ea140c5558f6868c39600c429070"
+    },
+    "CHNCXR_0316_0.png": {
+      "label": 0,
+      "remote_size": 4192953,
+      "sha256": "d28cbc5ea78512664fe028590d5503b4ec40ac247a55a1aab3a13b8886b849e0"
+    },
+    "CHNCXR_0317_0.png": {
+      "label": 0,
+      "remote_size": 6013391,
+      "sha256": "8963fa72987ee5b3b2b705641ad3bc0021abb53b67c8f5788c400572249e4d00"
+    },
+    "CHNCXR_0318_0.png": {
+      "label": 0,
+      "remote_size": 6528011,
+      "sha256": "e5f69a98be0f6364a1525e4f5764d82b6b79b5b28dd75b1c1bdfefc59171d75d"
+    },
+    "CHNCXR_0319_0.png": {
+      "label": 0,
+      "remote_size": 6292422,
+      "sha256": "171715cda459753ea9a52644b8665040f6424efe247283b3d1d5dc16ebc8b2ef"
+    },
+    "CHNCXR_0320_0.png": {
+      "label": 0,
+      "remote_size": 5973792,
+      "sha256": "e6cc3554f1e1780024e97d928f943581724582307c7cdad932fef19fe31a3a5c"
+    },
+    "CHNCXR_0321_0.png": {
+      "label": 0,
+      "remote_size": 6023126,
+      "sha256": "2e2c8b16e5f79a5a6968b424234c132d4e52b7ec1bab926e3a63238f27f00490"
+    },
+    "CHNCXR_0322_0.png": {
+      "label": 0,
+      "remote_size": 6297078,
+      "sha256": "bf3186a4c8824c4ea96e9229be18423e3563f1476e965fca1c269c019f69fa6a"
+    },
+    "CHNCXR_0323_0.png": {
+      "label": 0,
+      "remote_size": 5949187,
+      "sha256": "cd4c85bf80bf7d3fd9a92b511a0b25139569618f40df4af71380d7006c704cb1"
+    },
+    "CHNCXR_0324_0.png": {
+      "label": 0,
+      "remote_size": 6361103,
+      "sha256": "5067bb1f7a2a292b0d0803feb8129e0543ba1c57cd02515a85dbc324177631a8"
+    },
+    "CHNCXR_0325_0.png": {
+      "label": 0,
+      "remote_size": 6085913,
+      "sha256": "22669fc26ad01d93be8b52ff9b5fef29ffa059f7614e683a4b8552144582a105"
+    },
+    "CHNCXR_0326_0.png": {
+      "label": 0,
+      "remote_size": 6027117,
+      "sha256": "963ce6b71710d4f3fcc1ac473231faee9025a0cc0d0ed07c166431a50b09fef1"
+    },
+    "CHNCXR_0327_1.png": {
+      "label": 1,
+      "remote_size": 5553963,
+      "sha256": "3fd59f333e1525751037be898644c254d163e0fc5a1344fdc461ab654168ee56"
+    },
+    "CHNCXR_0328_1.png": {
+      "label": 1,
+      "remote_size": 6258213,
+      "sha256": "48f4fdbde094d1c3d5828968f21083cebbebdb92c33b4e6bf7d7b4d75222e92d"
+    },
+    "CHNCXR_0329_1.png": {
+      "label": 1,
+      "remote_size": 4589064,
+      "sha256": "72e6ff307f93a74d31f31199ac811d8caaae243b0af774bde268508ea5e6aa37"
+    },
+    "CHNCXR_0330_1.png": {
+      "label": 1,
+      "remote_size": 6135478,
+      "sha256": "1e37ea2862a88cc62dbb99daf6df7a2c65dacf81759de35ddcbd5053fd772382"
+    },
+    "CHNCXR_0331_1.png": {
+      "label": 1,
+      "remote_size": 4325553,
+      "sha256": "64dc244703aed883cfa5a264a6f89803cb4fc5a6017f6d5dc14e87181bdad263"
+    },
+    "CHNCXR_0332_1.png": {
+      "label": 1,
+      "remote_size": 6045559,
+      "sha256": "35f4fe05ed40485da401ef6a8d0ed4895d62919aba6c81f1e1be6615ff11e4b0"
+    },
+    "CHNCXR_0333_1.png": {
+      "label": 1,
+      "remote_size": 5778365,
+      "sha256": "bbb39c48b260ad591362d59913a5c6727ac6fdc9ab1e297df8ef84e1316f0c2d"
+    },
+    "CHNCXR_0334_1.png": {
+      "label": 1,
+      "remote_size": 6368917,
+      "sha256": "4f597a99acfa82855da45d0dffff762df4f496a621f60f5a515c252dabae8a69"
+    },
+    "CHNCXR_0335_1.png": {
+      "label": 1,
+      "remote_size": 5112699,
+      "sha256": "4beb801616103eb6ebe9b0b190664b9d2f011aa12485e0406b50fd1437ab0840"
+    },
+    "CHNCXR_0336_1.png": {
+      "label": 1,
+      "remote_size": 5602227,
+      "sha256": "a7d9f12830a80cd187eb62e5291d3ba5896bc16630635f71ba834d054dccbebe"
+    },
+    "CHNCXR_0337_1.png": {
+      "label": 1,
+      "remote_size": 5243229,
+      "sha256": "8c38a6765443adf778693f96db3a04735b778625fc3c52689dc251b5efd44b78"
+    },
+    "CHNCXR_0338_1.png": {
+      "label": 1,
+      "remote_size": 5831161,
+      "sha256": "a7b4c07d8d7bc4927279c608da7d794afe44ae948c7f4051d63a9eac83a1384d"
+    },
+    "CHNCXR_0339_1.png": {
+      "label": 1,
+      "remote_size": 5348254,
+      "sha256": "cb50916a1c5fa504a96f2a4c584114459f1b391c109898d01d47dfd12bbd2631"
+    },
+    "CHNCXR_0340_1.png": {
+      "label": 1,
+      "remote_size": 6476801,
+      "sha256": "52819e064dc0c42a10aad2ef7945ffaffa0ab2ffb63785d2499ba11463f62e9c"
+    },
+    "CHNCXR_0341_1.png": {
+      "label": 1,
+      "remote_size": 6148591,
+      "sha256": "e3a2fa9dbe006d1dcdc6998928ef1efd942ead567a0b755c500cd59c33dd3cf1"
+    },
+    "CHNCXR_0342_1.png": {
+      "label": 1,
+      "remote_size": 6789039,
+      "sha256": "277092d4cedbce3433fa121b3ce4a8f4194a905217de892fbe2e588d3967ff39"
+    },
+    "CHNCXR_0343_1.png": {
+      "label": 1,
+      "remote_size": 6827472,
+      "sha256": "eea010b09183f4b47a0af829ff8d9dd6b3f3dec8fe6f137aaa805c8a3b7dbc00"
+    },
+    "CHNCXR_0344_1.png": {
+      "label": 1,
+      "remote_size": 5144783,
+      "sha256": "9cd4382110f86514e98ac8440d197f648856c4223cef562e2e25b2a9ddab30bd"
+    },
+    "CHNCXR_0345_1.png": {
+      "label": 1,
+      "remote_size": 5499162,
+      "sha256": "f9a75e9167862d791528466cbf49f8f98c9bf6443612347a26fafce08959194f"
+    },
+    "CHNCXR_0346_1.png": {
+      "label": 1,
+      "remote_size": 4151380,
+      "sha256": "c0be9641a8adef4f699dfcd407cc18883922a84073691c9ad88df2c4cf7230df"
+    },
+    "CHNCXR_0347_1.png": {
+      "label": 1,
+      "remote_size": 5460363,
+      "sha256": "b223b0c2e62fe456baaad0f9e8811976ebeaa7900815cd6fc8a9fc3359566328"
+    },
+    "CHNCXR_0348_1.png": {
+      "label": 1,
+      "remote_size": 4889578,
+      "sha256": "b148e6f8864cd1634505cc4ad58d258b8991cac20071ba7cb35819c3cbdff11a"
+    },
+    "CHNCXR_0349_1.png": {
+      "label": 1,
+      "remote_size": 6293726,
+      "sha256": "5408ff12271e1a979c7c30b42b42b5e160ad8879a4d10f8aee806eec035f5677"
+    },
+    "CHNCXR_0350_1.png": {
+      "label": 1,
+      "remote_size": 6638311,
+      "sha256": "62641e9ccb88d9f0ea840065aaaec1f73960bd4f19050cc24ca10001137d5061"
+    },
+    "CHNCXR_0351_1.png": {
+      "label": 1,
+      "remote_size": 6289137,
+      "sha256": "89058b6dde007fa0f5e36f56066eef51da25537f1761931ce886d71f81043d0d"
+    },
+    "CHNCXR_0352_1.png": {
+      "label": 1,
+      "remote_size": 6150613,
+      "sha256": "6797640bd9572d2499f527fd350f00b003f6d89fe537adae7282edd433b8623b"
+    },
+    "CHNCXR_0353_1.png": {
+      "label": 1,
+      "remote_size": 4768664,
+      "sha256": "19b0e54acbc9d5c9d27543a15235ae2da4e13bdd2ca6c67dc5c57732e714f102"
+    },
+    "CHNCXR_0354_1.png": {
+      "label": 1,
+      "remote_size": 6258740,
+      "sha256": "b8c27d7b9b035bad4112e43b2c37bd9a11dd7d068cc04e547a3ef1a2656e6743"
+    },
+    "CHNCXR_0355_1.png": {
+      "label": 1,
+      "remote_size": 7087062,
+      "sha256": "9497d8ffc2831ee48aa0fc2f4fca7ff930c0a7434fb58d52c2244f48981b4fc2"
+    },
+    "CHNCXR_0356_1.png": {
+      "label": 1,
+      "remote_size": 5329285,
+      "sha256": "f961de919fdcb8bca759d312c369c7b5f24fcab7d73089f03205f096ee67594f"
+    },
+    "CHNCXR_0357_1.png": {
+      "label": 1,
+      "remote_size": 6915716,
+      "sha256": "bf8f5dadab0d0f8200ba8f395733405609f9a2a94d7e6f63847071e1aea704c8"
+    },
+    "CHNCXR_0358_1.png": {
+      "label": 1,
+      "remote_size": 6041999,
+      "sha256": "eb1707d9b18931c9dd8be132063bc9db1de5d780eadff6a174eb4ec64dbf4928"
+    },
+    "CHNCXR_0359_1.png": {
+      "label": 1,
+      "remote_size": 5979997,
+      "sha256": "503eab71977c8021ab3678eccd2608943313c73a6ca39a6ada09ae628c534410"
+    },
+    "CHNCXR_0360_1.png": {
+      "label": 1,
+      "remote_size": 5807026,
+      "sha256": "fff4ab169baa4b33b48f53d11653771497f9220bec3dc6968b29ec552b6427ee"
+    },
+    "CHNCXR_0361_1.png": {
+      "label": 1,
+      "remote_size": 5737788,
+      "sha256": "915db0f49ea8b63d330b9d4c0645b95eb724624dd9b4ca559f39ce3024353187"
+    },
+    "CHNCXR_0362_1.png": {
+      "label": 1,
+      "remote_size": 7282508,
+      "sha256": "ea93396261a9cf03cc7cb9d4530d0ef79822044e517cd4719d098a61c07957df"
+    },
+    "CHNCXR_0363_1.png": {
+      "label": 1,
+      "remote_size": 5603102,
+      "sha256": "7ec3f798d2b84f7efde3aab7861549bf777392c2df61f3dc056f43723316201b"
+    },
+    "CHNCXR_0364_1.png": {
+      "label": 1,
+      "remote_size": 6629730,
+      "sha256": "489c7741cb6da27c6146ed08fec9633111ee9159ffd09c363d47be3388962cc4"
+    },
+    "CHNCXR_0365_1.png": {
+      "label": 1,
+      "remote_size": 5564614,
+      "sha256": "2bb0ae74373c53ae877d51722a81f4a27f35f00469e60d4c51f03d39365284a9"
+    },
+    "CHNCXR_0366_1.png": {
+      "label": 1,
+      "remote_size": 6597255,
+      "sha256": "c6d34b743d73ae62906ec4fdaf5de9293f9725a79c8d13233ccc885953b240a9"
+    },
+    "CHNCXR_0367_1.png": {
+      "label": 1,
+      "remote_size": 6123215,
+      "sha256": "c4dc0b817d433fb81a1f135069576b64f8d91ebfa16da543ba4d32671858a844"
+    },
+    "CHNCXR_0368_1.png": {
+      "label": 1,
+      "remote_size": 3939373,
+      "sha256": "b0da69d095ba901561f7bb5179095bbfb3ffb5389a5e4287f88a031dcf3cb443"
+    },
+    "CHNCXR_0369_1.png": {
+      "label": 1,
+      "remote_size": 6696309,
+      "sha256": "efe2a9ae23bd88bcebea3b439805f6481935fe4adf770163df89720def67b9cc"
+    },
+    "CHNCXR_0370_1.png": {
+      "label": 1,
+      "remote_size": 5776281,
+      "sha256": "e18393b6eda24d6bc151e30eb60d5b720531db5c92ea3b368ffa56aafd8ef374"
+    },
+    "CHNCXR_0371_1.png": {
+      "label": 1,
+      "remote_size": 6391729,
+      "sha256": "fc5fa26df72175284e0226127fd06d403df7a2c46afb939cfb9d8617cf7250b5"
+    },
+    "CHNCXR_0372_1.png": {
+      "label": 1,
+      "remote_size": 6394314,
+      "sha256": "aa43028ad075847986c818d0866a461683a255181d6efd180178b549bc95e660"
+    },
+    "CHNCXR_0373_1.png": {
+      "label": 1,
+      "remote_size": 5109237,
+      "sha256": "2ee0ff01ccbdc064b364a1e457da7db3aae26f0bfaa341c3f15e4489915f49c9"
+    },
+    "CHNCXR_0374_1.png": {
+      "label": 1,
+      "remote_size": 5878046,
+      "sha256": "13cf35a302ac9c1f6db68d45ad651671e4ddac7ae7185b0e02dbff9a52ef67e1"
+    },
+    "CHNCXR_0375_1.png": {
+      "label": 1,
+      "remote_size": 7026438,
+      "sha256": "04225b5a986af37d761c6ca44f721964c88932486092efa43f12609747e261d2"
+    },
+    "CHNCXR_0376_1.png": {
+      "label": 1,
+      "remote_size": 7262896,
+      "sha256": "6b4f2f97b3bda9e24814a9b30fb377423e5720e74f1467ddb118e3a5dbdd69be"
+    },
+    "CHNCXR_0377_1.png": {
+      "label": 1,
+      "remote_size": 5347623,
+      "sha256": "0884c74aae9b1968fb82b52b48f34c19f065cdf2eb392a8dd4fe778ae8214311"
+    },
+    "CHNCXR_0378_1.png": {
+      "label": 1,
+      "remote_size": 7013685,
+      "sha256": "10cc9a2b28f1d9d6b9b97ebbbb40c96efee238bda10e8700f9b9501ed469b1ac"
+    },
+    "CHNCXR_0379_1.png": {
+      "label": 1,
+      "remote_size": 4419463,
+      "sha256": "e42505924420a827384ecf204254a46a2c369ddf7e7e87edf9ea6f8d98856726"
+    },
+    "CHNCXR_0380_1.png": {
+      "label": 1,
+      "remote_size": 6809608,
+      "sha256": "090f2e4c20f6a3f030d8e697a85c18e3745d2efdaf721be2985f1c7b936564c1"
+    },
+    "CHNCXR_0381_1.png": {
+      "label": 1,
+      "remote_size": 7286325,
+      "sha256": "e84beb2efc53da178129f494cd689f5819cf6a28ab36dc4ff6699fa844e89d92"
+    },
+    "CHNCXR_0382_1.png": {
+      "label": 1,
+      "remote_size": 5823066,
+      "sha256": "969fd2a0ec022cc290096794b73f5b950af7b497f6ba7142f9da7157e517d637"
+    },
+    "CHNCXR_0383_1.png": {
+      "label": 1,
+      "remote_size": 5763518,
+      "sha256": "bf68d76b6f36a408c0e60f2d3431ae260cd4e00a94a768b07f343533097a524d"
+    },
+    "CHNCXR_0384_1.png": {
+      "label": 1,
+      "remote_size": 5865554,
+      "sha256": "c97a2873db337011380bbf9d913b68082f52a528169979a2ead27f9c0538c0ef"
+    },
+    "CHNCXR_0385_1.png": {
+      "label": 1,
+      "remote_size": 5817116,
+      "sha256": "757755c10ab4fa6173c59851dc12d64e3a8e0250d2c23bed59e1531b003b6302"
+    },
+    "CHNCXR_0386_1.png": {
+      "label": 1,
+      "remote_size": 6252151,
+      "sha256": "e77d759af98712894776f54f63cbceb605f1952c171742fddd088fbffeb2ca9f"
+    },
+    "CHNCXR_0387_1.png": {
+      "label": 1,
+      "remote_size": 5444397,
+      "sha256": "1aa379c2bae8052b564d49cb31461f15d15fb3902b9477e13684157ab34a1ff3"
+    },
+    "CHNCXR_0388_1.png": {
+      "label": 1,
+      "remote_size": 6616987,
+      "sha256": "2e1e922988d984d7dde6d07ae949e0d1f5a8929f216885019bf04e5b354a5d19"
+    },
+    "CHNCXR_0389_1.png": {
+      "label": 1,
+      "remote_size": 6077274,
+      "sha256": "1f60fdbdc560f890bfc5a3e74f3f5687fc39abae2022fde6ace91ceb71f9759d"
+    },
+    "CHNCXR_0390_1.png": {
+      "label": 1,
+      "remote_size": 6850792,
+      "sha256": "46fd7803565da2170778fabaf0123c6989f99966e75abaa3fa722fd563b441f4"
+    },
+    "CHNCXR_0391_1.png": {
+      "label": 1,
+      "remote_size": 3913223,
+      "sha256": "8fa553552a0839380990c35312763ff112beb5bbbcf0b77711907d470e75497c"
+    },
+    "CHNCXR_0392_1.png": {
+      "label": 1,
+      "remote_size": 5816290,
+      "sha256": "803c5c2a52570e70ada0fede714f606e4197dc57dcb60cf110f4f863c4372953"
+    },
+    "CHNCXR_0393_1.png": {
+      "label": 1,
+      "remote_size": 5033905,
+      "sha256": "58b5292a89a6dde6e39677db8e8f0160adf472963b77a8a1154243ac1d2b456d"
+    },
+    "CHNCXR_0394_1.png": {
+      "label": 1,
+      "remote_size": 7175879,
+      "sha256": "0bf41e7990908be2856dd25b806414374682f515200b0a251ac27e53b3c0e998"
+    },
+    "CHNCXR_0395_1.png": {
+      "label": 1,
+      "remote_size": 5679360,
+      "sha256": "71b2362b383cd2799331b3e10262e8be9f521e7a7b60380ddd912e46e78d3acd"
+    },
+    "CHNCXR_0396_1.png": {
+      "label": 1,
+      "remote_size": 6307090,
+      "sha256": "b07e91ba6e9a17c97043fdfc5b3769c46925a2ea4f43b3ca57ef27c4989612c3"
+    },
+    "CHNCXR_0397_1.png": {
+      "label": 1,
+      "remote_size": 5691299,
+      "sha256": "0bf0774bc10ef7d0bdf4a7938310cdc6182d78dd7d9516b0d939c74784045751"
+    },
+    "CHNCXR_0398_1.png": {
+      "label": 1,
+      "remote_size": 4796945,
+      "sha256": "82da3c4f0c735bf37083cccca25c9cb341b6f86fe4f248a5bb7d9b41d1cc2997"
+    },
+    "CHNCXR_0399_1.png": {
+      "label": 1,
+      "remote_size": 6504230,
+      "sha256": "f4a4af4a62019282eb9168e5c6191c1caa1d70fff1d6e7e220de0f56053022f8"
+    },
+    "CHNCXR_0400_1.png": {
+      "label": 1,
+      "remote_size": 5445208,
+      "sha256": "5631e4b220148491ff0bd3f28c1fe96b80616ef57047fdc5c7f6ebeea13b9ad2"
+    },
+    "CHNCXR_0401_1.png": {
+      "label": 1,
+      "remote_size": 5466445,
+      "sha256": "baab64155e83d2d69c995a2c734d9c1b4fd1800492067a60ba7143a5216bf91b"
+    },
+    "CHNCXR_0402_1.png": {
+      "label": 1,
+      "remote_size": 6193614,
+      "sha256": "ebc007c04c9295f8d1f5a80aade7866971d6cbba5cc0bda3f69feb36fdde1b29"
+    },
+    "CHNCXR_0403_1.png": {
+      "label": 1,
+      "remote_size": 6744559,
+      "sha256": "4d77d18381314f7666cd52a4cf30bf21702b9287d2ae2fb05a1dba3898d53d46"
+    },
+    "CHNCXR_0404_1.png": {
+      "label": 1,
+      "remote_size": 5045503,
+      "sha256": "4615ed2238e174fca3db93044d9c9ff5859321263fb467c0382cce814388c057"
+    },
+    "CHNCXR_0405_1.png": {
+      "label": 1,
+      "remote_size": 5550799,
+      "sha256": "fc206867acb75d45269bd18d16f2fedc535d33a5ca73fb2a0d45332fb85b833b"
+    },
+    "CHNCXR_0406_1.png": {
+      "label": 1,
+      "remote_size": 5312515,
+      "sha256": "45d1940557860816994b47f3a489a4427fe75cb81d3ac0d290a782ae094b6e61"
+    },
+    "CHNCXR_0407_1.png": {
+      "label": 1,
+      "remote_size": 7066196,
+      "sha256": "698e8db9ac2fbd2cba925762129a50583f0c90bc5279e6c771dc2386b696ac09"
+    },
+    "CHNCXR_0408_1.png": {
+      "label": 1,
+      "remote_size": 7367168,
+      "sha256": "dfcdc44f97507e8ecdeeb2322df3d58ba0bb8f8fcc6f053a60bd63fa5874e182"
+    },
+    "CHNCXR_0409_1.png": {
+      "label": 1,
+      "remote_size": 5578123,
+      "sha256": "bfdb994ad4cf58f64e12691e7d83dda2686c9e56eea08a1976afaf988288cbe9"
+    },
+    "CHNCXR_0410_1.png": {
+      "label": 1,
+      "remote_size": 4826752,
+      "sha256": "5a37977e931c2629ad805c8eecbfbd516f950eb7824196af5f5dcb68f998eddb"
+    },
+    "CHNCXR_0411_1.png": {
+      "label": 1,
+      "remote_size": 7070357,
+      "sha256": "8df379350c160f23bd51ae8c69ae18ac87890bcad4879039c88ea346385ef2e2"
+    },
+    "CHNCXR_0412_1.png": {
+      "label": 1,
+      "remote_size": 6926797,
+      "sha256": "ab7b71b229844ec2cd7d95fcd5c939c46aa8af0857b81afa79526c1d90077f17"
+    },
+    "CHNCXR_0413_1.png": {
+      "label": 1,
+      "remote_size": 4738535,
+      "sha256": "c1451e080eb1af8fea3420009b6c0fe07e617be29f8c925d213eef9554d5d803"
+    },
+    "CHNCXR_0414_1.png": {
+      "label": 1,
+      "remote_size": 4593296,
+      "sha256": "54210982577bb6fd164cc6880cf97e18abd876dc23559fe6a8d62a146997c371"
+    },
+    "CHNCXR_0415_1.png": {
+      "label": 1,
+      "remote_size": 4747691,
+      "sha256": "3447bc72d8743c9d3944a68925c00207c7524def73ed1d26c36d21c5bcc6d069"
+    },
+    "CHNCXR_0416_1.png": {
+      "label": 1,
+      "remote_size": 4864165,
+      "sha256": "3353ccafdaabca4866576c11c3cb0ef6efacd127d4d66c0d74def0890bf466f7"
+    },
+    "CHNCXR_0417_1.png": {
+      "label": 1,
+      "remote_size": 5583924,
+      "sha256": "d518499ab1bfcc0b1d1364873e786ff2075a786163c2ab97234a6ae1f8283039"
+    },
+    "CHNCXR_0418_1.png": {
+      "label": 1,
+      "remote_size": 5541078,
+      "sha256": "cdba2e3119b88a076adccdf60f54fedbc0585e017f3204f63086b316574c7019"
+    },
+    "CHNCXR_0419_1.png": {
+      "label": 1,
+      "remote_size": 4835885,
+      "sha256": "15345f85a8df548cd0f7fce8fcc3be1721d24edca9f9f101733be36264f590b7"
+    },
+    "CHNCXR_0420_1.png": {
+      "label": 1,
+      "remote_size": 6262829,
+      "sha256": "7db99364d048d1cb5d926651fdd3122c0e6f322c8988885393571f69d9da6662"
+    },
+    "CHNCXR_0421_1.png": {
+      "label": 1,
+      "remote_size": 6435547,
+      "sha256": "19bf31b94cca0c657dcce9c9d099ba3d98259772a78e97ff513ff06877ddfc0f"
+    },
+    "CHNCXR_0422_1.png": {
+      "label": 1,
+      "remote_size": 7104042,
+      "sha256": "5bfc731d1866dc881582ae06ef2eaa6d0a14ea02aedd53c7da7cfce2b4465e73"
+    },
+    "CHNCXR_0423_1.png": {
+      "label": 1,
+      "remote_size": 7100122,
+      "sha256": "fe4203114de4bb60af211ad5cc46c8625b38851bd47866b2cc53015de259b491"
+    },
+    "CHNCXR_0424_1.png": {
+      "label": 1,
+      "remote_size": 6965339,
+      "sha256": "20ddb2de9ce6d0b560a1409f439afa5bc70089d80213f16604e48337e7eff925"
+    },
+    "CHNCXR_0425_1.png": {
+      "label": 1,
+      "remote_size": 7113740,
+      "sha256": "1a57162df4d38a04d8219dfa098d75f3402c5d353160a7fa4f0569c2b6419fde"
+    },
+    "CHNCXR_0426_1.png": {
+      "label": 1,
+      "remote_size": 5158152,
+      "sha256": "6f09f37206bccc22da607903f819bca99e8d42f74f3fad7ea67b36b16863f455"
+    },
+    "CHNCXR_0427_1.png": {
+      "label": 1,
+      "remote_size": 6747153,
+      "sha256": "3b68f17544e9cb67ff182a42192538ada599c78d3c107d9970474ddd4ea89c2b"
+    },
+    "CHNCXR_0428_1.png": {
+      "label": 1,
+      "remote_size": 6926604,
+      "sha256": "cc80ef8a837582f832047a1b25dd2004bb62a84ce856e188fa40230ac373a220"
+    },
+    "CHNCXR_0429_1.png": {
+      "label": 1,
+      "remote_size": 7046544,
+      "sha256": "3827b24bef19edb11c41688b52a2fa48729fe933953268a3c48e0aea8b34ff80"
+    },
+    "CHNCXR_0430_1.png": {
+      "label": 1,
+      "remote_size": 6876376,
+      "sha256": "799b10fd3f0eabfe34638ad77912ba60d58556df79761e4cca70cca691827b20"
+    },
+    "CHNCXR_0431_1.png": {
+      "label": 1,
+      "remote_size": 7119982,
+      "sha256": "045b8d4367925103357ee529895108d5f9b5ce89e0d29cd101544dae40834f1e"
+    },
+    "CHNCXR_0432_1.png": {
+      "label": 1,
+      "remote_size": 6986470,
+      "sha256": "592d522f5b89591a3539592157f95adbd484b7d57352ea0c855efec6145a05ff"
+    },
+    "CHNCXR_0433_1.png": {
+      "label": 1,
+      "remote_size": 7206831,
+      "sha256": "e5eb0ef99651fd6e3e3682b2cd564c9ae3aaf49780e54e094502483381bae74b"
+    },
+    "CHNCXR_0434_1.png": {
+      "label": 1,
+      "remote_size": 6998550,
+      "sha256": "dcb92727b581aa78e93fb6faf646d22f9045e5b3276ae4ef450e9ed179b9d106"
+    },
+    "CHNCXR_0435_1.png": {
+      "label": 1,
+      "remote_size": 5073820,
+      "sha256": "94fd5ce6fbaa6c0d47d5307c3ca018866be4ec9a6dadfe0414abe72dce88c914"
+    },
+    "CHNCXR_0436_1.png": {
+      "label": 1,
+      "remote_size": 6883909,
+      "sha256": "450c6b50f86c78906fce78eba2649b83099b6673edc0417a24b9ac8c8d47d18a"
+    },
+    "CHNCXR_0437_1.png": {
+      "label": 1,
+      "remote_size": 4226643,
+      "sha256": "3e66bbbaf5f5d4100269b1d303f18a225500eaa5b31e584d2d89efabdb752a5b"
+    },
+    "CHNCXR_0438_1.png": {
+      "label": 1,
+      "remote_size": 5226240,
+      "sha256": "2d1daec7ae9687d960b6360727e255045d9485727eb637671c80081922f9e8a1"
+    },
+    "CHNCXR_0439_1.png": {
+      "label": 1,
+      "remote_size": 6267538,
+      "sha256": "4ba15405418db691d5e564a331e51be40d1262c5fd59b7dd2cb3e4e962fda78d"
+    },
+    "CHNCXR_0440_1.png": {
+      "label": 1,
+      "remote_size": 4229603,
+      "sha256": "249d8b639a0846cfd7a0f5dda603d0ecfd3131e93c3fceebe04c74b4b0549fdd"
+    },
+    "CHNCXR_0441_1.png": {
+      "label": 1,
+      "remote_size": 5500023,
+      "sha256": "811b84345a78af6a98b4aa14b8d3b3112375972b6cb816aa974fd7a43a4c3d30"
+    },
+    "CHNCXR_0442_1.png": {
+      "label": 1,
+      "remote_size": 6830361,
+      "sha256": "50760cbceabc2d5aeb6a8f5f07efd461fbd0166329e48fd6e85156acf9f1ce2c"
+    },
+    "CHNCXR_0443_1.png": {
+      "label": 1,
+      "remote_size": 6787106,
+      "sha256": "ec157f86c104c30780b7fbbe38afb3bd12b16c5844ca5e074f5d277d8556dde9"
+    },
+    "CHNCXR_0444_1.png": {
+      "label": 1,
+      "remote_size": 6954777,
+      "sha256": "efd3b2fd57aec69c5e09cd16d71178fc5e4f2b58732caec6ad0f3fe582e2e7f7"
+    },
+    "CHNCXR_0445_1.png": {
+      "label": 1,
+      "remote_size": 7171958,
+      "sha256": "7029847f0eb40e09d200c8608235508bbade88e624e5a9b5daa5b1dee072af5d"
+    },
+    "CHNCXR_0446_1.png": {
+      "label": 1,
+      "remote_size": 6244176,
+      "sha256": "cc5092e6b73da60c4a650b4f5f04ca3bbc60ef08e5642899450d075ecad51d88"
+    },
+    "CHNCXR_0447_1.png": {
+      "label": 1,
+      "remote_size": 6041500,
+      "sha256": "22db1b31ea7f6dc23397469e6225595acd137148c2d7f861e8bbad46a3163cc3"
+    },
+    "CHNCXR_0448_1.png": {
+      "label": 1,
+      "remote_size": 4354930,
+      "sha256": "309b36fa1d60d8818f9060df8889ff9d0b57e5d30083344e1501be7bbc48d575"
+    },
+    "CHNCXR_0449_1.png": {
+      "label": 1,
+      "remote_size": 6433258,
+      "sha256": "1ca698ac17e74f4e30c7abde790550087b72097216a4e1bb93fc3051d0395bb4"
+    },
+    "CHNCXR_0450_1.png": {
+      "label": 1,
+      "remote_size": 6911520,
+      "sha256": "66c75a3c5ce63ba17a5200af2d9ab9547efa35d7e9f162fa9ab0e30b026e060b"
+    },
+    "CHNCXR_0451_1.png": {
+      "label": 1,
+      "remote_size": 6835847,
+      "sha256": "937240e5b6b101b95e0dcdf0a961b1f61a9a09cbc6fab04ce73be4477900779d"
+    },
+    "CHNCXR_0452_1.png": {
+      "label": 1,
+      "remote_size": 5661396,
+      "sha256": "1310028d91e65c93af9d66e364890344985ad118a748bb15dfbe1e95749a00e1"
+    },
+    "CHNCXR_0453_1.png": {
+      "label": 1,
+      "remote_size": 6837268,
+      "sha256": "433b94c319432d0af63f12c8d9ae6f6faf8cddbfc2a5bbe3664cae141e629f30"
+    },
+    "CHNCXR_0454_1.png": {
+      "label": 1,
+      "remote_size": 6218657,
+      "sha256": "d96c4015202fe6d66117a980cce8447756040d9c72b2ff9c711cca71062ceb0b"
+    },
+    "CHNCXR_0455_1.png": {
+      "label": 1,
+      "remote_size": 6428589,
+      "sha256": "df171820d2187764f4a1eeb5a2bda9336cb63eb179494cc029dd25d00fcd8821"
+    },
+    "CHNCXR_0456_1.png": {
+      "label": 1,
+      "remote_size": 4668325,
+      "sha256": "0cf4696c3e0d0f7f54514f6db0a53a69cf3e6dff690240fc4c6b928e6779d553"
+    },
+    "CHNCXR_0457_1.png": {
+      "label": 1,
+      "remote_size": 5958236,
+      "sha256": "0b371db7d3c2504a24efc061939f23a0e8d3fa408de870fe980f4875c3534924"
+    },
+    "CHNCXR_0458_1.png": {
+      "label": 1,
+      "remote_size": 6630235,
+      "sha256": "0df7eca50950c5ffbd1fd66bcf83624204201c4af80d0e88d5f3fab2d68d2d05"
+    },
+    "CHNCXR_0459_1.png": {
+      "label": 1,
+      "remote_size": 5684439,
+      "sha256": "2ed173e87e820344d8fbfcd7386cc127d8fc18f20324e767ceb521521a8e87c1"
+    },
+    "CHNCXR_0460_1.png": {
+      "label": 1,
+      "remote_size": 6630547,
+      "sha256": "acbf931eb45fc042711a0b136a9d3f885461ac719e98329a020b28b5f7b28922"
+    },
+    "CHNCXR_0461_1.png": {
+      "label": 1,
+      "remote_size": 6148655,
+      "sha256": "18508a01e84f7ffe3e351f046c5a54daaa9a6a2f1e6cd4156435312c2a8edabc"
+    },
+    "CHNCXR_0462_1.png": {
+      "label": 1,
+      "remote_size": 6296095,
+      "sha256": "25f45454b0eba20137f5c19442cb35c4436ce6a763b3dcab41305a1f040033de"
+    },
+    "CHNCXR_0463_1.png": {
+      "label": 1,
+      "remote_size": 6098917,
+      "sha256": "3f2965285f661e1232af473b37bf3ec2fa1b42cc2e12617323b321019beb24c4"
+    },
+    "CHNCXR_0464_1.png": {
+      "label": 1,
+      "remote_size": 6709302,
+      "sha256": "f0aa89e5ff6592cb42277ce938f6d3961380a65d1b53cbf7e009a6b5f79bbc36"
+    },
+    "CHNCXR_0465_1.png": {
+      "label": 1,
+      "remote_size": 6095533,
+      "sha256": "b19fd9fc3b7b81e1062076b802494b27e7e6b8ebe5da601e0f2085d764b21ab8"
+    },
+    "CHNCXR_0466_1.png": {
+      "label": 1,
+      "remote_size": 5575166,
+      "sha256": "f92d9194162552a1f922238154c3511261e0fbf841d851315212e8ecaa788d79"
+    },
+    "CHNCXR_0467_1.png": {
+      "label": 1,
+      "remote_size": 4879739,
+      "sha256": "b0b00c556e0e75872473caf3b8a2d8170610f9c6bf2ff17ca6160f04ea47a43c"
+    },
+    "CHNCXR_0468_1.png": {
+      "label": 1,
+      "remote_size": 5373537,
+      "sha256": "edc4ac77a596a79680a4bc2b5ac3a4bbd803205f7031274100c69eab15630c81"
+    },
+    "CHNCXR_0469_1.png": {
+      "label": 1,
+      "remote_size": 4721396,
+      "sha256": "b895d2b2c6a307b104fcca34e7dab7e33d9ed4bcb66ee17d2be9f1e91c4c9ac4"
+    },
+    "CHNCXR_0470_1.png": {
+      "label": 1,
+      "remote_size": 4447757,
+      "sha256": "5f598ec996f1e4296e78e13ad60e93fe220bb40a88a8884a33457e35cf046ccf"
+    },
+    "CHNCXR_0471_1.png": {
+      "label": 1,
+      "remote_size": 4788526,
+      "sha256": "9c5493dc45ca397501235cd622d5795c29323340ea125f7fc7162576cac6f8bd"
+    },
+    "CHNCXR_0472_1.png": {
+      "label": 1,
+      "remote_size": 5621103,
+      "sha256": "dd7aecf5aa48d9dcbcb1b2516181f28be63eab8d367e8c42b6f51ad8aecd4894"
+    },
+    "CHNCXR_0473_1.png": {
+      "label": 1,
+      "remote_size": 6663458,
+      "sha256": "79bc63cca7890185cab0743f9fadd161f79459d72683c67b31c341d7d9af7aa1"
+    },
+    "CHNCXR_0474_1.png": {
+      "label": 1,
+      "remote_size": 5426644,
+      "sha256": "5554265596c30955ee066d40728b5b5ad7362c969bd6b88d9820d5c2e5ca4848"
+    },
+    "CHNCXR_0475_1.png": {
+      "label": 1,
+      "remote_size": 5949037,
+      "sha256": "714f0acaa63462b77ecefd85ee367598b6c633f5bfac1cfc2515f059b116c0ef"
+    },
+    "CHNCXR_0476_1.png": {
+      "label": 1,
+      "remote_size": 4945653,
+      "sha256": "f83993f998cc134ce2f827a7560ec653f868b43e3d79f3cc3a818322408b5ed3"
+    },
+    "CHNCXR_0477_1.png": {
+      "label": 1,
+      "remote_size": 5874589,
+      "sha256": "4396e6c19bdf2baf4ca9ebfd687e9e4c656ba9c99fb018bdc3da4657f954a8b0"
+    },
+    "CHNCXR_0478_1.png": {
+      "label": 1,
+      "remote_size": 4313915,
+      "sha256": "5ac90f1c09a31011c3ec7afb1e9ef2d342e52fa1c76249cebcfc5c2857b1b089"
+    },
+    "CHNCXR_0479_1.png": {
+      "label": 1,
+      "remote_size": 6718238,
+      "sha256": "1795d3cfdf716af6ee2eb382a356a384498650bbfe52b2786a44c9f079c8e656"
+    },
+    "CHNCXR_0480_1.png": {
+      "label": 1,
+      "remote_size": 5572463,
+      "sha256": "b68d53d40120c453624901d633b4b03bc63d24819c9a51a8f7356c51928e47d4"
+    },
+    "CHNCXR_0481_1.png": {
+      "label": 1,
+      "remote_size": 6352230,
+      "sha256": "329f9205c928719c37f975efc24493c9c7f2fed70ac01c6d60ea694503cc8d6c"
+    },
+    "CHNCXR_0482_1.png": {
+      "label": 1,
+      "remote_size": 4228536,
+      "sha256": "645ee0998d11088af5f44288380ac85dd001792858860ad40fbe90e7490c8c7e"
+    },
+    "CHNCXR_0483_1.png": {
+      "label": 1,
+      "remote_size": 5970459,
+      "sha256": "237e22af4a473117d43e2ccce3a7e17084d99a9bf2949c044e34e12077e3089f"
+    },
+    "CHNCXR_0484_1.png": {
+      "label": 1,
+      "remote_size": 5839555,
+      "sha256": "114764be78f42d0e75d157e2d280fc11735b21e19a1ab9b4191b5d97d4be1ee5"
+    },
+    "CHNCXR_0485_1.png": {
+      "label": 1,
+      "remote_size": 6330090,
+      "sha256": "d111c29ca2b80e69a5f1908e75ad3e525384797399a3112a5926d8abd82e2698"
+    },
+    "CHNCXR_0486_1.png": {
+      "label": 1,
+      "remote_size": 6374438,
+      "sha256": "8588fa14189e4258b034721fd05af0fe77fd28a81a3de0441f35c2a8b150b5f9"
+    },
+    "CHNCXR_0487_1.png": {
+      "label": 1,
+      "remote_size": 6132425,
+      "sha256": "160c94cb9df09adf8a7879f4d9fc2ea85eb6dbc08c3e9030fdef08db0698b014"
+    },
+    "CHNCXR_0488_1.png": {
+      "label": 1,
+      "remote_size": 5221512,
+      "sha256": "dc104c464b468e0ac7fe59687665c2643f993fb439871ebb7a6eea264cff6b0f"
+    },
+    "CHNCXR_0489_1.png": {
+      "label": 1,
+      "remote_size": 4620875,
+      "sha256": "cf692ae6a4ce2194af5548d15916aaea162fa96649243ccb3c67f104e6f6e457"
+    },
+    "CHNCXR_0490_1.png": {
+      "label": 1,
+      "remote_size": 6734876,
+      "sha256": "186bdf1eea745c3f39f593d9ed84e2986ed691358512a231482e3445ee8663cb"
+    },
+    "CHNCXR_0491_1.png": {
+      "label": 1,
+      "remote_size": 6578624,
+      "sha256": "9651d20ff57c1db6ab48c36ac11ef0f0c3434600d3f37659d45d3c843b0e33d6"
+    },
+    "CHNCXR_0492_1.png": {
+      "label": 1,
+      "remote_size": 5246100,
+      "sha256": "bd780f81f2e92b6a14a69c3fcd53495628e67345acbca5f7a3bd843b28608088"
+    },
+    "CHNCXR_0493_1.png": {
+      "label": 1,
+      "remote_size": 5518358,
+      "sha256": "7cd87a76b295f71955e4400c09c46f3c0ba39038958b827f12019f1aae8105b4"
+    },
+    "CHNCXR_0494_1.png": {
+      "label": 1,
+      "remote_size": 4837229,
+      "sha256": "66d85bf33c69c86f0e6388b592392c6f5ec44695875c63e75eeaea4f02c1a42f"
+    },
+    "CHNCXR_0495_1.png": {
+      "label": 1,
+      "remote_size": 5352173,
+      "sha256": "aa246e8b3e5881af593f4a87d1199fd336cf4668ba8ae6b0519d7a911798db21"
+    },
+    "CHNCXR_0496_1.png": {
+      "label": 1,
+      "remote_size": 4846076,
+      "sha256": "f98b4d1e9d34439986fd4905cec5474204d0eeb09de76fe45193691aec485005"
+    },
+    "CHNCXR_0497_1.png": {
+      "label": 1,
+      "remote_size": 5020013,
+      "sha256": "b8fcdac40313242565c2233cc27725380c0aaa2a36a5b632dd46d7d35fface47"
+    },
+    "CHNCXR_0498_1.png": {
+      "label": 1,
+      "remote_size": 5869121,
+      "sha256": "255b109f2f627c8cf84b391eaa90ddb5dcdaa4ca7b439e9e5ce007b05976d398"
+    },
+    "CHNCXR_0499_1.png": {
+      "label": 1,
+      "remote_size": 5014566,
+      "sha256": "d0592690d6b6891c0523cf5156d645ce0bb69695fa0c678377bcd2a5a0ff2705"
+    },
+    "CHNCXR_0500_1.png": {
+      "label": 1,
+      "remote_size": 5367025,
+      "sha256": "b56bc5e903aef58cf7b368fc00d1483e7efcd0e4a6967fe49e947b124d200f8d"
+    },
+    "CHNCXR_0501_1.png": {
+      "label": 1,
+      "remote_size": 5800022,
+      "sha256": "29fdcadf9809df407e882ab3985c94b0dfd24478a1fc979bf4fe203033efa430"
+    },
+    "CHNCXR_0502_1.png": {
+      "label": 1,
+      "remote_size": 5137339,
+      "sha256": "4d04b12cffe1544fa67dccad39ff2ed49136ba66271794d3210b89568546047f"
+    },
+    "CHNCXR_0503_1.png": {
+      "label": 1,
+      "remote_size": 6738721,
+      "sha256": "a9f6091e503cf839d7303adf8ddfdb71609626b3f7c4218bc7f9a4990e5928cb"
+    },
+    "CHNCXR_0504_1.png": {
+      "label": 1,
+      "remote_size": 6270873,
+      "sha256": "d276626b46a02b19d77b8ba3b3c9e7da52113e3558e6aa55fd671801806887a7"
+    },
+    "CHNCXR_0505_1.png": {
+      "label": 1,
+      "remote_size": 6180921,
+      "sha256": "117c4b9ce760925bbc6897da1013a300e5b12e2b820d1356350d6a3a94fd3aa8"
+    },
+    "CHNCXR_0506_1.png": {
+      "label": 1,
+      "remote_size": 6307448,
+      "sha256": "0ccfb2809ca0aabcd8344cbfca2f7ee170e018515c213ba7b82dd40464ca43ef"
+    },
+    "CHNCXR_0507_1.png": {
+      "label": 1,
+      "remote_size": 5081095,
+      "sha256": "ab8e315cf9171222ea3ec972d4cc9309bffd2d8c66aa5ab3f6a0414528398a53"
+    },
+    "CHNCXR_0508_1.png": {
+      "label": 1,
+      "remote_size": 6352241,
+      "sha256": "46eb2507f028076cde0e2ab860b1e34e6db3a8a1124fdcfa59b80450953b511e"
+    },
+    "CHNCXR_0509_1.png": {
+      "label": 1,
+      "remote_size": 6002629,
+      "sha256": "412248fb0f99287de989ed2fd62abb8b033bac319b0f6d7e185e573c9ee68d74"
+    },
+    "CHNCXR_0510_1.png": {
+      "label": 1,
+      "remote_size": 5342241,
+      "sha256": "c74cc86f4efad491abed86dea5942efbf03cda4956efe21c12a23ce24d36b6f0"
+    },
+    "CHNCXR_0511_1.png": {
+      "label": 1,
+      "remote_size": 6369872,
+      "sha256": "a0833fbe8fe8a18bcd1141a01252ae13a82760fae8b4b50fc990fe862b1b9404"
+    },
+    "CHNCXR_0512_1.png": {
+      "label": 1,
+      "remote_size": 7099643,
+      "sha256": "6a07a0a1b826caad9f649f286a109d0f64dfcbe4a56abb70b0e09b2dfd5a8e68"
+    },
+    "CHNCXR_0513_1.png": {
+      "label": 1,
+      "remote_size": 5466133,
+      "sha256": "0574d53116809dfbd55c4ef4009d369c2df6417c3e3111627dd5b364ec2dcb45"
+    },
+    "CHNCXR_0514_1.png": {
+      "label": 1,
+      "remote_size": 4754979,
+      "sha256": "b8abba84bc766f3bf7c78bd4043c753e2792e4d8b36d6a43d63c5922ba7d880f"
+    },
+    "CHNCXR_0515_1.png": {
+      "label": 1,
+      "remote_size": 5910462,
+      "sha256": "17e76f8fd29d92b79b820c1b949c803f284509f8509a689296bebe556a31a8de"
+    },
+    "CHNCXR_0516_1.png": {
+      "label": 1,
+      "remote_size": 6211014,
+      "sha256": "94e4ea4c91c43bfa6c0d7e8b01ed33ae6fc947ea51c4c07bcaf13be769f5e2a6"
+    },
+    "CHNCXR_0517_1.png": {
+      "label": 1,
+      "remote_size": 4601061,
+      "sha256": "6d915ae9a195b251f32ccd2753b0c454fc3ff3137a0cefbfd88efdc7f77f5983"
+    },
+    "CHNCXR_0518_1.png": {
+      "label": 1,
+      "remote_size": 6284450,
+      "sha256": "febef1d4a4b6de45a0d156750b8025310015306d4caccffb25d1c1e66f468cfc"
+    },
+    "CHNCXR_0519_1.png": {
+      "label": 1,
+      "remote_size": 5442222,
+      "sha256": "a777f880eb87d8e31f2bdc245cc407befc48038db9dbc76b6cce535d25c8cc41"
+    },
+    "CHNCXR_0520_1.png": {
+      "label": 1,
+      "remote_size": 6379260,
+      "sha256": "c695f46350c5e7a11aca39730de97f677e0be8de68c46d0c28111712c9cf4dd2"
+    },
+    "CHNCXR_0521_1.png": {
+      "label": 1,
+      "remote_size": 6216795,
+      "sha256": "78b9730aed89cef66f54735e16f9dbf399b79412a9e2ef1d6d701bb5a24b2aaa"
+    },
+    "CHNCXR_0522_1.png": {
+      "label": 1,
+      "remote_size": 6404592,
+      "sha256": "9eeea69c640888630806380ac20fda770edadb191ff88245f737edd00d9ebf0f"
+    },
+    "CHNCXR_0523_1.png": {
+      "label": 1,
+      "remote_size": 6345108,
+      "sha256": "1dc894588b1c54dae7dc841619e21ed90992ecc7e0874cf7c97c4ec23118ee61"
+    },
+    "CHNCXR_0524_1.png": {
+      "label": 1,
+      "remote_size": 6772245,
+      "sha256": "278db7b1ffbd001d38550879a7346714001bdf562c1d05cc09ae557ade5a272a"
+    },
+    "CHNCXR_0525_1.png": {
+      "label": 1,
+      "remote_size": 5752370,
+      "sha256": "a92bf61ba9d0f4fd8b2b867003a4ac95a42c6992724a740a5c6b88b342fa7cdc"
+    },
+    "CHNCXR_0526_1.png": {
+      "label": 1,
+      "remote_size": 4975176,
+      "sha256": "51c983ac1dfb8c70ff120192735f614018d4f19e53f8b461068f0ee0d2f94685"
+    },
+    "CHNCXR_0527_1.png": {
+      "label": 1,
+      "remote_size": 5489713,
+      "sha256": "1a69207dba6efb27d459504dad96962c44020e61edecf41caf0dd5e40620f231"
+    },
+    "CHNCXR_0528_1.png": {
+      "label": 1,
+      "remote_size": 4437663,
+      "sha256": "f75d577f67cc3fe4c8d7d8b60bb1fec22355a81e98d5ef783f14e2a22e876f58"
+    },
+    "CHNCXR_0529_1.png": {
+      "label": 1,
+      "remote_size": 5519095,
+      "sha256": "5a36a877e91ee82c6abed1c42f2e18e39529e4ce7ba36546ae5e47149b3b1b18"
+    },
+    "CHNCXR_0530_1.png": {
+      "label": 1,
+      "remote_size": 5546022,
+      "sha256": "0e49876193f5cf6c93852fecb0913a04aef0d207424be6282aeae26eb8f023f7"
+    },
+    "CHNCXR_0531_1.png": {
+      "label": 1,
+      "remote_size": 5314566,
+      "sha256": "d54681f691e7357256b1a71e29161a66a1d3b8170803c9c8161a7fcd9c9d73a7"
+    },
+    "CHNCXR_0532_1.png": {
+      "label": 1,
+      "remote_size": 4753109,
+      "sha256": "8f0b3727dee81bdd15955a5dfb1ac5a9daa0c7a88af49109021c3da4d5dfaed5"
+    },
+    "CHNCXR_0533_1.png": {
+      "label": 1,
+      "remote_size": 5646056,
+      "sha256": "1c6d7b1703fc275dbda7e20d93075ac3e05e0a6be9705fe2e89a0f634e9e7270"
+    },
+    "CHNCXR_0534_1.png": {
+      "label": 1,
+      "remote_size": 6741840,
+      "sha256": "433c14772a8e82b3d5a0756acda55e31fc77d092b3fcec19fd54bd34f99d6169"
+    },
+    "CHNCXR_0535_1.png": {
+      "label": 1,
+      "remote_size": 6009494,
+      "sha256": "85253ef71cb4c4295abb6158c94833deb912ce82ec9f52244eaa0d6d65335d23"
+    },
+    "CHNCXR_0536_1.png": {
+      "label": 1,
+      "remote_size": 5121040,
+      "sha256": "ed06af852a31b9f5a721b0f596d130dccacf7783ad5cd9fffdc98c0b6435f274"
+    },
+    "CHNCXR_0537_1.png": {
+      "label": 1,
+      "remote_size": 6412840,
+      "sha256": "b3e87b814297ef963ac788249e59eea431f859d72c7f06a56261a6b9151823c2"
+    },
+    "CHNCXR_0538_1.png": {
+      "label": 1,
+      "remote_size": 6320757,
+      "sha256": "0c0c5ca835328944574de2b68e1c908f9b78d1398c36073308fe0e62e3454382"
+    },
+    "CHNCXR_0539_1.png": {
+      "label": 1,
+      "remote_size": 6194596,
+      "sha256": "548fd3b141fe2f6702e364a59d6bf701d18fa5a19ade267792f8cd37fc1d66dc"
+    },
+    "CHNCXR_0540_1.png": {
+      "label": 1,
+      "remote_size": 5280564,
+      "sha256": "8b53d451a72eabaa0c6ef84879fc28faaeb78d3f13b4744d54f32c2023f64ad7"
+    },
+    "CHNCXR_0541_1.png": {
+      "label": 1,
+      "remote_size": 6613243,
+      "sha256": "64ee61978bb46c8f70077c77770ff9f579b46e0264ed294d8934d6bc3128bf02"
+    },
+    "CHNCXR_0542_1.png": {
+      "label": 1,
+      "remote_size": 4269062,
+      "sha256": "346f4f6f4cd24cad8e012979591d30f01593d2b7a4fe5566097eb81489d58e7e"
+    },
+    "CHNCXR_0543_1.png": {
+      "label": 1,
+      "remote_size": 4774081,
+      "sha256": "9a26fbb63bc82b5bc8dfb5aa1a2728c0bed2d95ff847000240632fc1e0990e6d"
+    },
+    "CHNCXR_0544_1.png": {
+      "label": 1,
+      "remote_size": 5205222,
+      "sha256": "1c485d7a392ceaf73cc50d95cb28704627abf5baebfef0fd58e944f8435a6b3f"
+    },
+    "CHNCXR_0545_1.png": {
+      "label": 1,
+      "remote_size": 5199547,
+      "sha256": "10492c07f3ad109974789085a99d9216c0cc11175b5e680f95a474afbed70d1d"
+    },
+    "CHNCXR_0546_1.png": {
+      "label": 1,
+      "remote_size": 5651814,
+      "sha256": "e050a49f8faf30b5511424c3544900784bf97eb3e3d5c872f7a683761becc1ab"
+    },
+    "CHNCXR_0547_1.png": {
+      "label": 1,
+      "remote_size": 5990489,
+      "sha256": "f2783002e53fd749aecb8b4a38eea3160a474730087ab583155ec743c51d073e"
+    },
+    "CHNCXR_0548_1.png": {
+      "label": 1,
+      "remote_size": 6029913,
+      "sha256": "94891c9b9569b23111b06a1b2842c3e15fabd4e7e854a187dbcadc90b51ea10a"
+    },
+    "CHNCXR_0549_1.png": {
+      "label": 1,
+      "remote_size": 4690571,
+      "sha256": "b65c9beee33f55d5b8633f3bc4b14a8d65c63e980fc68d76e0effa42ab27a8d6"
+    },
+    "CHNCXR_0550_1.png": {
+      "label": 1,
+      "remote_size": 5742253,
+      "sha256": "eb2b4c94e580ef7d608816d51ed11bcce410dfcbf54d77ec9c086440f759c5dd"
+    },
+    "CHNCXR_0551_1.png": {
+      "label": 1,
+      "remote_size": 5022166,
+      "sha256": "56600b1b6e0e6d93b51dda2f4d361917dee34739441599a6b49f4c891639e628"
+    },
+    "CHNCXR_0552_1.png": {
+      "label": 1,
+      "remote_size": 6984378,
+      "sha256": "396d30e8ae8180d90228f9b7161ee5999e7e30c1b46aaa973d4bd67bd4b95c8c"
+    },
+    "CHNCXR_0553_1.png": {
+      "label": 1,
+      "remote_size": 5729467,
+      "sha256": "fea35413d89afd567802d223278a57bd358278c8dc9fa8d9c788d428fab7b073"
+    },
+    "CHNCXR_0554_1.png": {
+      "label": 1,
+      "remote_size": 5797837,
+      "sha256": "b9f8547c229c043c0de5acc1c3b3dfa8b9c6182a628a6728c9b38d8e52a9b3be"
+    },
+    "CHNCXR_0555_1.png": {
+      "label": 1,
+      "remote_size": 5248020,
+      "sha256": "0790cf5edaaee8d18ef5bf4a89709ffd3224b117b5dd0a4738958454370ffc5a"
+    },
+    "CHNCXR_0556_1.png": {
+      "label": 1,
+      "remote_size": 5432173,
+      "sha256": "5e23bb8c43a01fb32ecf94acae99d68b24cfd240fa54be05ac6411c6a8c47d1d"
+    },
+    "CHNCXR_0557_1.png": {
+      "label": 1,
+      "remote_size": 6809787,
+      "sha256": "71b6b7c9ed9269abddd2a6086cb97a6de30d094857293b843b82c15c2432d3d5"
+    },
+    "CHNCXR_0558_1.png": {
+      "label": 1,
+      "remote_size": 6233246,
+      "sha256": "ffc884fdec2cb839d7cb7eb0839e31cebdb9c1a224c6f81cc46722c5c40c72de"
+    },
+    "CHNCXR_0559_1.png": {
+      "label": 1,
+      "remote_size": 6463446,
+      "sha256": "9e040376be18dbdb2dac71aa18bc1b8052441e5e13528a6765db4af9b34971fa"
+    },
+    "CHNCXR_0560_1.png": {
+      "label": 1,
+      "remote_size": 6189316,
+      "sha256": "83b3db146e7058768ed60c6fb400e57dfbbff5a21cffb97b97792e06cd2b126d"
+    },
+    "CHNCXR_0561_1.png": {
+      "label": 1,
+      "remote_size": 5329172,
+      "sha256": "5374b6bda8f4e6596071dd1e507ee78017d997db2ce42e278e6fbbb67eb48a4c"
+    },
+    "CHNCXR_0562_1.png": {
+      "label": 1,
+      "remote_size": 5405062,
+      "sha256": "4eeea98fdce56de72fc54bed75f41878f16e0f4d3bd94aa7c23424f010352f41"
+    },
+    "CHNCXR_0563_1.png": {
+      "label": 1,
+      "remote_size": 5709233,
+      "sha256": "f8a4439427137c7e73d66518c64f145706d41b6107aa90b2226c26b374290c26"
+    },
+    "CHNCXR_0564_1.png": {
+      "label": 1,
+      "remote_size": 6311823,
+      "sha256": "829292060e6d8bcb1446a30b01f3491a428f7910b5d19928266299461cb75eea"
+    },
+    "CHNCXR_0565_1.png": {
+      "label": 1,
+      "remote_size": 4521345,
+      "sha256": "338f32c42d604e1b42ded7183c21ed5f322ede02d7e2056edf06b87d6c574169"
+    },
+    "CHNCXR_0566_1.png": {
+      "label": 1,
+      "remote_size": 5518706,
+      "sha256": "2646a6152805e6fceb87bfdbd8203624ef15b02235beb213664a52a7d6a4602b"
+    },
+    "CHNCXR_0567_1.png": {
+      "label": 1,
+      "remote_size": 7077348,
+      "sha256": "c180b663253bd2f7c3642c8b0d903c2a03bba9f74074a9f1783cb3be1f4f6ef6"
+    },
+    "CHNCXR_0568_1.png": {
+      "label": 1,
+      "remote_size": 6363727,
+      "sha256": "55c33aaa614b25adfdcf0a0a60caa92cff782919eedcc3bc619153cd4cb2c9b5"
+    },
+    "CHNCXR_0569_1.png": {
+      "label": 1,
+      "remote_size": 6190027,
+      "sha256": "292b29be37ee89ea384d4dbd2a37a2e45174ba5c691decc01884655507381a3b"
+    },
+    "CHNCXR_0570_1.png": {
+      "label": 1,
+      "remote_size": 5991237,
+      "sha256": "6484ac5d8b810a378aa17c3a7a2f24958a377138b28144222cd817a3c458e8ed"
+    },
+    "CHNCXR_0571_1.png": {
+      "label": 1,
+      "remote_size": 6541087,
+      "sha256": "0a0d05698e32f9cd9a2a1d7810714ddbdb0b659b0e70da5a2ca28fee0686a87e"
+    },
+    "CHNCXR_0572_1.png": {
+      "label": 1,
+      "remote_size": 4420741,
+      "sha256": "84be11695abe6eebff27309ed11dc3278a5e5d0b01bef220a3f11d4b1223ebf7"
+    },
+    "CHNCXR_0573_1.png": {
+      "label": 1,
+      "remote_size": 6138413,
+      "sha256": "83920074c99ffffd40eeaf5afb155e24c5de6b9f02ffee69f7e867bf81dfe6c1"
+    },
+    "CHNCXR_0574_1.png": {
+      "label": 1,
+      "remote_size": 6392850,
+      "sha256": "003944993c17ce9d52bde165ba05ba30ce2208b6ed22fd9289d60ceb7dadcd18"
+    },
+    "CHNCXR_0575_1.png": {
+      "label": 1,
+      "remote_size": 4854848,
+      "sha256": "3e3cf023da1b7f93f0a86f9de293daaa4493741347edacceb59f42e15d06f08a"
+    },
+    "CHNCXR_0576_1.png": {
+      "label": 1,
+      "remote_size": 5664929,
+      "sha256": "a4ede2274c3102c501992112c40b944db89aed6a9ea2d54f5d4897d46b7beec3"
+    },
+    "CHNCXR_0577_1.png": {
+      "label": 1,
+      "remote_size": 4422225,
+      "sha256": "866e9c7d2bbd60409469991a191b5680aa03dbb906165b1d823c77d44f8ab317"
+    },
+    "CHNCXR_0578_1.png": {
+      "label": 1,
+      "remote_size": 7161722,
+      "sha256": "8068f44ff6a9cd05fddbe54b23cfa8c0696405a7f7069ab7f93a5bd28f331a39"
+    },
+    "CHNCXR_0579_1.png": {
+      "label": 1,
+      "remote_size": 5305329,
+      "sha256": "017c124297193169ac916ce712b0f1cd2c63ef2861aca05938fb5fb441ac73d6"
+    },
+    "CHNCXR_0580_1.png": {
+      "label": 1,
+      "remote_size": 6367259,
+      "sha256": "17f723540360e171c147a5165f98d46c68a66278620423337af91dbceab19938"
+    },
+    "CHNCXR_0581_1.png": {
+      "label": 1,
+      "remote_size": 5953340,
+      "sha256": "5d72c42b5ad74a655bb2cb9f8808e7d0bfc6d82103295097c862b7b725713d63"
+    },
+    "CHNCXR_0582_1.png": {
+      "label": 1,
+      "remote_size": 6624280,
+      "sha256": "63c64f7a8f6b0dbf72cc40591ace551743bf86695a14277821e1d1ebb3aa4b6b"
+    },
+    "CHNCXR_0583_1.png": {
+      "label": 1,
+      "remote_size": 7201297,
+      "sha256": "5ebd8fdf1af677e95c6cca3c3ae7b5266464547fe1b8704118a256ecce5e8bf0"
+    },
+    "CHNCXR_0584_1.png": {
+      "label": 1,
+      "remote_size": 5821090,
+      "sha256": "5266b5a15d8d894e4813aa187f4265ac3d4e61379ddb65b36c70ad9c1bbead45"
+    },
+    "CHNCXR_0585_1.png": {
+      "label": 1,
+      "remote_size": 7098681,
+      "sha256": "3570329ca4731cde4e4f9d5b864af107169e5f0bafdac990eafd4c561189afea"
+    },
+    "CHNCXR_0586_1.png": {
+      "label": 1,
+      "remote_size": 4947367,
+      "sha256": "d3ace865f94a087e8debf80cf1f629ac36b7e685552ced46e7c11f1e3f7bd4ee"
+    },
+    "CHNCXR_0587_1.png": {
+      "label": 1,
+      "remote_size": 7182410,
+      "sha256": "92520cc413d231dcd2d18110e503964f7d52326f27c22d1429ad52ee3fd3c165"
+    },
+    "CHNCXR_0588_1.png": {
+      "label": 1,
+      "remote_size": 5823888,
+      "sha256": "fef8d5e2ce7e893f10fd08eee722a9244c5c5a36df1cb1e4ed397fd7969bc9f1"
+    },
+    "CHNCXR_0589_1.png": {
+      "label": 1,
+      "remote_size": 5244254,
+      "sha256": "3f1f1602ba660b85b409881f0265fbc9efe7aa73e52f37c2965d109d145673be"
+    },
+    "CHNCXR_0590_1.png": {
+      "label": 1,
+      "remote_size": 5397799,
+      "sha256": "121ebd204209ab3784b83f131f78b17faa2c302223b81aaa3e5ea9e0f491b634"
+    },
+    "CHNCXR_0591_1.png": {
+      "label": 1,
+      "remote_size": 7257007,
+      "sha256": "241f4e9d6237795182867f473d04ffd89f3a35a6371578034fa10a03b3210dbe"
+    },
+    "CHNCXR_0592_1.png": {
+      "label": 1,
+      "remote_size": 5651116,
+      "sha256": "bf0ae36bc45f3866a7d316604f7df9700f1cbd067ea2432cb08dbdcd72079c6f"
+    },
+    "CHNCXR_0593_1.png": {
+      "label": 1,
+      "remote_size": 4681283,
+      "sha256": "e90e24c7adb686d4253cf9f96b01ebd21c73223124289756919cf65583af0e54"
+    },
+    "CHNCXR_0594_1.png": {
+      "label": 1,
+      "remote_size": 4936200,
+      "sha256": "870150b7993d952c27adb212648b690c1d2401448c9883b6241ca00c19cb8872"
+    },
+    "CHNCXR_0595_1.png": {
+      "label": 1,
+      "remote_size": 4709293,
+      "sha256": "c929e6e119b001d7482c7f2fa87a396391a2524dffb01c4315ca1890165f4440"
+    },
+    "CHNCXR_0596_1.png": {
+      "label": 1,
+      "remote_size": 4872640,
+      "sha256": "9b498118535e2804a805bf9de258c867da50c81495ce2ed56c3f96ec77c11096"
+    },
+    "CHNCXR_0597_1.png": {
+      "label": 1,
+      "remote_size": 7174817,
+      "sha256": "b216493823dac3e502a1ce5a2e613220879c9f9693961fbeb6fd1f6e9656e648"
+    },
+    "CHNCXR_0598_1.png": {
+      "label": 1,
+      "remote_size": 3290496,
+      "sha256": "c6762cc28ba530870834e604724ce93ba1c1991f185fd05a124b814a81c2a862"
+    },
+    "CHNCXR_0599_1.png": {
+      "label": 1,
+      "remote_size": 6367518,
+      "sha256": "7e2425fd404a825f23b17e27dfc03e65e14a56371f89666f70b40494b1320697"
+    },
+    "CHNCXR_0600_1.png": {
+      "label": 1,
+      "remote_size": 7050122,
+      "sha256": "34092dbfa5c2453674eb1fa57a46c9495c26bc40a7713c453b0fc3c2dd88aa87"
+    },
+    "CHNCXR_0601_1.png": {
+      "label": 1,
+      "remote_size": 6395215,
+      "sha256": "bbff1d5b3ebe984f6520db70ddb9fb0cd007b7ba740376255b535d20b2b52e2a"
+    },
+    "CHNCXR_0602_1.png": {
+      "label": 1,
+      "remote_size": 4048029,
+      "sha256": "1ab5eabf1449ce2425c1ce00bfff5404045b0bf2f301b5808e77675cf9d36a28"
+    },
+    "CHNCXR_0603_1.png": {
+      "label": 1,
+      "remote_size": 4540276,
+      "sha256": "9f1ebf98e8e65d7fee978432820a6db1f2e4c156564053bfa00b5fe66921e6b3"
+    },
+    "CHNCXR_0604_1.png": {
+      "label": 1,
+      "remote_size": 6054787,
+      "sha256": "c7ad01dfd179f2125d5920318f50dfdc9a781716688637f6a14df96b98c6cdd4"
+    },
+    "CHNCXR_0605_1.png": {
+      "label": 1,
+      "remote_size": 5010325,
+      "sha256": "8e88f0dea5fdac726cc28fee62efcaff40b851a27fecc74a5d5a806de3cea624"
+    },
+    "CHNCXR_0606_1.png": {
+      "label": 1,
+      "remote_size": 5496610,
+      "sha256": "a8770a7ce4f5466edb57ab7cd5bf2fcae9b2de257746621dc5c45d311430339f"
+    },
+    "CHNCXR_0607_1.png": {
+      "label": 1,
+      "remote_size": 7364090,
+      "sha256": "fdc6f3850b1f0129740ab257bc9fa40311e7d879ca7884972e83e2c5994c5879"
+    },
+    "CHNCXR_0608_1.png": {
+      "label": 1,
+      "remote_size": 7120563,
+      "sha256": "99fe500800b54c591ecc3aacef1cc4dc2e033589b964813d32965c7ac0bbe00c"
+    },
+    "CHNCXR_0609_1.png": {
+      "label": 1,
+      "remote_size": 6191940,
+      "sha256": "d119ef379070dae3ebc5723c14dd8de7b3352aba27211844c438db8c66877949"
+    },
+    "CHNCXR_0610_1.png": {
+      "label": 1,
+      "remote_size": 5114812,
+      "sha256": "97174c392e2ddc5d6edcfd05f98edf5a530696856c32bd76f5aa29702f2f2323"
+    },
+    "CHNCXR_0611_1.png": {
+      "label": 1,
+      "remote_size": 4364411,
+      "sha256": "60c4433f7c74fdb80e81428ec30bae4543faffe4656eea1edae3e83faef9b2ba"
+    },
+    "CHNCXR_0612_1.png": {
+      "label": 1,
+      "remote_size": 6491433,
+      "sha256": "b7971fa728588c3cdd5018b8b51d6e9cf5200ae2c1d5e7f0a1b7061491d00c93"
+    },
+    "CHNCXR_0613_1.png": {
+      "label": 1,
+      "remote_size": 4943448,
+      "sha256": "30a57818166205abbe5140e7d7522dd21ec8d732fd515d576f024d380ab4b8c1"
+    },
+    "CHNCXR_0614_1.png": {
+      "label": 1,
+      "remote_size": 4723365,
+      "sha256": "314d9fc31e263e70e00952d007174c513b2d37bf724a4bac3ad012642925de1b"
+    },
+    "CHNCXR_0615_1.png": {
+      "label": 1,
+      "remote_size": 4821045,
+      "sha256": "08c6877de83abbb159d8e74fb17dec6e806113ece8e749aef0df4a738d77fb55"
+    },
+    "CHNCXR_0616_1.png": {
+      "label": 1,
+      "remote_size": 3868027,
+      "sha256": "31607caec18a95a688989ca127b0c13abe79f33277dd343a27174660e36a4454"
+    },
+    "CHNCXR_0617_1.png": {
+      "label": 1,
+      "remote_size": 6290947,
+      "sha256": "336fe60458ed16d66d93d8ed720f036702848df14c5f12c8ee9c7d16a7667104"
+    },
+    "CHNCXR_0618_1.png": {
+      "label": 1,
+      "remote_size": 4606270,
+      "sha256": "6bceabfddef309effc6590c4bc3f2c7a54343ca7a8fb265cac8ed3240a3413d4"
+    },
+    "CHNCXR_0619_1.png": {
+      "label": 1,
+      "remote_size": 4465390,
+      "sha256": "295f07407726bc3effe1fc2f7c60ab80aced56ba013e07d9de2e50a587a80d94"
+    },
+    "CHNCXR_0620_1.png": {
+      "label": 1,
+      "remote_size": 4834943,
+      "sha256": "4f54efcc78b4b8d19b67450280f67a18a0da934bc68d1750d3933e306c57876e"
+    },
+    "CHNCXR_0621_1.png": {
+      "label": 1,
+      "remote_size": 5519863,
+      "sha256": "bf842e203adcfafdf2611b8dbaf4385fe14a60508f73f1fb77e539f628bfa618"
+    },
+    "CHNCXR_0622_1.png": {
+      "label": 1,
+      "remote_size": 4853302,
+      "sha256": "ae1b5f4d10e48f46d61f2c13eb462738d816a1ec20c3e6493c7ca1ab96fe9c82"
+    },
+    "CHNCXR_0623_1.png": {
+      "label": 1,
+      "remote_size": 4751721,
+      "sha256": "656611edffb51e08a36b98f2cd9d57cd08e64bb307b18fc2cf9d3189f66cfed7"
+    },
+    "CHNCXR_0624_1.png": {
+      "label": 1,
+      "remote_size": 4697460,
+      "sha256": "f8e2a87c6e5268e875b85cbd6b459a3e3b891ac8a4e669013fd10295d3cc71dc"
+    },
+    "CHNCXR_0625_1.png": {
+      "label": 1,
+      "remote_size": 5542536,
+      "sha256": "d3cdbe26aba78e8c9a43abee4bb39fdde2ec318eebeb5fb5f4afd90e0b0eb260"
+    },
+    "CHNCXR_0626_1.png": {
+      "label": 1,
+      "remote_size": 7228726,
+      "sha256": "1a7621c44708c806b357c23a1d2c21c7de59e62652e785a46ac7597326140a36"
+    },
+    "CHNCXR_0627_1.png": {
+      "label": 1,
+      "remote_size": 6059585,
+      "sha256": "e73e14aad91f61dccf0341dec79a933cd9e0eff8ed22671d3a37b0c9fd720d5f"
+    },
+    "CHNCXR_0628_1.png": {
+      "label": 1,
+      "remote_size": 7288846,
+      "sha256": "c85ae3f58e7023135f7b83919cdb4d42ed6fb3f47c896cbccecef3a2d88e3859"
+    },
+    "CHNCXR_0629_1.png": {
+      "label": 1,
+      "remote_size": 5056675,
+      "sha256": "8a16f075e2ae2bc2dfe9808117df3b59c5ff0e0c1eef18398dd274b4ae284b3d"
+    },
+    "CHNCXR_0630_1.png": {
+      "label": 1,
+      "remote_size": 7106727,
+      "sha256": "6308cebede2e3e5876e4055e0faea755a88408fd13e302f752236c72b4ce4642"
+    },
+    "CHNCXR_0631_1.png": {
+      "label": 1,
+      "remote_size": 5043345,
+      "sha256": "be65d5a2b77f5186338fd7bad631f70c98b137b3fb0141b08059df7dc4b487f1"
+    },
+    "CHNCXR_0632_1.png": {
+      "label": 1,
+      "remote_size": 5183420,
+      "sha256": "c0264883b93a0b586378fc84866d41d5e240e42966e08d878e998519d71bf391"
+    },
+    "CHNCXR_0633_1.png": {
+      "label": 1,
+      "remote_size": 5447691,
+      "sha256": "fb9f165c50c5bfa458474681868d225d95a2fa018fb8f1417ae06a1b1443bd14"
+    },
+    "CHNCXR_0634_1.png": {
+      "label": 1,
+      "remote_size": 6026792,
+      "sha256": "5f4653e2bb99ea9efea43460f361ecc10ddd0d7f30cf6d869f80bce5ab131cfe"
+    },
+    "CHNCXR_0635_1.png": {
+      "label": 1,
+      "remote_size": 4442249,
+      "sha256": "65235fba6dcfa5d85776077b1118864d261180767ad5fe9cb020a2212fadda59"
+    },
+    "CHNCXR_0636_1.png": {
+      "label": 1,
+      "remote_size": 5537715,
+      "sha256": "87eff037c546ade9b8732ed06f4cff5b2b9c10040b2768f64ecf5fdb401b34a3"
+    },
+    "CHNCXR_0637_1.png": {
+      "label": 1,
+      "remote_size": 5039278,
+      "sha256": "37223d04a739f8bd1ab5232c5e324b2fac03f8ceda5ce786c29b2e4a3364d5d9"
+    },
+    "CHNCXR_0638_1.png": {
+      "label": 1,
+      "remote_size": 5179846,
+      "sha256": "58c16e5f6bfa11ed1775182937d50cd628f5b7ef686f3464f291892b65918786"
+    },
+    "CHNCXR_0639_1.png": {
+      "label": 1,
+      "remote_size": 3826062,
+      "sha256": "ad7e7b8acdedbdbe4cb43725ba53626d227bab4b81bff7d152a04fe2cf5d99a8"
+    },
+    "CHNCXR_0640_1.png": {
+      "label": 1,
+      "remote_size": 5766973,
+      "sha256": "46ca12b18cf3d6a7d652b87e95cfedcc9e5d82ee72f1ae99cdd92d62d9179f83"
+    },
+    "CHNCXR_0641_1.png": {
+      "label": 1,
+      "remote_size": 6345324,
+      "sha256": "b4fa40aa0f31cec36077f1aa0f68066d0c93228c8dbaa5b289e215748da97295"
+    },
+    "CHNCXR_0642_1.png": {
+      "label": 1,
+      "remote_size": 4737334,
+      "sha256": "c7f07205f19503634b5fb20646336ae9baa2d6c59cf005d57d0b3d7bc3a3899f"
+    },
+    "CHNCXR_0643_1.png": {
+      "label": 1,
+      "remote_size": 5758084,
+      "sha256": "c36b2e276907dfc09e35c8bcacc86a2ffe295cd38095622bacbb7ee0ba4aff30"
+    },
+    "CHNCXR_0644_1.png": {
+      "label": 1,
+      "remote_size": 3612111,
+      "sha256": "c75228d02bd41ed5aa9a09efa0cfebe0cde8af5c8b1f733f654296e5cdd4634c"
+    },
+    "CHNCXR_0645_1.png": {
+      "label": 1,
+      "remote_size": 5684945,
+      "sha256": "a6af85e373c8982d9a29239bb72569ab8943136541aa26503020431391244e18"
+    },
+    "CHNCXR_0646_1.png": {
+      "label": 1,
+      "remote_size": 7571876,
+      "sha256": "5f59f44496b3a7ed5ebbe0e6e9006af6186035e5c42c65d6a4f7e2f8e24ad97d"
+    },
+    "CHNCXR_0647_1.png": {
+      "label": 1,
+      "remote_size": 7628658,
+      "sha256": "7a3331751136262167398b686d26fda596b653738930fb66c46c9791b85c5a12"
+    },
+    "CHNCXR_0648_1.png": {
+      "label": 1,
+      "remote_size": 6241228,
+      "sha256": "5316062b002578b2c81fdd4b644e9b0779920a1d7dbc41441aca26479e8f0748"
+    },
+    "CHNCXR_0649_1.png": {
+      "label": 1,
+      "remote_size": 6113713,
+      "sha256": "89d6530a17da28092a57d9884dbf4a3025bb208f75214275cda09680ba318ae7"
+    },
+    "CHNCXR_0650_1.png": {
+      "label": 1,
+      "remote_size": 6927843,
+      "sha256": "83a10d8a034c76a45949e1093b81c89e378d3efd9f16fdb2d86bc131c4bb6234"
+    },
+    "CHNCXR_0651_1.png": {
+      "label": 1,
+      "remote_size": 5607838,
+      "sha256": "dea2a2dd65d8f46d99a25b4614f5694d947726d8803bc07cd3914b5b655a4132"
+    },
+    "CHNCXR_0652_1.png": {
+      "label": 1,
+      "remote_size": 6500961,
+      "sha256": "e357e928318fb7afe00d76119317b4035ab7ecf07c575cdf91f456dffe0d1631"
+    },
+    "CHNCXR_0653_1.png": {
+      "label": 1,
+      "remote_size": 5196269,
+      "sha256": "c24458a8335dd2f1262192f0bb4b20690b05c5081b43388554492906b9a42dd4"
+    },
+    "CHNCXR_0654_1.png": {
+      "label": 1,
+      "remote_size": 4185873,
+      "sha256": "ebfc6de36b0c570abb7a2a4f950315b49bd5a089659b5aba3b7d9b7f8a68e6d5"
+    },
+    "CHNCXR_0655_1.png": {
+      "label": 1,
+      "remote_size": 5535358,
+      "sha256": "9efd4fd6db8658cacbfd2e600e952741364a2c97fcae13f4cd796aae608e3b2c"
+    },
+    "CHNCXR_0656_1.png": {
+      "label": 1,
+      "remote_size": 7501853,
+      "sha256": "caa64809817e18c5af02b822fb139efe5a4098832849926bd6c84a69253cef21"
+    },
+    "CHNCXR_0657_1.png": {
+      "label": 1,
+      "remote_size": 6999778,
+      "sha256": "807c54faf5176f338ea65342c549f97f1a22347a1273fe470a5f809895a9a4e3"
+    },
+    "CHNCXR_0658_1.png": {
+      "label": 1,
+      "remote_size": 6699925,
+      "sha256": "1ba0a7e4accfac73d4526e8aac53d1f89ba5cfcadd5c2194b494abfe4e67b3a8"
+    },
+    "CHNCXR_0659_1.png": {
+      "label": 1,
+      "remote_size": 7801127,
+      "sha256": "03347e317078c30c5ef45f977dd76a6867e163c8d5611e0ba15f5e3419c29a93"
+    },
+    "CHNCXR_0660_1.png": {
+      "label": 1,
+      "remote_size": 7175712,
+      "sha256": "6dcedb0a261783e659a4854dccc42f049086c36223d3d6377d0f1b66d654eae2"
+    },
+    "CHNCXR_0661_1.png": {
+      "label": 1,
+      "remote_size": 5641338,
+      "sha256": "df7410f133cca418cedac948e766f894f0ca1ca5b9bc4bf8bfe67b84aded0ad1"
+    },
+    "CHNCXR_0662_1.png": {
+      "label": 1,
+      "remote_size": 6853896,
+      "sha256": "1aced8b821798d864814cd6013d72d3ef620d4cfae529dee882037ba2c398dcf"
+    }
+  }
+}

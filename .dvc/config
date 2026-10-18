@@ -1,0 +1,5 @@
+[core]
+    remote = myazure
+['remote "myazure"']
+    url = azure://dvc/tb-cxr
+    account_name = wut2026

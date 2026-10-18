@@ -1,0 +1,42 @@
+[tool.black]
+line-length = 120
+target-version = ["py312"]
+extend-exclude = '''
+/(
+    \.venv
+  | venv
+  | data
+  | runs
+  | artifacts
+  | mlruns
+)/
+'''
+
+[tool.ruff]
+line-length = 120
+target-version = "py312"
+exclude = [".venv", "venv", "data", "runs", "artifacts", "mlruns"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "C4", "SIM"]
+ignore = [
+  "E501",   # line length is black's job
+  "B008",   # FastAPI's Depends()/File() defaults are the documented pattern
+  "B905",   # zip(strict=) is used explicitly where it matters
+]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["S101"]        # asserts are the point of tests
+"ml/train.py" = ["C901"]    # the training loop is intentionally linear
+
+[tool.pytest.ini_options]
+minversion = "8.0"
+testpaths = ["tests"]
+addopts = "-ra --strict-markers --strict-config"
+filterwarnings = [
+    "ignore::DeprecationWarning:torch.*",
+    "ignore::DeprecationWarning:onnxruntime.*",
+]
+markers = [
+    "slow: exercises the full model on many inputs",
+]

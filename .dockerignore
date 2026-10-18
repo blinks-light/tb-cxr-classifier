@@ -1,0 +1,46 @@
+# Keep the build context small and the image free of training material.
+.git
+.github
+.gitignore
+.dvc
+.dvcignore
+.venv
+venv
+__pycache__
+**/__pycache__
+*.py[cod]
+.pytest_cache
+.ruff_cache
+.mypy_cache
+.coverage
+htmlcov
+
+# training / data -- never needed to serve the model
+data
+runs
+mlruns
+mlflow.db
+mlruns.db
+ml
+tests
+*.ipynb
+*.pdf
+*.docx
+
+# dev-only files
+requirements-dev.txt
+pyproject.toml
+Makefile
+DEPLOYMENT.md
+README.md
+ml/README_data.md
+ml/README_experiments.md
+ml/PROVENANCE.md
+**/*.md
+**/.DS_Store
+Thumbs.db
+
+# local secrets
+.env
+.env.*
+!.env.example

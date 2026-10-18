@@ -1,0 +1,30 @@
+# Experiment 2 -- the improved run that is allowed to go to production.
+#
+# Changes vs baseline (each one is justified in ml/README_experiments.md):
+#   * dataset v2   : near-duplicate removal + stratified rebuild of the splits
+#   * CLAHE        : local contrast equalisation, helps subtle apical infiltrates
+#   * augmentation : flips + small affine warps (n=662 is a small dataset)
+#   * fine-tuning  : backbone unfrozen after 2 warm-up epochs
+#   * class weights: keeps the recall pressure on the TB class
+#   * cosine LR    : smoother convergence in a short schedule
+#   * threshold    : tuned on validation for sensitivity >= 0.90, not fixed at 0.5
+name: improved_v2_finetune
+data_dir: data/versions/v2
+preprocessing: v2
+
+seed: 42
+epochs: 16
+batch_size: 16
+lr: 0.0007
+weight_decay: 0.0005
+dropout: 0.3
+num_workers: 4
+
+augment: true
+class_weight: balanced
+scheduler: cosine
+
+freeze_backbone_epochs: 2
+
+threshold_strategy: tuned
+target_sensitivity: 0.90
