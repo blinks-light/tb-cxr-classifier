@@ -1,7 +1,7 @@
 # TB CXR inference service -- multi-stage build for a slim runtime image.
 #
 #   builder : installs the (small) runtime dependency set into /install
-#   runtime : python:3.12-slim + /usr/local/libs + app/ + artifacts/  (~330 MB)
+#   runtime : python:3.12-slim + /usr/local/libs + app/ + artifacts/  (~522 MiB)
 #
 # torch / scikit-learn / mlflow are deliberately absent: training happens
 # elsewhere, the image only *serves* the exported ONNX graph.
