@@ -72,7 +72,9 @@ jobs:
         run: python -c "from app.inference import TBClassifier; m=TBClassifier(); print('model ok:', m.meta['model_name'], 'sha256', m.meta['onnx_sha256'][:12])"
 
       - name: Run tests
-        run: pytest -q --junitxml=reports/junit.xml
+        run: |
+          mkdir -p reports
+          pytest -q --junitxml=reports/junit.xml
 
       - name: Upload test report
         if: always()
