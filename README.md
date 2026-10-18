@@ -200,6 +200,29 @@ Both CD workflows only **build and publish** an image — actually running it on
 host is out of scope, as the assignment specifies. `DEPLOYMENT.md` documents how
 to run the published image.
 
+### Publishing this repo to GitHub (one manual step)
+
+The repository is built and verified locally with the full branch history
+(`main`, `staging`, `dev`, `feature/*` + tags `v1.0.0`, `v1.0.1`). Pushing it needs
+*your* GitHub credentials, so it is the one thing left to do by hand:
+
+```powershell
+# 1. create an empty repo (no README, no .gitignore) named tb-cxr-classifier, then:
+git remote add origin https://github.com/blinks-light/tb-cxr-classifier.git
+git push -u origin main
+git push origin staging dev
+git push origin --tags
+
+# 2. repository secrets (Settings -> Secrets and variables -> Actions):
+#    STAGING_LOG_LEVEL, STAGING_INTRA_OP_THREADS,
+#    PRODUCTION_LOG_LEVEL, PRODUCTION_INTRA_OP_THREADS
+
+# 3. branch protection + the `production` environment: see below
+```
+
+GitHub needs the proxy for this machine: `git config http.proxy http://127.0.0.1:7892`
+(already set in this working copy).
+
 ### Branch protection (must be configured in the GitHub UI)
 
 `Settings → Branches → Add branch protection rule`, for `dev`, `staging`, `main`:
