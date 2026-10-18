@@ -100,7 +100,8 @@ materially different training problems, not a cosmetic re-label.
 An unstratified 15 % validation slice drew 45.5 % positives against 52.1 % in
 training. With 99 validation images a 7-point class shift is ~7 patients, which is
 enough to make a threshold tuned on that slice unreliable — and threshold choice
-is the single biggest lever in this project (§5 of `ml/README_experiments.md`).
+is the single biggest lever in this project (see §3 of
+[`README_experiments.md`](README_experiments.md)).
 
 ---
 
@@ -123,9 +124,10 @@ hashes are useless on a dataset where every image is a chest X-ray. The RMSE
 approach on 32×32 thumbnails is what the committed pipeline uses.
 
 Because dedup found nothing, **v2's data-level improvement is the audited
-stratified split**. All of the accuracy gain in §`ml/README_experiments.md`
-therefore has to come from modelling and preprocessing, which is how the two
-documents stay honest with each other.
+stratified split**. All of the accuracy gain reported in
+[`README_experiments.md`](README_experiments.md) therefore has to come from
+modelling and preprocessing, which is how the two documents stay honest with each
+other.
 
 ---
 
