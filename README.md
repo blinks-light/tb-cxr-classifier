@@ -133,8 +133,9 @@ a caller can re-threshold without redeploying.
 
 The runtime dependency set is `fastapi, uvicorn, python-multipart, onnxruntime,
 numpy, pillow, pydantic`. Training pulls in torch (~200 MB wheel) and
-scikit-learn; the image does not. That is the difference between a ~330 MB image
-and a ~1.5 GB one — enforced in CI (`docker` job fails above 700 MB).
+scikit-learn; the image does not. That is the difference between a 522 MiB image
+(128 MB compressed) and a ~1.5 GB one — enforced in CI (`docker` job fails above
+700 MB).
 
 ---
 

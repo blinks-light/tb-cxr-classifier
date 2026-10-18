@@ -74,7 +74,8 @@ Runtime environment variables understood by the app:
 
 No torch, no scikit-learn, no data, no notebooks, no git history
 (see `.dockerignore`). CI fails the build if the image exceeds **700 MB**; the
-built image is ~330 MB.
+built image is **522 MiB** (128 MB compressed; `docker image inspect --format '{{.Size}}'`
+reports 547,609,012 bytes).
 
 Startup fails fast (container unhealthy) when:
 
